@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1327733F610BBC875EDF1AE1915A244B /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B5667C70FB1CBDEC8A9FF81F3754825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		34322ABE0CBD2B69369C766A96F5D4A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		44734358A838F5FEC2626D02E4193EDB /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		5319DC0FD28FC1B6591FDDCFA533F68E /* Pods-EZRecipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D72BE7FF1A9F2D2AB9BCC74CF8F0464 /* Pods-EZRecipe-dummy.m */; };
+		579CB3952F2E43F9CC92BFA92FD80368 /* Pods-EZRecipe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 629EAF4F060B1DDF6DB23F592E0EA4D5 /* Pods-EZRecipe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39BBE3E33278B1B851A208BFF2F9E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		828C2F610E967B199EDC3EF905E320D8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		90994CB8DEC654634AB6A5C4EAB11D78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A0D7181DD874BCF80DD01F8B5E2ACD73 /* Pods-EZRecipeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B884A5BFA0C78491CA3AFB1E2DBF4F1F /* Pods-EZRecipeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0A1A995B5CFB8C164CD083D3702D829 /* Pods-EZRecipeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4D8296D15343C6C241EF0D55E0D439 /* Pods-EZRecipeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEF665B9FD0009C83CC1812313A05DD0 /* Pods-EZRecipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B200DC0B2A66B266C85FE99D0932C9F6 /* Pods-EZRecipeTests-dummy.m */; };
+		F6B402DF10172C9FA04C8A12EF2F2D9D /* Pods-EZRecipeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD6DB681A916B80A5CAD1EC2A24552 /* Pods-EZRecipeUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B990C82D430E9F7B3314A358411275 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA8E1F8F84345ACBC956C6BAC54FEA4D;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		2E7734898B3A8BCDC159C475848A6E3A /* Pods-EZRecipeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZRecipeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3666D924124C4C880F4A4FAD0C2A38CC /* Pods-EZRecipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeTests.release.xcconfig"; sourceTree = "<group>"; };
+		412717DA367B453CB74CAFA36100B772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4764A332774B7942CCCFE6190CAB00B0 /* Pods-EZRecipeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EZRecipeUITests.modulemap"; sourceTree = "<group>"; };
+		4E0FBA1DD1AE9793B20AE62C51C86C64 /* Pods-EZRecipe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipe-resources.sh"; sourceTree = "<group>"; };
+		599C2C7A866FFC5DF53C89B87897AC11 /* Pods_EZRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB5EEFE4828C039C386E2F78E0CD0E4 /* Pods-EZRecipeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZRecipeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		629EAF4F060B1DDF6DB23F592E0EA4D5 /* Pods-EZRecipe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZRecipe-umbrella.h"; sourceTree = "<group>"; };
+		6B453AB6B0CEB04C0113D658B3AAD6EE /* Pods-EZRecipeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		85B03BA255B3542D089FA5B7330A996C /* Pods-EZRecipeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeUITests-resources.sh"; sourceTree = "<group>"; };
+		8D72BE7FF1A9F2D2AB9BCC74CF8F0464 /* Pods-EZRecipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZRecipe-dummy.m"; sourceTree = "<group>"; };
+		8F9422131E4AEA031751D0B4B3649FE1 /* Pods-EZRecipeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EZRecipeTests.modulemap"; sourceTree = "<group>"; };
+		9121A6B4D76789794AA46318F22D7792 /* Pods-EZRecipeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZRecipeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		92658ADA3D4317916096C05C7002207E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C2C9AFD9C5E6D59EC0A49DFC036055 /* Pods-EZRecipeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZRecipeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF4D8296D15343C6C241EF0D55E0D439 /* Pods-EZRecipeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZRecipeUITests-umbrella.h"; sourceTree = "<group>"; };
+		B200DC0B2A66B266C85FE99D0932C9F6 /* Pods-EZRecipeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZRecipeTests-dummy.m"; sourceTree = "<group>"; };
+		B7DD6DB681A916B80A5CAD1EC2A24552 /* Pods-EZRecipeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZRecipeUITests-dummy.m"; sourceTree = "<group>"; };
+		B884A5BFA0C78491CA3AFB1E2DBF4F1F /* Pods-EZRecipeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZRecipeTests-umbrella.h"; sourceTree = "<group>"; };
+		B9328A23C2F734F22FA0F48E026D22B4 /* Pods-EZRecipeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeTests-frameworks.sh"; sourceTree = "<group>"; };
+		BBF3E9005BA26957C0BDD73152B7B4C5 /* Pods-EZRecipe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EZRecipe.modulemap"; sourceTree = "<group>"; };
+		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		BF7198ECE044C8B69DCC53D9EF5D706A /* Pods-EZRecipe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZRecipe-acknowledgements.plist"; sourceTree = "<group>"; };
+		C10834919E9267C29371C7AF4EF9432F /* Pods_EZRecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83B0D7407B0BDFB752148F5C0C5CCFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6B693274218ECC511C4FEC174521DD /* Pods-EZRecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D7A7CE081A939AD416CE47666D80C665 /* Pods-EZRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipe.release.xcconfig"; sourceTree = "<group>"; };
+		D8F8F896DCCBB0B12706896F27D27C24 /* Pods_EZRecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA856C74DDFC8F5FB6CDFF2970DE0FC3 /* Pods-EZRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E084188D4F3E84075D1A89462A8317EE /* Pods-EZRecipeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeTests-resources.sh"; sourceTree = "<group>"; };
+		E18A59E6932684EDE65D950D0795FA50 /* Pods-EZRecipe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZRecipe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E376A733CC4EA1454798AC225651509E /* Pods-EZRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipe.debug.xcconfig"; sourceTree = "<group>"; };
+		E7CB89FC475499163DCD77F0D057FA38 /* Pods-EZRecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F00027CB11E4B7E2A3EF08E8C6B39C49 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B1A384DDC5275719ADDAB6900C2BAA /* Pods-EZRecipe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipe-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C3094450C1911D07A3EAE9A24E9A5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34322ABE0CBD2B69369C766A96F5D4A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783D0ED551E1E6A887D83AF75A3BBAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90994CB8DEC654634AB6A5C4EAB11D78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DAB1FECFFAB30496499B5A8BE590267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5667C70FB1CBDEC8A9FF81F3754825 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19DC6FDE3F0FF0D0B14991F3A2DB1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F39BBE3E33278B1B851A208BFF2F9E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6643200B45C7CBA2E5C8A343E1EDBA0D /* Pods-EZRecipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C83B0D7407B0BDFB752148F5C0C5CCFC /* Info.plist */,
+				8F9422131E4AEA031751D0B4B3649FE1 /* Pods-EZRecipeTests.modulemap */,
+				93C2C9AFD9C5E6D59EC0A49DFC036055 /* Pods-EZRecipeTests-acknowledgements.markdown */,
+				9121A6B4D76789794AA46318F22D7792 /* Pods-EZRecipeTests-acknowledgements.plist */,
+				B200DC0B2A66B266C85FE99D0932C9F6 /* Pods-EZRecipeTests-dummy.m */,
+				B9328A23C2F734F22FA0F48E026D22B4 /* Pods-EZRecipeTests-frameworks.sh */,
+				E084188D4F3E84075D1A89462A8317EE /* Pods-EZRecipeTests-resources.sh */,
+				B884A5BFA0C78491CA3AFB1E2DBF4F1F /* Pods-EZRecipeTests-umbrella.h */,
+				CA6B693274218ECC511C4FEC174521DD /* Pods-EZRecipeTests.debug.xcconfig */,
+				3666D924124C4C880F4A4FAD0C2A38CC /* Pods-EZRecipeTests.release.xcconfig */,
+			);
+			name = "Pods-EZRecipeTests";
+			path = "Target Support Files/Pods-EZRecipeTests";
+			sourceTree = "<group>";
+		};
+		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
+				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				92BCFB242541134515A8FDA28824F9B6 /* Products */,
+				7E9C36EEF5AC5B04E176F2E70E119B8F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E9C36EEF5AC5B04E176F2E70E119B8F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8654670FE7A7A8EEC58FA3816DD7EBCC /* Pods-EZRecipe */,
+				6643200B45C7CBA2E5C8A343E1EDBA0D /* Pods-EZRecipeTests */,
+				EE8CD90403CCA03A9F1BFC690FB8DEF3 /* Pods-EZRecipeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8654670FE7A7A8EEC58FA3816DD7EBCC /* Pods-EZRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				412717DA367B453CB74CAFA36100B772 /* Info.plist */,
+				BBF3E9005BA26957C0BDD73152B7B4C5 /* Pods-EZRecipe.modulemap */,
+				E18A59E6932684EDE65D950D0795FA50 /* Pods-EZRecipe-acknowledgements.markdown */,
+				BF7198ECE044C8B69DCC53D9EF5D706A /* Pods-EZRecipe-acknowledgements.plist */,
+				8D72BE7FF1A9F2D2AB9BCC74CF8F0464 /* Pods-EZRecipe-dummy.m */,
+				F2B1A384DDC5275719ADDAB6900C2BAA /* Pods-EZRecipe-frameworks.sh */,
+				4E0FBA1DD1AE9793B20AE62C51C86C64 /* Pods-EZRecipe-resources.sh */,
+				629EAF4F060B1DDF6DB23F592E0EA4D5 /* Pods-EZRecipe-umbrella.h */,
+				E376A733CC4EA1454798AC225651509E /* Pods-EZRecipe.debug.xcconfig */,
+				D7A7CE081A939AD416CE47666D80C665 /* Pods-EZRecipe.release.xcconfig */,
+			);
+			name = "Pods-EZRecipe";
+			path = "Target Support Files/Pods-EZRecipe";
+			sourceTree = "<group>";
+		};
+		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
+				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
+				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
+				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
+				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
+				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		92BCFB242541134515A8FDA28824F9B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8F8F896DCCBB0B12706896F27D27C24 /* Pods_EZRecipe.framework */,
+				599C2C7A866FFC5DF53C89B87897AC11 /* Pods_EZRecipeTests.framework */,
+				C10834919E9267C29371C7AF4EF9432F /* Pods_EZRecipeUITests.framework */,
+				F00027CB11E4B7E2A3EF08E8C6B39C49 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE8CD90403CCA03A9F1BFC690FB8DEF3 /* Pods-EZRecipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92658ADA3D4317916096C05C7002207E /* Info.plist */,
+				4764A332774B7942CCCFE6190CAB00B0 /* Pods-EZRecipeUITests.modulemap */,
+				5FB5EEFE4828C039C386E2F78E0CD0E4 /* Pods-EZRecipeUITests-acknowledgements.markdown */,
+				2E7734898B3A8BCDC159C475848A6E3A /* Pods-EZRecipeUITests-acknowledgements.plist */,
+				B7DD6DB681A916B80A5CAD1EC2A24552 /* Pods-EZRecipeUITests-dummy.m */,
+				6B453AB6B0CEB04C0113D658B3AAD6EE /* Pods-EZRecipeUITests-frameworks.sh */,
+				85B03BA255B3542D089FA5B7330A996C /* Pods-EZRecipeUITests-resources.sh */,
+				AF4D8296D15343C6C241EF0D55E0D439 /* Pods-EZRecipeUITests-umbrella.h */,
+				DA856C74DDFC8F5FB6CDFF2970DE0FC3 /* Pods-EZRecipeUITests.debug.xcconfig */,
+				E7CB89FC475499163DCD77F0D057FA38 /* Pods-EZRecipeUITests.release.xcconfig */,
+			);
+			name = "Pods-EZRecipeUITests";
+			path = "Target Support Files/Pods-EZRecipeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A7A981B5C2F7C7F59589AAB1F3085C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579CB3952F2E43F9CC92BFA92FD80368 /* Pods-EZRecipe-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A9B0568E5A57C3C3272DB12F1A7C5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D7181DD874BCF80DD01F8B5E2ACD73 /* Pods-EZRecipeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637D478887C42A3E7314EB96A6C5EBAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A1A995B5CFB8C164CD083D3702D829 /* Pods-EZRecipeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79223F15F577D78773F081B34AF8CFEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1327733F610BBC875EDF1AE1915A244B /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40660BF13B4239A7CFF0E9AA5A42CC66 /* Pods-EZRecipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51AD4B5CBC7D56B9BED79BBD2607768 /* Build configuration list for PBXNativeTarget "Pods-EZRecipe" */;
+			buildPhases = (
+				953700A129D331FEE4E3DAF60BD8BE01 /* Sources */,
+				C19DC6FDE3F0FF0D0B14991F3A2DB1B5 /* Frameworks */,
+				4A7A981B5C2F7C7F59589AAB1F3085C8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C74043D0F1F4C2EB06E6CB64F088ED /* PBXTargetDependency */,
+			);
+			name = "Pods-EZRecipe";
+			productName = "Pods-EZRecipe";
+			productReference = D8F8F896DCCBB0B12706896F27D27C24 /* Pods_EZRecipe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA8E1F8F84345ACBC956C6BAC54FEA4D /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B058C39DBEF839CBA03D08AC773E0C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				11B3C87BEA567F9203F995F925A73FBC /* Sources */,
+				0C3094450C1911D07A3EAE9A24E9A5AE /* Frameworks */,
+				79223F15F577D78773F081B34AF8CFEA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = F00027CB11E4B7E2A3EF08E8C6B39C49 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDCAB7753F8A6999CCA56B7F5AE58644 /* Pods-EZRecipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7BB1C6061A637765835D76B12B86FD /* Build configuration list for PBXNativeTarget "Pods-EZRecipeUITests" */;
+			buildPhases = (
+				C23C34087C9008AD96FDC3AC0AAAB387 /* Sources */,
+				9DAB1FECFFAB30496499B5A8BE590267 /* Frameworks */,
+				637D478887C42A3E7314EB96A6C5EBAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EZRecipeUITests";
+			productName = "Pods-EZRecipeUITests";
+			productReference = C10834919E9267C29371C7AF4EF9432F /* Pods_EZRecipeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6EDAD4D8666BCA6EB33BF252F7A76D5 /* Pods-EZRecipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE825652384C7F3070FB6D9A7E0649D /* Build configuration list for PBXNativeTarget "Pods-EZRecipeTests" */;
+			buildPhases = (
+				4D94F8D52B8691ECE50D963E5DB41D3A /* Sources */,
+				783D0ED551E1E6A887D83AF75A3BBAA0 /* Frameworks */,
+				62A9B0568E5A57C3C3272DB12F1A7C5E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EZRecipeTests";
+			productName = "Pods-EZRecipeTests";
+			productReference = 599C2C7A866FFC5DF53C89B87897AC11 /* Pods_EZRecipeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 92BCFB242541134515A8FDA28824F9B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40660BF13B4239A7CFF0E9AA5A42CC66 /* Pods-EZRecipe */,
+				D6EDAD4D8666BCA6EB33BF252F7A76D5 /* Pods-EZRecipeTests */,
+				CDCAB7753F8A6999CCA56B7F5AE58644 /* Pods-EZRecipeUITests */,
+				AA8E1F8F84345ACBC956C6BAC54FEA4D /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11B3C87BEA567F9203F995F925A73FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44734358A838F5FEC2626D02E4193EDB /* SwiftyJSON-dummy.m in Sources */,
+				828C2F610E967B199EDC3EF905E320D8 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D94F8D52B8691ECE50D963E5DB41D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF665B9FD0009C83CC1812313A05DD0 /* Pods-EZRecipeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953700A129D331FEE4E3DAF60BD8BE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5319DC0FD28FC1B6591FDDCFA533F68E /* Pods-EZRecipe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23C34087C9008AD96FDC3AC0AAAB387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B402DF10172C9FA04C8A12EF2F2D9D /* Pods-EZRecipeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C74043D0F1F4C2EB06E6CB64F088ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = AA8E1F8F84345ACBC956C6BAC54FEA4D /* SwiftyJSON */;
+			targetProxy = 07B990C82D430E9F7B3314A358411275 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0097A2D1B84C2A527A4E940065576C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43BED05039622B35FAE34CEBA5B2BF33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6B693274218ECC511C4FEC174521DD /* Pods-EZRecipeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeTests/Pods-EZRecipeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EZRecipeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5715858533C352BAC12BDC91A922F200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E376A733CC4EA1454798AC225651509E /* Pods-EZRecipe.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipe/Pods-EZRecipe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EZRecipe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B6620E45866D27D4226D29B71521CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A7CE081A939AD416CE47666D80C665 /* Pods-EZRecipe.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipe/Pods-EZRecipe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EZRecipe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64FCC2C5E4FB863C2D6CAE0C3655F39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CB89FC475499163DCD77F0D057FA38 /* Pods-EZRecipeUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeUITests/Pods-EZRecipeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EZRecipeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72C82529F6C2D2969AC1924099648447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		814E899FF00578A44A84D5586DFBE21C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA856C74DDFC8F5FB6CDFF2970DE0FC3 /* Pods-EZRecipeUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeUITests/Pods-EZRecipeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EZRecipeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F71469DFC9E644288F16B6F138A05E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3666D924124C4C880F4A4FAD0C2A38CC /* Pods-EZRecipeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeTests/Pods-EZRecipeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EZRecipeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B058C39DBEF839CBA03D08AC773E0C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0097A2D1B84C2A527A4E940065576C4F /* Debug */,
+				72C82529F6C2D2969AC1924099648447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7BB1C6061A637765835D76B12B86FD /* Build configuration list for PBXNativeTarget "Pods-EZRecipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814E899FF00578A44A84D5586DFBE21C /* Debug */,
+				64FCC2C5E4FB863C2D6CAE0C3655F39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE825652384C7F3070FB6D9A7E0649D /* Build configuration list for PBXNativeTarget "Pods-EZRecipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BED05039622B35FAE34CEBA5B2BF33 /* Debug */,
+				F71469DFC9E644288F16B6F138A05E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51AD4B5CBC7D56B9BED79BBD2607768 /* Build configuration list for PBXNativeTarget "Pods-EZRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5715858533C352BAC12BDC91A922F200 /* Debug */,
+				5B6620E45866D27D4226D29B71521CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
