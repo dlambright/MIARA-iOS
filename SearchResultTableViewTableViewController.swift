@@ -10,10 +10,13 @@ import UIKit
 
 class SearchResultTableViewTableViewController: UITableViewController {
     var recipeList = [Recipe]()
+    var selectedRecipe : Recipe?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        /*let recipeThree = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: 12, new_social_rank: 90, new_publisher_url: "qw", new_source_url: "zx", new_title: "some stuff", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
+        /*var recipeThree = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: 12, new_social_rank: 90, new_publisher_url: "qw", new_source_url: "zx", new_title: "some stuff", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
         let recipeFour = Recipe(new_f2f_url: "yolo", new_publisher: "dustin", new_recipe_id: 21, new_social_rank: 100, new_publisher_url: "yoyo", new_source_url: "wer", new_title: "stuff", new_image_url: "http://static.food2fork.com/avocadopizzawithcilantrosauce4bf5.jpg")
         let recipeTwo = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: 12, new_social_rank: 90, new_publisher_url: "qw", new_source_url: "zx", new_title: "fite me irl", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
         
@@ -49,8 +52,26 @@ class SearchResultTableViewTableViewController: UITableViewController {
 
         cell.lblTitle.text = recipeList[indexPath.row].title
         cell.imgRecipeView.image = recipeList[indexPath.row].image
+        cell.recipe = recipeList[indexPath.row]
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! RecipeTableViewCell
+        selectedRecipe = cell.recipe
+        
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "recipeDetailViewController") as? RecipeDetailViewController{ //as? HomePageViewController{
+            
+            vc.currentRecipe = selectedRecipe
+            //present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
+        //self.navigationItem.
+        //self.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController")
+        //self.performSegue(withIdentifier: "tableToDetailSegue", sender: nil)
     }
 
 
@@ -89,14 +110,17 @@ class SearchResultTableViewTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let newVC = segue.destination as! RecipeDetailViewController
+        newVC.currentRecipe = selectedRecipe
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

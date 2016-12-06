@@ -12,7 +12,7 @@ class RecipeTableViewCell: UITableViewCell {
 
     @IBOutlet var lblTitle: UILabel!
     @IBOutlet var imgRecipeView: UIImageView!
-    
+    var recipe : Recipe! = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
