@@ -10,6 +10,7 @@ import UIKit
 
 class RecipeTableViewCell: UITableViewCell {
 
+    @IBOutlet var viewBackground: UIView!
     @IBOutlet var lblTitle: UILabel!
     @IBOutlet var imgRecipeView: UIImageView!
     var recipe : Recipe! = nil

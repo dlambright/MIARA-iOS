@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		681C748B19270CCC166AE246 /* Pods_EZRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D93693AFD40045B06B38CB /* Pods_EZRecipeTests.framework */; };
+		A8031DE01DF8E8F40008110B /* chicago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8031DDF1DF8E8F40008110B /* chicago.jpg */; };
 		A830CCAC1DD8E97200A9B688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830CCAB1DD8E97200A9B688 /* AppDelegate.swift */; };
 		A830CCAE1DD8E97200A9B688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830CCAD1DD8E97200A9B688 /* ViewController.swift */; };
 		A830CCB11DD8E97200A9B688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A830CCAF1DD8E97200A9B688 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		4372B550CCA55646D585BD9C /* Pods-EZRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRecipeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZRecipeUITests/Pods-EZRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C5A7EBB8852CAD2F02ABA4B /* Pods-EZRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRecipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-EZRecipe/Pods-EZRecipe.release.xcconfig"; sourceTree = "<group>"; };
 		A74B318477370AAC05B3C76E /* Pods-EZRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRecipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZRecipe/Pods-EZRecipe.debug.xcconfig"; sourceTree = "<group>"; };
+		A8031DDF1DF8E8F40008110B /* chicago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chicago.jpg; path = EZRecipe/chicago.jpg; sourceTree = "<group>"; };
 		A830CCA81DD8E97200A9B688 /* EZRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A830CCAB1DD8E97200A9B688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A830CCAD1DD8E97200A9B688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		A830CC9F1DD8E97200A9B688 = {
 			isa = PBXGroup;
 			children = (
+				A8031DDF1DF8E8F40008110B /* chicago.jpg */,
 				A8BFDFA81DED8B450095CF5A /* magnifying-glass-3-xxl.png */,
 				A8D6ECE41DF7286500EB04A7 /* RecipeWebViewViewController.swift */,
 				A8BFDFA61DEA841F0095CF5A /* RecipeDetailViewController.swift */,
@@ -318,6 +321,7 @@
 				A8BFDFA31DE947DD0095CF5A /* download.png in Resources */,
 				A830CCB61DD8E97200A9B688 /* LaunchScreen.storyboard in Resources */,
 				A830CCB31DD8E97200A9B688 /* Assets.xcassets in Resources */,
+				A8031DE01DF8E8F40008110B /* chicago.jpg in Resources */,
 				A8BFDFA91DED8B450095CF5A /* magnifying-glass-3-xxl.png in Resources */,
 				A830CCB11DD8E97200A9B688 /* Main.storyboard in Resources */,
 			);

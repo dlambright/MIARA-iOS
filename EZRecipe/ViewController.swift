@@ -10,6 +10,9 @@ import UIKit
 import SwiftyJSON
 
 class ViewController: UIViewController {
+    @IBOutlet var btnSearch: UIButton!
+    @IBOutlet var btnSavedRecipes: UIButton!
+    
 
     let basicUrl = "http://www.food2fork.com/api/search?key=c042b0a932dea3455a4f91097140f8c9&q=pizza"
     var recipeList = [Recipe]()
@@ -27,6 +30,8 @@ class ViewController: UIViewController {
         recipeList.append(recipeTwo)
         recipeList.append(recipeThree)
         recipeList.append(recipeFour)
+        btnSearch.layer.borderColor = UIColor.white.cgColor
+        btnSavedRecipes.layer.borderColor = UIColor.white.cgColor
         
         //self.makeHTTPRequest()
         // Do any additional setup after loading the view, typically from a nib.

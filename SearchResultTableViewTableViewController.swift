@@ -12,6 +12,12 @@ class SearchResultTableViewTableViewController: UITableViewController {
     var recipeList = [Recipe]()
     var selectedRecipe : Recipe?
     
+    let colors = [UIColor(colorLiteralRed: 232/255, green: 62/255, blue: 185/255, alpha: 0.85),
+                  UIColor(colorLiteralRed: 255/255, green: 168/255, blue: 68/255, alpha: 0.85),
+                  UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.85),
+                  UIColor(colorLiteralRed: 32/232, green: 232/255, blue: 109/255, alpha: 0.85),
+                  UIColor(colorLiteralRed: 255/255, green: 239/255, blue: 75/255, alpha: 0.85)]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +59,7 @@ class SearchResultTableViewTableViewController: UITableViewController {
         cell.lblTitle.text = recipeList[indexPath.row].title
         cell.imgRecipeView.image = recipeList[indexPath.row].image
         cell.recipe = recipeList[indexPath.row]
+        cell.viewBackground.backgroundColor = colors[indexPath.row]
 
         return cell
     }
