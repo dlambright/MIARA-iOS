@@ -97,8 +97,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let newViewController = segue.destination as! SearchResultTableViewTableViewController
+        let newViewController = segue.destination as! SearchResultsViewController
         newViewController.recipeList = self.recipeList
+        //newViewController.lblTitle.text = "search results for dank pizza"
     }
     
     
