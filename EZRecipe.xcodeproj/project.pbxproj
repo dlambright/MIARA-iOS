@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		681C748B19270CCC166AE246 /* Pods_EZRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D93693AFD40045B06B38CB /* Pods_EZRecipeTests.framework */; };
-		A8031DE01DF8E8F40008110B /* chicago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8031DDF1DF8E8F40008110B /* chicago.jpg */; };
-		A8031DE21DF9E0A50008110B /* Joel_bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A8031DE11DF9E0A50008110B /* Joel_bridge.png */; };
 		A8031DE41DF9E2C40008110B /* Joel_Bridge_II.png in Resources */ = {isa = PBXBuildFile; fileRef = A8031DE31DF9E2C40008110B /* Joel_Bridge_II.png */; };
 		A8031DE61DF9EA2E0008110B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8031DE51DF9EA2E0008110B /* SearchResultsViewController.swift */; };
+		A8031DEC1DFB9E360008110B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8031DEB1DFB9E360008110B /* CardView.xib */; };
+		A8031DEE1DFB9FEF0008110B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8031DED1DFB9FEF0008110B /* CardView.swift */; };
 		A830CCAC1DD8E97200A9B688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830CCAB1DD8E97200A9B688 /* AppDelegate.swift */; };
 		A830CCAE1DD8E97200A9B688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830CCAD1DD8E97200A9B688 /* ViewController.swift */; };
 		A830CCB11DD8E97200A9B688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A830CCAF1DD8E97200A9B688 /* Main.storyboard */; };
@@ -54,10 +54,10 @@
 		4372B550CCA55646D585BD9C /* Pods-EZRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRecipeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZRecipeUITests/Pods-EZRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C5A7EBB8852CAD2F02ABA4B /* Pods-EZRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRecipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-EZRecipe/Pods-EZRecipe.release.xcconfig"; sourceTree = "<group>"; };
 		A74B318477370AAC05B3C76E /* Pods-EZRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRecipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZRecipe/Pods-EZRecipe.debug.xcconfig"; sourceTree = "<group>"; };
-		A8031DDF1DF8E8F40008110B /* chicago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chicago.jpg; path = EZRecipe/chicago.jpg; sourceTree = "<group>"; };
-		A8031DE11DF9E0A50008110B /* Joel_bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Joel_bridge.png; path = EZRecipe/Joel_bridge.png; sourceTree = "<group>"; };
 		A8031DE31DF9E2C40008110B /* Joel_Bridge_II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Joel_Bridge_II.png; path = EZRecipe/Joel_Bridge_II.png; sourceTree = "<group>"; };
 		A8031DE51DF9EA2E0008110B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		A8031DEB1DFB9E360008110B /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		A8031DED1DFB9FEF0008110B /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A830CCA81DD8E97200A9B688 /* EZRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A830CCAB1DD8E97200A9B688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A830CCAD1DD8E97200A9B688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 		A830CC9F1DD8E97200A9B688 = {
 			isa = PBXGroup;
 			children = (
+				A8031DED1DFB9FEF0008110B /* CardView.swift */,
+				A8031DEB1DFB9E360008110B /* CardView.xib */,
 				A8031DE31DF9E2C40008110B /* Joel_Bridge_II.png */,
-				A8031DE11DF9E0A50008110B /* Joel_bridge.png */,
-				A8031DDF1DF8E8F40008110B /* chicago.jpg */,
 				A8BFDFA81DED8B450095CF5A /* magnifying-glass-3-xxl.png */,
 				A8D6ECE41DF7286500EB04A7 /* RecipeWebViewViewController.swift */,
 				A8BFDFA61DEA841F0095CF5A /* RecipeDetailViewController.swift */,
@@ -320,13 +320,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8031DE21DF9E0A50008110B /* Joel_bridge.png in Resources */,
 				A8BFDF9F1DE937AB0095CF5A /* Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg in Resources */,
 				A8BFDFA31DE947DD0095CF5A /* download.png in Resources */,
+				A8031DEC1DFB9E360008110B /* CardView.xib in Resources */,
 				A830CCB61DD8E97200A9B688 /* LaunchScreen.storyboard in Resources */,
 				A830CCB31DD8E97200A9B688 /* Assets.xcassets in Resources */,
 				A8031DE41DF9E2C40008110B /* Joel_Bridge_II.png in Resources */,
-				A8031DE01DF8E8F40008110B /* chicago.jpg in Resources */,
 				A8BFDFA91DED8B450095CF5A /* magnifying-glass-3-xxl.png in Resources */,
 				A830CCB11DD8E97200A9B688 /* Main.storyboard in Resources */,
 			);
@@ -495,6 +494,7 @@
 				A8BFDFA71DEA841F0095CF5A /* RecipeDetailViewController.swift in Sources */,
 				A8BFDF9D1DE92CFE0095CF5A /* TempTableViewController.swift in Sources */,
 				A8031DE61DF9EA2E0008110B /* SearchResultsViewController.swift in Sources */,
+				A8031DEE1DFB9FEF0008110B /* CardView.swift in Sources */,
 				A8BFDF991DE760350095CF5A /* RecipeTableViewCell.swift in Sources */,
 				A830CCAE1DD8E97200A9B688 /* ViewController.swift in Sources */,
 				A8BFDFA51DE9F6F00095CF5A /* File.swift in Sources */,
@@ -599,6 +599,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/charliebuckets/Desktop/projects/EZRecipe/Pods/EZRecipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -641,6 +642,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/charliebuckets/Desktop/projects/EZRecipe/Pods/EZRecipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

@@ -3,18 +3,24 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.readSampleText() -&gt; ():ViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
-      </ContextState>
-      <ContextState
          contextName = "ViewController.makeHTTPRequest() -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "basicUrl">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(makeHTTPRequest() -&gt; ()).(closure #1):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchResultTableViewTableViewController.viewDidLoad() -&gt; ():SearchResultTableViewTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.readSampleText() -&gt; ():ViewController.swift">
       </ContextState>
       <ContextState
          contextName = "SearchResultTableViewTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:SearchResultTableViewTableViewController.swift">
@@ -25,10 +31,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.(makeHTTPRequest() -&gt; ()).(closure #1):ViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "SearchResultTableViewTableViewController.viewDidLoad() -&gt; ():SearchResultTableViewTableViewController.swift">
+         contextName = "RecipeDetailViewController.viewDidLoad() -&gt; ():RecipeDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.height">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

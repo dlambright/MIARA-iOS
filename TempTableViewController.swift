@@ -19,7 +19,6 @@ class TempTableViewController: UITableViewController {
         
         recipeList.append(recipeThree)
         recipeList.append(recipeFour)
-        let countg = recipeList.count
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
