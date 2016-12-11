@@ -58,6 +58,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
             
             vc.currentRecipe = selectedRecipe
             //present(vc, animated: true, completion: nil)
+            tblSearchResults.deselectRow(at: indexPath, animated: true)
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
