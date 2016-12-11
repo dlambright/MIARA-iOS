@@ -11,6 +11,7 @@ import UIKit
 class RecipeTableViewCell: UITableViewCell {
 
     
+    @IBOutlet var lblRating: UILabel!
     @IBOutlet var viewBackground: UIView!
     @IBOutlet var lblTitle: UILabel!
     @IBOutlet var imgRecipeView: UIImageView!

@@ -305,9 +305,17 @@
                                                                 <constraint firstAttribute="width" constant="134" id="jOn-D9-maM"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEn-9f-WkR">
+                                                            <rect key="frame" x="301" y="90" width="58" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.1479131711409396" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="58" id="5bs-rs-3T4"/>
+                                                                <constraint firstAttribute="height" constant="48" id="TOj-dF-oAG"/>
+                                                            </constraints>
+                                                        </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5I-ve-bRT">
-                                                            <rect key="frame" x="311" y="4" width="38" height="48"/>
-                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <rect key="frame" x="311" y="90" width="38" height="48"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="48" id="4AP-gw-2cv"/>
                                                                 <constraint firstAttribute="width" constant="38" id="4Cn-mS-hM3"/>
@@ -318,23 +326,48 @@
                                                                 <action selector="btnSavePress:" destination="Q4N-g2-1GD" eventType="touchUpInside" id="rJG-kO-x2W"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-Dv-cBX">
-                                                            <rect key="frame" x="142" y="59.5" width="197" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-Dv-cBX">
+                                                            <rect key="frame" x="134" y="0.0" width="225" height="88"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15356543624161073" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-7i-xjN">
+                                                            <rect key="frame" x="217.5" y="90" width="81.5" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.15048238255033558" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4n-Ve-3HO">
+                                                            <rect key="frame" x="134" y="90" width="81.5" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.15048238259999999" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="0.14712667785234898" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="YmW-Dv-cBX" firstAttribute="centerY" secondItem="TYY-Dl-oRG" secondAttribute="centerY" id="0in-xX-FEt"/>
-                                                        <constraint firstItem="d5I-ve-bRT" firstAttribute="top" secondItem="TYY-Dl-oRG" secondAttribute="top" constant="4" id="BCb-OT-BPl"/>
+                                                        <constraint firstItem="YmW-Dv-cBX" firstAttribute="top" secondItem="IBh-st-Ivo" secondAttribute="top" id="2ia-oL-s85"/>
                                                         <constraint firstAttribute="trailing" secondItem="d5I-ve-bRT" secondAttribute="trailing" constant="10" id="Fzb-4x-hp1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="YmW-Dv-cBX" secondAttribute="trailing" constant="20" id="Q3e-df-5Xl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YmW-Dv-cBX" secondAttribute="trailing" id="Q3e-df-5Xl"/>
+                                                        <constraint firstItem="C4n-Ve-3HO" firstAttribute="top" secondItem="YmW-Dv-cBX" secondAttribute="bottom" constant="2" id="RQw-pQ-NRx"/>
+                                                        <constraint firstItem="ybG-7i-xjN" firstAttribute="width" secondItem="C4n-Ve-3HO" secondAttribute="width" id="TNV-Tv-xG9"/>
+                                                        <constraint firstItem="EEn-9f-WkR" firstAttribute="leading" secondItem="ybG-7i-xjN" secondAttribute="trailing" constant="2" id="Tgd-A6-HD8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ybG-7i-xjN" secondAttribute="bottom" id="Uqj-RT-Lgp"/>
                                                         <constraint firstItem="IBh-st-Ivo" firstAttribute="top" secondItem="TYY-Dl-oRG" secondAttribute="top" id="YaJ-BS-HTE"/>
-                                                        <constraint firstItem="YmW-Dv-cBX" firstAttribute="leading" secondItem="IBh-st-Ivo" secondAttribute="trailing" constant="8" id="cbw-mz-DHV"/>
+                                                        <constraint firstItem="ybG-7i-xjN" firstAttribute="leading" secondItem="C4n-Ve-3HO" secondAttribute="trailing" constant="2" id="cQ7-h9-mEI"/>
+                                                        <constraint firstItem="YmW-Dv-cBX" firstAttribute="leading" secondItem="IBh-st-Ivo" secondAttribute="trailing" id="cbw-mz-DHV"/>
+                                                        <constraint firstItem="ybG-7i-xjN" firstAttribute="top" secondItem="YmW-Dv-cBX" secondAttribute="bottom" constant="2" id="cdg-TK-eed"/>
+                                                        <constraint firstItem="d5I-ve-bRT" firstAttribute="top" secondItem="YmW-Dv-cBX" secondAttribute="bottom" constant="2" id="cf2-OL-cwF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="EEn-9f-WkR" secondAttribute="trailing" id="hPB-SZ-jOk"/>
                                                         <constraint firstItem="IBh-st-Ivo" firstAttribute="leading" secondItem="TYY-Dl-oRG" secondAttribute="leading" id="ip4-AP-WH6"/>
                                                         <constraint firstAttribute="bottom" secondItem="IBh-st-Ivo" secondAttribute="bottom" id="m3n-0N-7TC"/>
+                                                        <constraint firstItem="C4n-Ve-3HO" firstAttribute="leading" secondItem="IBh-st-Ivo" secondAttribute="trailing" id="wxq-fz-Ogr"/>
+                                                        <constraint firstItem="EEn-9f-WkR" firstAttribute="top" secondItem="YmW-Dv-cBX" secondAttribute="bottom" constant="2" id="xAF-TW-GBW"/>
+                                                        <constraint firstAttribute="bottom" secondItem="d5I-ve-bRT" secondAttribute="bottom" id="xEJ-qT-dM8"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -346,6 +379,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="TYY-Dl-oRG" secondAttribute="trailing" id="J4j-9K-be2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="C4n-Ve-3HO" secondAttribute="bottom" constant="-2" id="KL4-7c-sh3"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="TYY-Dl-oRG" secondAttribute="leading" id="SG3-Wa-fi1"/>
                                                 <constraint firstItem="TYY-Dl-oRG" firstAttribute="top" secondItem="oHA-r1-nTG" secondAttribute="topMargin" constant="-2" id="m1f-ck-57q"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="TYY-Dl-oRG" secondAttribute="bottom" constant="-2" id="tKH-lj-kn4"/>
@@ -355,6 +389,7 @@
                                         <connections>
                                             <outlet property="btnSave" destination="d5I-ve-bRT" id="kYi-AM-VaG"/>
                                             <outlet property="imgRecipeView" destination="IBh-st-Ivo" id="aSL-mN-52G"/>
+                                            <outlet property="lblRating" destination="ybG-7i-xjN" id="sSv-PL-FC0"/>
                                             <outlet property="lblTitle" destination="YmW-Dv-cBX" id="7wW-Le-MpQ"/>
                                             <outlet property="viewBackground" destination="TYY-Dl-oRG" id="g1y-Pb-gZh"/>
                                         </connections>
@@ -380,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHL-jD-Gak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="124"/>
+            <point key="canvasLocation" x="944.79999999999995" y="123.68815592203899"/>
         </scene>
         <!--Recipe Web View View Controller-->
         <scene sceneID="bCn-WF-Mmm">
