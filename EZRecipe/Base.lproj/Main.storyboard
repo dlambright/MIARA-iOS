@@ -192,11 +192,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-Tl-lON">
-                                <rect key="frame" x="267" y="188" width="100" height="30"/>
+                                <rect key="frame" x="249" y="188" width="118" height="36"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.1451866610738255" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Agd-K1-NxI"/>
-                                    <constraint firstAttribute="height" constant="30" id="F2J-yf-xZK"/>
+                                    <constraint firstAttribute="height" constant="36" id="F2J-yf-xZK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <state key="normal" title="link">
@@ -206,23 +205,62 @@
                                     <segue destination="ZHf-yb-JLW" kind="show" id="JWl-AT-1OY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-mQ-fAo">
+                                <rect key="frame" x="128.5" y="188" width="118.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14707424496644295" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="mRi-AD-8JT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="refresh">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-L7-AIO">
+                                <rect key="frame" x="8" y="188" width="118.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="tIb-4V-O9j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Ve-h8i">
+                                <rect key="frame" x="8" y="248" width="359" height="403"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Wkd-Ve-h8i" firstAttribute="top" secondItem="CYc-mQ-fAo" secondAttribute="bottom" constant="24" id="2Z4-nU-KeS"/>
+                            <constraint firstItem="i3a-L7-AIO" firstAttribute="top" secondItem="fqH-MB-VWa" secondAttribute="bottom" constant="2" id="2tb-Tr-pBf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SQr-fS-H9e" secondAttribute="trailing" constant="-16" id="8sN-9O-ShH"/>
+                            <constraint firstItem="CYc-mQ-fAo" firstAttribute="top" secondItem="fqH-MB-VWa" secondAttribute="bottom" constant="2" id="Cly-64-f01"/>
+                            <constraint firstItem="CYc-mQ-fAo" firstAttribute="leading" secondItem="i3a-L7-AIO" secondAttribute="trailing" constant="2" id="QDr-xV-a3T"/>
                             <constraint firstItem="2dF-Tl-lON" firstAttribute="top" secondItem="fqH-MB-VWa" secondAttribute="bottom" constant="2" id="QNl-Qe-7np"/>
                             <constraint firstItem="SQr-fS-H9e" firstAttribute="top" secondItem="wZG-sj-K41" secondAttribute="bottom" id="Rr2-P9-Wjz"/>
                             <constraint firstItem="2dF-Tl-lON" firstAttribute="trailing" secondItem="fqH-MB-VWa" secondAttribute="trailing" id="VZa-Ws-uXr"/>
+                            <constraint firstItem="2dF-Tl-lON" firstAttribute="width" secondItem="CYc-mQ-fAo" secondAttribute="width" id="Vtc-Mp-ZYu"/>
+                            <constraint firstItem="Wkd-Ve-h8i" firstAttribute="leading" secondItem="Kca-Vk-mPs" secondAttribute="leading" constant="8" id="XeO-05-uex"/>
+                            <constraint firstAttribute="trailing" secondItem="Wkd-Ve-h8i" secondAttribute="trailing" constant="8" id="cqq-GI-46j"/>
                             <constraint firstItem="fqH-MB-VWa" firstAttribute="top" secondItem="SQr-fS-H9e" secondAttribute="bottom" constant="8" id="e3Q-in-XHl"/>
                             <constraint firstItem="SQr-fS-H9e" firstAttribute="leading" secondItem="Kca-Vk-mPs" secondAttribute="leadingMargin" constant="-16" id="eZ7-5b-eU0"/>
+                            <constraint firstItem="i3a-L7-AIO" firstAttribute="width" secondItem="CYc-mQ-fAo" secondAttribute="width" id="euk-gI-O8m"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fqH-MB-VWa" secondAttribute="trailing" constant="-8" id="kFc-K0-WAw"/>
+                            <constraint firstItem="i3a-L7-AIO" firstAttribute="leading" secondItem="fqH-MB-VWa" secondAttribute="leading" id="n0t-Da-ZtW"/>
+                            <constraint firstItem="2dF-Tl-lON" firstAttribute="leading" secondItem="CYc-mQ-fAo" secondAttribute="trailing" constant="2" id="s1d-zC-qmN"/>
                             <constraint firstItem="fqH-MB-VWa" firstAttribute="leading" secondItem="Kca-Vk-mPs" secondAttribute="leadingMargin" constant="-8" id="uvj-v8-bUs"/>
+                            <constraint firstItem="rGW-7j-0bH" firstAttribute="top" secondItem="Wkd-Ve-h8i" secondAttribute="bottom" constant="16" id="z8x-Ck-xNa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3G5-sl-tSM"/>
                     <connections>
+                        <outlet property="btnLink" destination="2dF-Tl-lON" id="0FL-Lm-jMH"/>
                         <outlet property="imgFoodImage" destination="SQr-fS-H9e" id="zs0-MW-hmv"/>
                         <outlet property="lblRecipeTitle" destination="rLa-L3-FS1" id="5lD-tP-S8x"/>
+                        <outlet property="viewCardViewHolder" destination="Wkd-Ve-h8i" id="cNP-cv-2Zw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlX-p6-xG6" userLabel="First Responder" sceneMemberID="firstResponder"/>

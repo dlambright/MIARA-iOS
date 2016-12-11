@@ -17,6 +17,8 @@ import MDCSwipeToChoose
 
 class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
 
+    @IBOutlet var viewCardViewHolder: UIView!
+    @IBOutlet var btnLink: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
     
@@ -29,30 +31,46 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
 
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
-        options.likedText = "Keep"
-        options.likedColor = UIColor.blue
-        options.nopeText = "Delete"
+//        options.likedText = "Keep"
+//        options.likedColor = UIColor.blue
+//        options.nopeText = "Delete"
         options.onPan = { state -> Void in
             if state?.thresholdRatio == 1 && state?.direction == MDCSwipeDirection.left {
                 print("Photo deleted!")
             }
         }
         
-        let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 16, y : self.view.frame.height/2 - 40 , width : self.view.frame.width-32, height : (self.view.frame.height/2)-16-40) , options: options)!
-        newCardView.imageView.image = UIImage(named: "Joel_Bridge_II.png")
-        self.view.addSubview(newCardView)
+        let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height-32) , options: options)!
+        newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 20/255, blue: 20/255, alpha: 1).cgColor
         
-        var constX : NSLayoutConstraint = NSLayoutConstraint(item: newCardView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-        self.view.addConstraint(constX)
+        let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 50))
+        lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
+        lblItemName.textColor = UIColor.white
+        lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.15).cgColor
+        lblItemName.text = "3.5 cups sugar"
+        lblItemName.textAlignment = NSTextAlignment.center
+        newCardView.addSubview(lblItemName)
         
-        constX = NSLayoutConstraint(item: newCardView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 200)
-        self.view.addConstraint(constX)
+        
+        
+        self.viewCardViewHolder.addSubview(newCardView)
+        
+//        let newNewCardView = MDCSwipeToChooseView(frame: CGRect(x : 16, y : btnLink.frame.maxY , width : self.view.frame.width-32, height : (self.view.frame.height - btnLink.frame.maxY - 80)) , options: options)!
+//        //newNewCardView.imageView.image = UIImage(named: "Joel_Bridge_II.png")
+//        self.view.addSubview(newNewCardView)
+        
+//        var constX : NSLayoutConstraint = NSLayoutConstraint(item: newCardView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
+//        self.view.addConstraint(constX)
+        
+//        constX = NSLayoutConstraint(item: newCardView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 200)
+//        self.view.addConstraint(constX)
         
 
         
         
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
