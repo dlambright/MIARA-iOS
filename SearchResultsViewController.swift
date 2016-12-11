@@ -67,6 +67,8 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         //self.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController")
         //self.performSegue(withIdentifier: "tableToDetailSegue", sender: nil)
     }
+    
+    
 
     
 

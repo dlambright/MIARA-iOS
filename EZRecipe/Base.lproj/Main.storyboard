@@ -215,6 +215,9 @@
                                 <state key="normal" title="refresh">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="refreshPress:" destination="PWH-q5-Bs5" eventType="touchUpInside" id="cVS-Ua-6zh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-L7-AIO">
                                 <rect key="frame" x="8" y="188" width="118.5" height="36"/>

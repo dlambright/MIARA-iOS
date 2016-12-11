@@ -19,6 +19,7 @@ class Recipe: NSObject {
     var image_url : String!
     var image : UIImage!
     var saved : Bool!
+    var ingredients : [String]!
     
     
     init(new_f2f_url : String,
