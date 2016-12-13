@@ -14,11 +14,12 @@
         <scene sceneID="jyA-j1-kyD">
             <objects>
                 <navigationController id="vxd-Lo-5eu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="vrR-GA-7TM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="vrR-GA-7TM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.44394513964653015" green="0.1961885392665863" blue="0.36660164594650269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,7 +46,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Joel_Bridge_II.png" translatesAutoresizingMaskIntoConstraints="NO" id="Egt-Mg-Ny8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Egt-Mg-Ny8">
                                 <rect key="frame" x="-8" y="0.0" width="391" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWQ-eW-7KF">
@@ -279,6 +280,9 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yRK-ck-jFR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH RESULTS FOR " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wak-9t-S8a">
                                 <rect key="frame" x="32" y="8" width="311" height="20"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
@@ -307,7 +311,7 @@
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEn-9f-WkR">
                                                             <rect key="frame" x="301" y="90" width="58" height="48"/>
-                                                            <color key="backgroundColor" white="1" alpha="0.1479131711409396" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="58" id="5bs-rs-3T4"/>
                                                                 <constraint firstAttribute="height" constant="48" id="TOj-dF-oAG"/>
@@ -326,25 +330,25 @@
                                                                 <action selector="btnSavePress:" destination="Q4N-g2-1GD" eventType="touchUpInside" id="rJG-kO-x2W"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-Dv-cBX">
-                                                            <rect key="frame" x="134" y="0.0" width="225" height="88"/>
-                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15356543624161073" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-7i-xjN">
                                                             <rect key="frame" x="217.5" y="90" width="81.5" height="48"/>
-                                                            <color key="backgroundColor" white="1" alpha="0.15048238255033558" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4n-Ve-3HO">
                                                             <rect key="frame" x="134" y="90" width="81.5" height="48"/>
-                                                            <color key="backgroundColor" white="1" alpha="0.15048238259999999" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-Dv-cBX">
+                                                            <rect key="frame" x="134" y="0.0" width="225" height="88"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -372,7 +376,7 @@
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="5"/>
+                                                            <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -385,7 +389,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="TYY-Dl-oRG" secondAttribute="bottom" constant="-2" id="tKH-lj-kn4"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="btnSave" destination="d5I-ve-bRT" id="kYi-AM-VaG"/>
                                             <outlet property="imgRecipeView" destination="IBh-st-Ivo" id="aSL-mN-52G"/>
@@ -400,12 +404,16 @@
                         <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Wak-9t-S8a" firstAttribute="top" secondItem="3rr-gd-LIU" secondAttribute="bottom" constant="8" id="0Px-yf-KNf"/>
+                            <constraint firstItem="yRK-ck-jFR" firstAttribute="leading" secondItem="nGD-CM-EWy" secondAttribute="leadingMargin" constant="-16" id="3dm-3x-s1f"/>
                             <constraint firstItem="Tlp-RS-tjL" firstAttribute="top" secondItem="huz-aH-0Sp" secondAttribute="bottom" id="HTn-R4-8yC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="huz-aH-0Sp" secondAttribute="trailing" constant="-16" id="S7v-st-gcR"/>
-                            <constraint firstItem="huz-aH-0Sp" firstAttribute="top" secondItem="Wak-9t-S8a" secondAttribute="bottom" constant="32" id="Uf5-FX-nqJ"/>
                             <constraint firstItem="Wak-9t-S8a" firstAttribute="leading" secondItem="nGD-CM-EWy" secondAttribute="leadingMargin" constant="16" id="WXI-NK-fYa"/>
+                            <constraint firstItem="yRK-ck-jFR" firstAttribute="top" secondItem="3rr-gd-LIU" secondAttribute="bottom" id="Zm5-uN-cCL"/>
+                            <constraint firstItem="huz-aH-0Sp" firstAttribute="top" secondItem="Wak-9t-S8a" secondAttribute="bottom" constant="32" id="d6g-Ii-pPY"/>
+                            <constraint firstItem="Tlp-RS-tjL" firstAttribute="top" secondItem="yRK-ck-jFR" secondAttribute="bottom" id="g0l-eO-kYC"/>
                             <constraint firstItem="huz-aH-0Sp" firstAttribute="leading" secondItem="nGD-CM-EWy" secondAttribute="leadingMargin" constant="-16" id="gPB-TN-KDU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wak-9t-S8a" secondAttribute="trailing" constant="16" id="sbe-Rc-R6U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yRK-ck-jFR" secondAttribute="trailing" constant="-16" id="wb2-9c-uFm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -452,9 +460,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Joel_Bridge_II.png" width="1856" height="3072"/>
         <image name="Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg" width="500" height="333"/>
         <image name="download.png" width="300" height="300"/>
         <image name="magnifying-glass-3-xxl.png" width="256" height="256"/>
+        <image name="purple.jpg" width="1080" height="1920"/>
     </resources>
 </document>
