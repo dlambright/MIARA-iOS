@@ -29,31 +29,11 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         imgFoodImage.image = currentRecipe.image
         lblRecipeTitle.text = currentRecipe.title
 
-        let options = MDCSwipeToChooseViewOptions()
-        options.delegate = self
-//        options.likedText = "Keep"
-//        options.likedColor = UIColor.blue
-//        options.nopeText = "Delete"
-        options.onPan = { state -> Void in
-            if state?.thresholdRatio == 1 && state?.direction == MDCSwipeDirection.left {
-                print("Photo deleted!")
-            }
-        }
-        
-        let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height-32) , options: options)!
-        newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 20/255, blue: 20/255, alpha: 1).cgColor
-        
-        let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 50))
-        lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
-        lblItemName.textColor = UIColor.white
-        lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.15).cgColor
-        lblItemName.text = "3.5 cups sugar"
-        lblItemName.textAlignment = NSTextAlignment.center
-        newCardView.addSubview(lblItemName)
+
         
         
         
-        self.viewCardViewHolder.addSubview(newCardView)
+
         
 //        let newNewCardView = MDCSwipeToChooseView(frame: CGRect(x : 16, y : btnLink.frame.maxY , width : self.view.frame.width-32, height : (self.view.frame.height - btnLink.frame.maxY - 80)) , options: options)!
 //        //newNewCardView.imageView.image = UIImage(named: "Joel_Bridge_II.png")
@@ -70,6 +50,36 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         
     }
     
+    func refreshCardStack(){
+        let options = MDCSwipeToChooseViewOptions()
+        options.delegate = self
+        //        options.likedText = "Keep"
+        //        options.likedColor = UIColor.blue
+        //        options.nopeText = "Delete"
+        options.onPan = { state -> Void in
+            if state?.thresholdRatio == 1 && state?.direction == MDCSwipeDirection.left {
+                print("Photo deleted!")
+            }
+        }
+        
+        for ingredient in currentRecipe.ingredients{
+            let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
+            newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 20/255, blue: 20/255, alpha: 1).cgColor
+            
+            let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 50))
+            lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
+            lblItemName.textColor = UIColor.white
+            lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.15).cgColor
+            lblItemName.text = ingredient
+            lblItemName.textAlignment = NSTextAlignment.center
+            newCardView.addSubview(lblItemName)
+            
+            
+            
+            self.viewCardViewHolder.addSubview(newCardView)
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -77,7 +87,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-
+        refreshCardStack()
     }
     
 
@@ -124,5 +134,8 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
     }
 
+    @IBAction func refreshPress(_ sender: Any) {
+        refreshCardStack()
+    }
 
 }
