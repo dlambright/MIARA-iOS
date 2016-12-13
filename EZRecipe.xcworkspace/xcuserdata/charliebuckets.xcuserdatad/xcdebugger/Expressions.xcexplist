@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "RecipeDetailViewController.refreshCardStack() -&gt; ():RecipeDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentRecipe">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.makeHTTPRequest() -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString

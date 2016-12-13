@@ -28,25 +28,6 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         super.viewDidLoad()
         imgFoodImage.image = currentRecipe.image
         lblRecipeTitle.text = currentRecipe.title
-
-
-        
-        
-        
-
-        
-//        let newNewCardView = MDCSwipeToChooseView(frame: CGRect(x : 16, y : btnLink.frame.maxY , width : self.view.frame.width-32, height : (self.view.frame.height - btnLink.frame.maxY - 80)) , options: options)!
-//        //newNewCardView.imageView.image = UIImage(named: "Joel_Bridge_II.png")
-//        self.view.addSubview(newNewCardView)
-        
-//        var constX : NSLayoutConstraint = NSLayoutConstraint(item: newCardView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-//        self.view.addConstraint(constX)
-        
-//        constX = NSLayoutConstraint(item: newCardView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 200)
-//        self.view.addConstraint(constX)
-        
-
-        
         
     }
     

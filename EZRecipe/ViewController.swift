@@ -33,10 +33,10 @@ class ViewController: UIViewController {
         recipeTwo.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         recipeThree.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         recipeFour.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
-        recipeList.append(recipeOne)
-        recipeList.append(recipeTwo)
-        recipeList.append(recipeThree)
-        recipeList.append(recipeFour)
+//        recipeList.append(recipeOne)
+//        recipeList.append(recipeTwo)
+//        recipeList.append(recipeThree)
+//        recipeList.append(recipeFour)
         btnSearch.layer.borderColor = UIColor.white.cgColor
         btnSavedRecipes.layer.borderColor = UIColor.white.cgColor
         

@@ -43,7 +43,8 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         
         cell.lblTitle.text = recipeList[indexPath.row].title
         cell.imgRecipeView.image = recipeList[indexPath.row].image
-        cell.lblRating.text = String(recipeList[indexPath.row].social_rank)
+        
+        cell.lblRating.text = String(Int(recipeList[indexPath.row].social_rank))
         cell.recipe = recipeList[indexPath.row]
         //cell.viewBackground.backgroundColor = colors[indexPath.row]
         

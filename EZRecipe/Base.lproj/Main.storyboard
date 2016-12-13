@@ -329,7 +329,7 @@
                                                                 <action selector="btnSavePress:" destination="Q4N-g2-1GD" eventType="touchUpInside" id="rJG-kO-x2W"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-Dv-cBX">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-Dv-cBX">
                                                             <rect key="frame" x="134" y="0.0" width="225" height="88"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15356543624161073" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
@@ -354,8 +354,8 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="YmW-Dv-cBX" firstAttribute="top" secondItem="IBh-st-Ivo" secondAttribute="top" id="2ia-oL-s85"/>
+                                                        <constraint firstItem="YmW-Dv-cBX" firstAttribute="trailing" secondItem="EEn-9f-WkR" secondAttribute="trailing" id="BkI-X0-sH3"/>
                                                         <constraint firstAttribute="trailing" secondItem="d5I-ve-bRT" secondAttribute="trailing" constant="10" id="Fzb-4x-hp1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="YmW-Dv-cBX" secondAttribute="trailing" id="Q3e-df-5Xl"/>
                                                         <constraint firstItem="C4n-Ve-3HO" firstAttribute="top" secondItem="YmW-Dv-cBX" secondAttribute="bottom" constant="2" id="RQw-pQ-NRx"/>
                                                         <constraint firstItem="ybG-7i-xjN" firstAttribute="width" secondItem="C4n-Ve-3HO" secondAttribute="width" id="TNV-Tv-xG9"/>
                                                         <constraint firstItem="EEn-9f-WkR" firstAttribute="leading" secondItem="ybG-7i-xjN" secondAttribute="trailing" constant="2" id="Tgd-A6-HD8"/>
