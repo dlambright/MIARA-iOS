@@ -62,7 +62,7 @@
 		A8031DED1DFB9FEF0008110B /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A8031DEF1DFFA2760008110B /* stars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stars.jpg; path = EZRecipe/stars.jpg; sourceTree = "<group>"; };
 		A8031DF11DFFA3A30008110B /* purple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = purple.jpg; path = EZRecipe/purple.jpg; sourceTree = "<group>"; };
-		A830CCA81DD8E97200A9B688 /* EZRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A830CCA81DD8E97200A9B688 /* Miara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A830CCAB1DD8E97200A9B688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A830CCAD1DD8E97200A9B688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A830CCB01DD8E97200A9B688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		A830CCA91DD8E97200A9B688 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A830CCA81DD8E97200A9B688 /* EZRecipe.app */,
+				A830CCA81DD8E97200A9B688 /* Miara.app */,
 				A830CCBC1DD8E97200A9B688 /* EZRecipeTests.xctest */,
 				A830CCC71DD8E97200A9B688 /* EZRecipeUITests.xctest */,
 			);
@@ -213,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A830CCA71DD8E97200A9B688 /* EZRecipe */ = {
+		A830CCA71DD8E97200A9B688 /* Miara */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A830CCD01DD8E97200A9B688 /* Build configuration list for PBXNativeTarget "EZRecipe" */;
+			buildConfigurationList = A830CCD01DD8E97200A9B688 /* Build configuration list for PBXNativeTarget "Miara" */;
 			buildPhases = (
 				E33B79B111E5474304B92C0F /* [CP] Check Pods Manifest.lock */,
 				A830CCA41DD8E97200A9B688 /* Sources */,
@@ -228,9 +228,9 @@
 			);
 			dependencies = (
 			);
-			name = EZRecipe;
+			name = Miara;
 			productName = EZRecipe;
-			productReference = A830CCA81DD8E97200A9B688 /* EZRecipe.app */;
+			productReference = A830CCA81DD8E97200A9B688 /* Miara.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A830CCBB1DD8E97200A9B688 /* EZRecipeTests */ = {
@@ -314,7 +314,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A830CCA71DD8E97200A9B688 /* EZRecipe */,
+				A830CCA71DD8E97200A9B688 /* Miara */,
 				A830CCBB1DD8E97200A9B688 /* EZRecipeTests */,
 				A830CCC61DD8E97200A9B688 /* EZRecipeUITests */,
 			);
@@ -532,12 +532,12 @@
 /* Begin PBXTargetDependency section */
 		A830CCBE1DD8E97200A9B688 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A830CCA71DD8E97200A9B688 /* EZRecipe */;
+			target = A830CCA71DD8E97200A9B688 /* Miara */;
 			targetProxy = A830CCBD1DD8E97200A9B688 /* PBXContainerItemProxy */;
 		};
 		A830CCC91DD8E97200A9B688 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A830CCA71DD8E97200A9B688 /* EZRecipe */;
+			target = A830CCA71DD8E97200A9B688 /* Miara */;
 			targetProxy = A830CCC81DD8E97200A9B688 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -665,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EZRecipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.EZRecipe;
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.Miara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -678,7 +678,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EZRecipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.EZRecipe;
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.Miara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -754,7 +754,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A830CCD01DD8E97200A9B688 /* Build configuration list for PBXNativeTarget "EZRecipe" */ = {
+		A830CCD01DD8E97200A9B688 /* Build configuration list for PBXNativeTarget "Miara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A830CCD11DD8E97200A9B688 /* Debug */,
