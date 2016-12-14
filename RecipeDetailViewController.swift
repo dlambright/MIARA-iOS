@@ -42,7 +42,10 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
                 print("Photo deleted!")
             }
         }
-        
+        if (currentRecipe.ingredients == nil ||
+            currentRecipe.ingredients.count == 0){
+            currentRecipe.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
+        }
         for ingredient in currentRecipe.ingredients{
             let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
             newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 20/255, blue: 20/255, alpha: 1).cgColor
