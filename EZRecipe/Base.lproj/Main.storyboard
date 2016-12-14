@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="-724" y="107"/>
         </scene>
-        <!--TODO: NAME THE BAND-->
+        <!--MIARA IS A RECIPE APP-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EZRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Miara" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -146,7 +146,7 @@
                             <constraint firstAttribute="trailing" secondItem="Orx-vI-BL6" secondAttribute="trailing" constant="32" id="y1w-26-RrJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TODO: NAME THE BAND" id="eJ2-Ve-cwi"/>
+                    <navigationItem key="navigationItem" title="MIARA IS A RECIPE APP" id="eJ2-Ve-cwi"/>
                     <connections>
                         <outlet property="btnSavedRecipes" destination="eWQ-eW-7KF" id="Dfw-tq-z3Y"/>
                         <outlet property="btnSearch" destination="Orx-vI-BL6" id="jcC-a5-hIJ"/>
@@ -159,7 +159,7 @@
         <!--Recipe Detail View Controller-->
         <scene sceneID="h4k-M6-cEh">
             <objects>
-                <viewController storyboardIdentifier="recipeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PWH-q5-Bs5" customClass="RecipeDetailViewController" customModule="EZRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PWH-q5-Bs5" customClass="RecipeDetailViewController" customModule="Miara" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wZG-sj-K41"/>
                         <viewControllerLayoutGuide type="bottom" id="rGW-7j-0bH"/>
@@ -281,7 +281,7 @@
         <!--Search Results View Controller-->
         <scene sceneID="LNd-Gj-lcn">
             <objects>
-                <viewController id="IvX-8k-pwl" customClass="SearchResultsViewController" customModule="EZRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IvX-8k-pwl" customClass="SearchResultsViewController" customModule="Miara" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3rr-gd-LIU"/>
                         <viewControllerLayoutGuide type="bottom" id="Tlp-RS-tjL"/>
@@ -303,7 +303,7 @@
                                 <rect key="frame" x="0.0" y="60" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="150" id="Q4N-g2-1GD" customClass="RecipeTableViewCell" customModule="EZRecipe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="150" id="Q4N-g2-1GD" customClass="RecipeTableViewCell" customModule="Miara" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q4N-g2-1GD" id="oHA-r1-nTG">
@@ -438,7 +438,7 @@
         <!--Recipe Web View View Controller-->
         <scene sceneID="bCn-WF-Mmm">
             <objects>
-                <viewController id="ZHf-yb-JLW" customClass="RecipeWebViewViewController" customModule="EZRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZHf-yb-JLW" customClass="RecipeWebViewViewController" customModule="Miara" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DcG-dB-ZuR"/>
                         <viewControllerLayoutGuide type="bottom" id="HS1-Rn-uar"/>
