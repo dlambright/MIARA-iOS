@@ -11,6 +11,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
+      </ContextState>
+      <ContextState
          contextName = "ViewController.makeHTTPRequest() -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -19,7 +22,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
+         contextName = "ViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.recipeList">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "ViewController.(makeHTTPRequest() -&gt; ()).(closure #1):ViewController.swift">
