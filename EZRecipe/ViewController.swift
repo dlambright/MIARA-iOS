@@ -30,6 +30,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Create action to dismiss keyboard when clicked outside of keyboard touch area
+        // and added tap gesture to view
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,
+                                                                 action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         recipeOne.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         recipeTwo.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         recipeThree.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
@@ -45,7 +51,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        
+    }
+    
+    // Function to dismiss keyboard
+    func dismissKeyboard() {
+        view.endEditing(true);
     }
     
     func makeHTTPRequest(){
