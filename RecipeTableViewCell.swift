@@ -10,9 +10,13 @@ import UIKit
 
 class RecipeTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet var lblRating: UILabel!
+    @IBOutlet var viewBackground: UIView!
     @IBOutlet var lblTitle: UILabel!
     @IBOutlet var imgRecipeView: UIImageView!
-    
+    @IBOutlet var btnSave: UIButton!
+    var recipe : Recipe! = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +27,16 @@ class RecipeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+
+    @IBAction func btnSavePress(_ sender: Any) {
+
+        if (viewBackground.backgroundColor == UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.70)){
+            viewBackground.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0)
+        }
+        else{
+            viewBackground.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.70)
+        }
     }
 
 }
