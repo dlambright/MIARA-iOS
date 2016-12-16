@@ -31,11 +31,11 @@ class RecipeTableViewCell: UITableViewCell {
 
     @IBAction func btnSavePress(_ sender: Any) {
 
-        if (viewBackground.backgroundColor == UIColor(colorLiteralRed: 166/255, green: 19/255, blue: 232/255, alpha: 0.15)){
+        if (viewBackground.backgroundColor == UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.70)){
             viewBackground.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0)
         }
         else{
-            viewBackground.backgroundColor = UIColor(colorLiteralRed: 166/255, green: 19/255, blue: 232/255, alpha: 0.15)
+            viewBackground.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.70)
         }
     }
 
