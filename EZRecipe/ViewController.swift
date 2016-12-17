@@ -30,6 +30,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Model.sharedInstance.searchRecipesWithString(searchString: "pizza")
+        
+
         // Create action to dismiss keyboard when clicked outside of keyboard touch area
         // and added tap gesture to view
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,
@@ -60,35 +63,7 @@ class ViewController: UIViewController {
     
     func makeHTTPRequest(){
 
-        recipeList = [Recipe]()
-        let eurl = URL(string: basicUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
-        
-        let request = URLRequest(url: eurl)
-        //request.httpMethod = "GET"
-        let session = URLSession.shared
-        
-        session.dataTask(with: request) {data, response, err in
-            if let jsonData = data {
-                
-                let swiftyJson:JSON = JSON(data: jsonData)
-                let count = swiftyJson["count"].intValue
-                let recipeArray = swiftyJson["recipes"].arrayValue
-                
-                for i in (0...count-1){
-                    let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
-                    self.recipeList.append(newRecipe)
-                }
-                print(count)
-                
-                let yolo:String = String(describing: data)
-                print(yolo)
-                
-                }
-            print("Entered the completionHandler")
-            }.resume()
-        
-
-    }
+            }
     
     func readSampleText(){
         let swiftyJson:JSON = JSON(sampleResult)

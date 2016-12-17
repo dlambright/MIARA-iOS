@@ -11,15 +11,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
-      </ContextState>
-      <ContextState
          contextName = "ViewController.makeHTTPRequest() -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "basicUrl">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
       </ContextState>
       <ContextState
          contextName = "ViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():ViewController.swift">
@@ -43,6 +43,14 @@
          <PersistentStrings>
             <PersistentString
                value = "recipeList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Model.init() -&gt; Model:Model.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.apiKey">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
