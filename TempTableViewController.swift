@@ -14,8 +14,8 @@ class TempTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let recipeThree = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: 12, new_social_rank: 90, new_publisher_url: "qw", new_source_url: "zx", new_title: "some stuff", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
-        let recipeFour = Recipe(new_f2f_url: "yolo", new_publisher: "dustin", new_recipe_id: 21, new_social_rank: 100, new_publisher_url: "yoyo", new_source_url: "wer", new_title: "stuff", new_image_url: "http://static.food2fork.com/avocadopizzawithcilantrosauce4bf5.jpg")
+        let recipeThree = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 90, new_publisher_url: "qw", new_source_url: "zx", new_title: "some stuff", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
+        let recipeFour = Recipe(new_f2f_url: "yolo", new_publisher: "dustin", new_recipe_id: "21", new_social_rank: 100, new_publisher_url: "yoyo", new_source_url: "wer", new_title: "stuff", new_image_url: "http://static.food2fork.com/avocadopizzawithcilantrosauce4bf5.jpg")
         
         recipeList.append(recipeThree)
         recipeList.append(recipeFour)

@@ -14,9 +14,7 @@ class Model: NSObject {
     private var apiKey : String!
     var recipeList = [Recipe]()
     
-    static let sharedInstance = Model() // Class Singleton
-    
-    
+    static let sharedInstance = Model() // Class Singleton  
     
     override init(){
         super.init()
@@ -33,6 +31,7 @@ class Model: NSObject {
         
         let request = URLRequest(url: eurl)
         let session = URLSession.shared
+        self.recipeList = [Recipe]()
         
         session.dataTask(with: request) {data, response, err in
             if let jsonData = data {
@@ -45,16 +44,39 @@ class Model: NSObject {
                     let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
                     self.recipeList.append(newRecipe)
                 }
-                print(count)
-                
             }
-            print("Entered the completionHandler")
-            }.resume()
+        }.resume()
     }
     
-    func getIngredientsForRecipeWithId(id: Int)->[String]{
+    func getIngredientsForRecipeWithId(id: String){
         
-        return [String]()
+        var ingredients = [String]()
+        let basicUrl = "http://food2fork.com/api/get?key=" + apiKey + "&rId=" + id
+        let eurl = URL(string: basicUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
+        
+        let request = URLRequest(url: eurl)
+        let session = URLSession.shared
+        
+        session.dataTask(with: request) {data, response, err in
+            if let jsonData = data {
+                
+                let swiftyJson:JSON = JSON(data: jsonData)
+                ingredients = swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!
+                
+                self.setIngredientsForRecipeWithId(id: id, ingredients: ingredients)
+            }
+        }.resume()
     }
+    
+    private func setIngredientsForRecipeWithId(id: String, ingredients : [String]){
+        for recipe in recipeList{
+            if recipe.recipe_id == id{
+                recipe.ingredients = ingredients
+                break
+            }
+        }
+    }
+    
+    
 
 }
