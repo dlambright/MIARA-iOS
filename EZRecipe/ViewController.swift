@@ -89,26 +89,6 @@ class ViewController: UIViewController {
         
 
     }
-    
-    func readSampleText(){
-        let swiftyJson:JSON = JSON(sampleResult)
-        let count = swiftyJson["count"].intValue
-        let recipeArray = swiftyJson["recipes"].arrayValue
-        
-        for i in (0...count-1){
-            let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
-            self.recipeList.append(newRecipe)
-            
-//            let url = URL(string: image.url)
-//            
-//            DispatchQueue.global().async {
-//                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-//                DispatchQueue.main.async {
-//                    imageView.image = UIImage(data: data!)
-//                }
-//            }
-        }
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
