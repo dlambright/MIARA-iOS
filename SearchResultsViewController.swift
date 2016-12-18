@@ -80,6 +80,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
             
             if (selectedRecipe?.ingredients == nil || selectedRecipe?.ingredients.count == 0){
                 Model.sharedInstance.getIngredientsForRecipeWithId(id: (selectedRecipe?.recipe_id)!)
+                sleep(1)
             }
             
             tblSearchResults.deselectRow(at: indexPath, animated: true)
