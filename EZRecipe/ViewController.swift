@@ -56,43 +56,33 @@ class ViewController: UIViewController {
         view.endEditing(true);
     }
     
-//    func readSampleText(){
-//        let swiftyJson:JSON = JSON(sampleResult)
-//        let count = swiftyJson["count"].intValue
-//        let recipeArray = swiftyJson["recipes"].arrayValue
-//        
-//        for i in (0...count-1){
-//            let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
-//            self.recipeList.append(newRecipe)
-//            
-//            let url = URL(string: image.url)
-//            
-//            DispatchQueue.global().async {
-//                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-//                DispatchQueue.main.async {
-//                    imageView.image = UIImage(data: data!)
-//                }
-//            }
-//        }
-//    }
-
     @IBAction func btnSearchPress(_ sender: Any) {
-        //TODO: action indicator
-        
         let searchTerm = txtSearchText.text
         
         if (searchTerm != ""){
             Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!)
             
-            sleep(4)
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
-            if let navigator = navigationController {
-                navigator.pushViewController(srvc, animated: true)
+            for _ in 0...2{
+                if(Model.sharedInstance.recipeList.count > 0){
+                    sleep(1)
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
+                    srvc.searchTerm = "search results for \"" + searchTerm! + "\""
+                    if let navigator = navigationController {
+                        navigator.pushViewController(srvc, animated: true)
+                    }
+                    return
+                }
+                else{
+                    sleep(1)
+                }
             }
-
+            
+            // If nothing get s returned from the server, send an error message
+            let alert = UIAlertController(title: "", message: "Unable to retrieve data from server", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-        
         
     }
     
@@ -101,11 +91,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        let newViewController = segue.destination as! SearchResultsViewController
 //        newViewController.recipeList = self.recipeList
         //newViewController.lblTitle.text = "search results for dank pizza"
-    }
+   // }
     
     
 

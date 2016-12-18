@@ -13,6 +13,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet var lblTitle: UILabel!
     //var recipeList = [Recipe]()
     var selectedRecipe : Recipe?
+    var searchTerm : String!
     @IBOutlet var tblSearchResults: UITableView!
     
     init(_ coder: NSCoder? = nil) {
@@ -33,9 +34,13 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         tblSearchResults.delegate = self
         tblSearchResults.dataSource = self
-        lblTitle.text = "search results"
+        lblTitle.text = searchTerm
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tblSearchResults.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

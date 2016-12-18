@@ -40,9 +40,11 @@ class Model: NSObject {
                 let count = swiftyJson["count"].intValue
                 let recipeArray = swiftyJson["recipes"].arrayValue
                 
-                for i in (0...count-1){
-                    let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
-                    self.recipeList.append(newRecipe)
+                if (count > 0){
+                    for i in (0...count-1){
+                        let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
+                        self.recipeList.append(newRecipe)
+                    }
                 }
             }
         }.resume()
