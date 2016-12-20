@@ -26,7 +26,9 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgFoodImage.image = currentRecipe.image
+        if (currentRecipe.image != nil){
+            imgFoodImage.image = currentRecipe.image
+        }
         lblRecipeTitle.text = currentRecipe.title
         
     }

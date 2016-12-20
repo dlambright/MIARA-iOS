@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.makeHTTPRequest() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "basicUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "RecipeDetailViewController.refreshCardStack() -&gt; ():RecipeDetailViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,15 +19,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.makeHTTPRequest() -&gt; ():ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "basicUrl">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "SearchResultTableViewTableViewController.viewDidLoad() -&gt; ():SearchResultTableViewTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "ViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():ViewController.swift">
@@ -30,13 +30,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.(makeHTTPRequest() -&gt; ()).(closure #1):ViewController.swift">
+         contextName = "Recipe.init(newJson : JSON) -&gt; Recipe:Recipe.swift">
       </ContextState>
       <ContextState
-         contextName = "SearchResultTableViewTableViewController.viewDidLoad() -&gt; ():SearchResultTableViewTableViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.readSampleText() -&gt; ():ViewController.swift">
+         contextName = "Model.(getIngredientsForRecipeWithId(id : Int) -&gt; [String]).(closure #1):Model.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ingredients">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "SearchResultTableViewTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:SearchResultTableViewTableViewController.swift">
@@ -45,6 +47,47 @@
                value = "recipeList">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Model.getIngredientsForRecipeWithId(id : Int) -&gt; ():Model.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "apiKey">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(makeHTTPRequest() -&gt; ()).(closure #1):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchResultsViewController.viewDidLoad() -&gt; ():SearchResultsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Recipe.(setActualImage() -&gt; ()).(closure #1).(closure #1):Recipe.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Model.init() -&gt; Model:Model.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.apiKey">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Model.(getIngredientsForRecipeWithId(id : Int) -&gt; ()).(closure #1):Model.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "swiftyJson">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.readSampleText() -&gt; ():ViewController.swift">
       </ContextState>
       <ContextState
          contextName = "RecipeDetailViewController.viewDidLoad() -&gt; ():RecipeDetailViewController.swift">

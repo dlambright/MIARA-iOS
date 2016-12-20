@@ -11,7 +11,7 @@ import SwiftyJSON
 class Recipe: NSObject {
     var f2f_url : String!
     var publiser : String!
-    var recipe_id : Int!
+    var recipe_id : String!
     var social_rank : Double!
     var publisher_url : String!
     var source_url : String!
@@ -24,7 +24,7 @@ class Recipe: NSObject {
     
     init(new_f2f_url : String,
          new_publisher : String,
-         new_recipe_id : Int,
+         new_recipe_id : String,
          new_social_rank : Double,
          new_publisher_url : String,
          new_source_url : String,
@@ -46,24 +46,29 @@ class Recipe: NSObject {
         super.init()
         self.f2f_url = newJson["f2f_url"].stringValue
         self.publiser = newJson["publisher"].stringValue
-        self.recipe_id = newJson["recipe_id"].intValue
+        self.recipe_id = newJson["recipe_id"].stringValue
         self.social_rank = newJson["social_rank"].doubleValue
         self.publisher_url = newJson["publisher_url"].stringValue
         self.source_url = newJson["source_url"].stringValue
         self.title = newJson["title"].stringValue
         self.image_url =  newJson["image_url"].stringValue
+        self.ingredients = newJson["ingredients"].arrayObject as! [String]!
         self.setActualImage()
     }
     
     func setActualImage(){
         let url = URL(string: self.image_url)
         
-        DispatchQueue.global().async {
-            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-            DispatchQueue.main.async {
-                self.image = UIImage(data: data!)
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                
+                if (data != nil){
+                    DispatchQueue.main.async {
+                        self.image = UIImage(data: data!)
+                    }
+                }
             }
-        }
+
     }
 
 }

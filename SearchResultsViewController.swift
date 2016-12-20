@@ -11,17 +11,36 @@ import UIKit
 class SearchResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet var lblTitle: UILabel!
-    var recipeList = [Recipe]()
+    //var recipeList = [Recipe]()
     var selectedRecipe : Recipe?
+    var searchTerm : String!
     @IBOutlet var tblSearchResults: UITableView!
+    
+    init(_ coder: NSCoder? = nil) {
+        
+        if let coder = coder {
+            super.init(coder: coder)!
+        } else {
+            super.init(nibName: nil, bundle:nil)
+        }
+    }
+    
+    required convenience init(coder: NSCoder) {
+        self.init(coder)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tblSearchResults.delegate = self
         tblSearchResults.dataSource = self
-        lblTitle.text = "search results"
+        lblTitle.text = searchTerm
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tblSearchResults.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,17 +54,19 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipeList.count
+        return Model.sharedInstance.recipeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCell", for: indexPath) as! RecipeTableViewCell
+                
+        if (Model.sharedInstance.recipeList[indexPath.row].image != nil){
+            cell.imgRecipeView.image = Model.sharedInstance.recipeList[indexPath.row].image
+        }
         
-        cell.lblTitle.text = recipeList[indexPath.row].title
-        cell.imgRecipeView.image = recipeList[indexPath.row].image
-        
-        cell.lblRating.text = String(Int(recipeList[indexPath.row].social_rank))
-        cell.recipe = recipeList[indexPath.row]
+        cell.lblTitle.text = Model.sharedInstance.recipeList[indexPath.row].title
+        cell.lblRating.text = String(Int(Model.sharedInstance.recipeList[indexPath.row].social_rank))
+        cell.recipe = Model.sharedInstance.recipeList[indexPath.row]
         //cell.viewBackground.backgroundColor = colors[indexPath.row]
         
         return cell
@@ -55,18 +76,18 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         let cell = tableView.cellForRow(at: indexPath) as! RecipeTableViewCell
         selectedRecipe = cell.recipe
         
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "recipeDetailViewController") as? RecipeDetailViewController{ //as? HomePageViewController{
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "recipeDetailViewController") as? RecipeDetailViewController{
             
-            vc.currentRecipe = selectedRecipe
-            //present(vc, animated: true, completion: nil)
+            if (selectedRecipe?.ingredients == nil || selectedRecipe?.ingredients.count == 0){
+                Model.sharedInstance.getIngredientsForRecipeWithId(id: (selectedRecipe?.recipe_id)!)
+                sleep(1)
+            }
+            
             tblSearchResults.deselectRow(at: indexPath, animated: true)
+            vc.currentRecipe = selectedRecipe
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
-        
-        //self.navigationItem.
-        //self.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController")
-        //self.performSegue(withIdentifier: "tableToDetailSegue", sender: nil)
     }
     
     
