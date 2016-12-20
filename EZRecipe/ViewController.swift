@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //txtSearchText.text = "taco"
-        
 
 //        recipeOne.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
 //        recipeTwo.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
@@ -71,10 +70,9 @@ class ViewController: UIViewController {
             let alert = UIAlertController(title: "", message: "Unable to retrieve data from server", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        }
         
+        }
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
