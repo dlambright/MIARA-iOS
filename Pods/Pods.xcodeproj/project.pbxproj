@@ -7,188 +7,223 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		067189BB8F49920F08BF5542BF04D73D /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7574E653EB71A9FB8DBE2FEE41F0C4BC /* UIColor+MDCRGB8Bit.m */; };
-		099AC9A57DCFD4FBE666872C2D428E5A /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = E61B332D9B2BC90D3A77D90864D75160 /* MDCGeometry.m */; };
-		2274FDBFD091334E34DFA4BC0CFB7B2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		242FBC5631BEC40D0DC291FF13CF3A36 /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB427F2C0933A5B70BF956FC65844D6C /* MDCSwipeToChooseViewOptions.m */; };
-		271811E181389275EC1783330AED0B2A /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74CEDA5FDCFB76E3B9FAE7BD23390523 /* MDCSwipeToChooseDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B5667C70FB1CBDEC8A9FF81F3754825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		3941CF2BFCF55A9F488D15CA4CAA4EDD /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = C941F4CA130B4F58AB5C9FD972D54C21 /* MDCViewState.m */; };
-		3A3742978DDA98BF47C1871848E907A9 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 655A2D8FDBB10829AFF70F29FEA03611 /* UIView+MDCBorderedLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		47483B710C59DF1D119D21F1A86765C4 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA4A715E1BC76C07A27A7716FA2C3EE /* MDCViewState.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		47E59E0DCAF208E6DD94FAD45CAFF2D9 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 200479576AAE39BC91ADBB2317479F55 /* MDCPanState.m */; };
-		4EB76ABD43C7958B40D3563BEACB90AB /* MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD98876638E2B70824EAC38EB64C43D1 /* MDCSwipeToChoose-dummy.m */; };
-		4F9DDA264E2BECA7D63CE4936C4C4804 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C39116F50B9796D68E3D98896B877C3C /* SwiftyJSON-dummy.m */; };
-		569CD97C67B06DDDEC93E6A002E986E4 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = B00EA89143614D178F8FE34EE1105672 /* UIView+MDCSwipeToChoose.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		697889EC085E33FCF7370E19311D4A27 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F23BF129FD0F9A4D85FC365BA17539 /* MDCPanState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ED60D38A8DB2375DE5A35CC4F3528CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		8424F3A6A2D3580B973A6B52993C77DB /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD938F5BB8E773B5791E9B15700880A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		900F1E5C1F540EA158E9B5D6A7C3EFE8 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6065FF493B0C14F66D3B1D23831008E /* MDCSwipeToChooseView.m */; };
-		90994CB8DEC654634AB6A5C4EAB11D78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		95D907DE78841CE45437C6EDF9B26D37 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F48B35D3E85D9190908499CB157BF /* SwiftyJSON.swift */; };
-		97BA0608AE3C9CBC317428DB2BDAA8DA /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D84C84BC686501629A9FD7A628AD7A /* MDCSwipeToChooseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0D7181DD874BCF80DD01F8B5E2ACD73 /* Pods-EZRecipeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B884A5BFA0C78491CA3AFB1E2DBF4F1F /* Pods-EZRecipeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A82ED66146E88CD8B8CF27D5E455DE60 /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 087B2857AEACFFF8A086976BD24ED568 /* MDCSwipeOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9D14AB519619ED13A1B32B9C137BE92 /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1311A1B1D839AC0E0E182AC0EC027A /* UIView+MDCBorderedLabel.m */; };
-		AB3BF2439C81987827B65A693014A88B /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BD87B5F37392715E6A2C508FFEE2D48F /* MDCSwipeResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE578611AA91EB68DD1691CC7F239FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		B086B817720B20773BF43029E4C255C1 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B8419CD1393ABEEF4DB2B41DC85C1D /* MDCSwipeToChoose.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0A1A995B5CFB8C164CD083D3702D829 /* Pods-EZRecipeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4D8296D15343C6C241EF0D55E0D439 /* Pods-EZRecipeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B76C081B5D58AEADE0E6D3AA8C54DCF8 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F7CE51B4DDC04BAB2B62E42208A5 /* MDCSwipeResult.m */; };
-		BE3B134B7E07BA26C1922214EF16B241 /* Pods-EZRecipe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 629EAF4F060B1DDF6DB23F592E0EA4D5 /* Pods-EZRecipe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEF665B9FD0009C83CC1812313A05DD0 /* Pods-EZRecipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B200DC0B2A66B266C85FE99D0932C9F6 /* Pods-EZRecipeTests-dummy.m */; };
-		D4DAE4CCF916DDDDE29645267D8F3648 /* MDCSwipeToChoose-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B822F9900EF75E1B517173388B70AE6 /* MDCSwipeToChoose-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D711EFA0F42531DF8F99897914F7EB1A /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FEF38A388BF8215B31BEDACAAFF2BD /* MDCSwipeOptions.m */; };
-		DD964CDF5FDB083907516271C9BBED6F /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 671FDD218EDC2AA8A06694FCF1086CC5 /* MDCSwipeDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5DB37FF784A8F24E177442BF5F3D130 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1704FAE63CD2F2104B3640EA4FAA6477 /* UIColor+MDCRGB8Bit.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E654EF07FDC18ECCCA4BF07EB8D1DB9A /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FC04BAF9839B10C2950826D37CDCF8 /* UIView+MDCSwipeToChoose.m */; };
-		E7051CD209E7DDD177E04C1E1AE377C3 /* Pods-EZRecipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D72BE7FF1A9F2D2AB9BCC74CF8F0464 /* Pods-EZRecipe-dummy.m */; };
-		E7FD2A21194D958801BA9807EEB921D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		EC6AA485BB88C350631832DE58CAC2DE /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC4BCDC0263E9ADD201159CF6F256D9 /* MDCSwipeToChooseViewOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6B402DF10172C9FA04C8A12EF2F2D9D /* Pods-EZRecipeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD6DB681A916B80A5CAD1EC2A24552 /* Pods-EZRecipeUITests-dummy.m */; };
-		FF322829F0DD620DC77F2425B09A7D40 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA1EA3832B2E07E98806EDC58AB00B6 /* MDCGeometry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01BA622D31AA703446954404F0A05307 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C39116F50B9796D68E3D98896B877C3C /* SwiftyJSON-dummy.m */; };
+		04B4303F28376715E4B3D4D03B116214 /* MDCSwipeToChoose-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B822F9900EF75E1B517173388B70AE6 /* MDCSwipeToChoose-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A351B318729A7740DEEB506327B2341 /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1311A1B1D839AC0E0E182AC0EC027A /* UIView+MDCBorderedLabel.m */; };
+		0D494332BB2E1215D96829CDBB7C08C6 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B8419CD1393ABEEF4DB2B41DC85C1D /* MDCSwipeToChoose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5DDFD7F3B69DF4A7BEC7BC2CC6EB5F /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 200479576AAE39BC91ADBB2317479F55 /* MDCPanState.m */; };
+		2663BF09B1F076028DB7A71CA67D731A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		284E96985A97466EFA69B1CC217FD777 /* Pods-Miara-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB239386B9752C89BA95426485C5F4 /* Pods-Miara-dummy.m */; };
+		2F13E6E8F13C89D2CB1C73440012BDA4 /* Pods-MiaraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 315FDFE6E8F8A811FFF9F9D80C920BFA /* Pods-MiaraUITests-dummy.m */; };
+		2F82824663CC96B66ABB068884C8AE12 /* Pods-MiaraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A5C1A2949682B8AC9BE0390D6B071 /* Pods-MiaraTests-dummy.m */; };
+		40F292DDBD594969F6D6EE8481E2FF03 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA1EA3832B2E07E98806EDC58AB00B6 /* MDCGeometry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45F60F7E783FBA89B95CEE0A1DC0B949 /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 671FDD218EDC2AA8A06694FCF1086CC5 /* MDCSwipeDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		483FF8AF7553AD06CBC75E64B52D7E88 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1704FAE63CD2F2104B3640EA4FAA6477 /* UIColor+MDCRGB8Bit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5569C128B3C6F7652BA4ECD01EEC894B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F48B35D3E85D9190908499CB157BF /* SwiftyJSON.swift */; };
+		56F5DDCFB8969A855C795B5D6FF91AC8 /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 087B2857AEACFFF8A086976BD24ED568 /* MDCSwipeOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596F8A1691807ADCFB2C25EECE0A49B2 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA4A715E1BC76C07A27A7716FA2C3EE /* MDCViewState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5ACC3390C25BD8949A4FF6139D7A00AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		67FCAABFEC041FC594FBC3A1EF81EB34 /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC4BCDC0263E9ADD201159CF6F256D9 /* MDCSwipeToChooseViewOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FBA22D290EFE5C7AB0C3AC253967682 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = B00EA89143614D178F8FE34EE1105672 /* UIView+MDCSwipeToChoose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70049E641C24CFDA0159191DAB09EE08 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD938F5BB8E773B5791E9B15700880A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		782071CEB98C842BC8798B1E4B7048AF /* Pods-Miara-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CEE637C93FDA980E02C9985570E5B /* Pods-Miara-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87264D96567AAAA0744937B20C69632E /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FC04BAF9839B10C2950826D37CDCF8 /* UIView+MDCSwipeToChoose.m */; };
+		8A3F6EF8F762EE5976A948AF733F16F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		8E742C30552816EE2295239B0666F520 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7574E653EB71A9FB8DBE2FEE41F0C4BC /* UIColor+MDCRGB8Bit.m */; };
+		992BD095ECF01F6EB1FDF3D78D4961BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9A36F47BCCBA3DB56E4A7C2CDB5EF747 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 655A2D8FDBB10829AFF70F29FEA03611 /* UIView+MDCBorderedLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A918D023AF668681D4FE23AB3F679133 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6065FF493B0C14F66D3B1D23831008E /* MDCSwipeToChooseView.m */; };
+		B3C0DD4A68E91CD02B481381CA980E00 /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = E61B332D9B2BC90D3A77D90864D75160 /* MDCGeometry.m */; };
+		C2D85F704D42E20A6B5B404EF4FC48C0 /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = C941F4CA130B4F58AB5C9FD972D54C21 /* MDCViewState.m */; };
+		C34E88BC5C63417CCCE29B3793730FBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		C67902B6879BF3B631A3483E2034483D /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D84C84BC686501629A9FD7A628AD7A /* MDCSwipeToChooseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6A96740FE6E724B55BB572F52091A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		CA5624C14B76CE2135A77AE97B367BD7 /* Pods-MiaraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83AD4C270EEF892855467A6701BE6156 /* Pods-MiaraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF5CFB947CC83A8C68B766128417356D /* MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD98876638E2B70824EAC38EB64C43D1 /* MDCSwipeToChoose-dummy.m */; };
+		D6869FA45D4A83069762592618FBE507 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F23BF129FD0F9A4D85FC365BA17539 /* MDCPanState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8B2966A2DF5EA1CF3865E5C5F9D878A /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74CEDA5FDCFB76E3B9FAE7BD23390523 /* MDCSwipeToChooseDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8E5649A23A15D0B18EA03641B403E93 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F7CE51B4DDC04BAB2B62E42208A5 /* MDCSwipeResult.m */; };
+		E994A9BF3B1B252D2BEBE4E1CEB3F846 /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB427F2C0933A5B70BF956FC65844D6C /* MDCSwipeToChooseViewOptions.m */; };
+		EBC7997C6CBC5511857113F381EBDA2E /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FEF38A388BF8215B31BEDACAAFF2BD /* MDCSwipeOptions.m */; };
+		F16934C562926B5EA773721A97D83214 /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BD87B5F37392715E6A2C508FFEE2D48F /* MDCSwipeResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F92E897C894EE0D27E5C60D6B70ECF /* Pods-MiaraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA86D8EF9661BD768D975CF578B7D79E /* Pods-MiaraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		876FD14226CBEE7092058FA9F1DEA044 /* PBXContainerItemProxy */ = {
+		02E493AA130D46080431A92AF6789E79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B78FB5A0F00D8651C3A145F4BD7B0D42;
+			remoteGlobalIDString = 0FA2B3A7D4217A511C3DA3C92A971D33;
 			remoteInfo = MDCSwipeToChoose;
 		};
-		E79B09AEC7341558A4E501FFBE6E5B1E /* PBXContainerItemProxy */ = {
+		03C9263EDCE54F424968F1E5D7EE416C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B7B9FBE70B760960E777F9C65BE65048;
+			remoteGlobalIDString = C5EB19EF7EB84F98A94551C2016589A1;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0492710A54C0AFC29F272328BC98537E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087B2857AEACFFF8A086976BD24ED568 /* MDCSwipeOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.h; sourceTree = "<group>"; };
-		141C40055495890C0693DF178339CBBF /* Pods_EZRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1704FAE63CD2F2104B3640EA4FAA6477 /* UIColor+MDCRGB8Bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MDCRGB8Bit.h"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.h"; sourceTree = "<group>"; };
+		182A5C1A2949682B8AC9BE0390D6B071 /* Pods-MiaraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MiaraTests-dummy.m"; sourceTree = "<group>"; };
 		18D1E796F5F19FBB7990FB502F384185 /* MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDCSwipeToChoose.xcconfig; sourceTree = "<group>"; };
+		1B89916D6D941A89356C3E2E634F450C /* Pods-MiaraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiaraTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1CCB239386B9752C89BA95426485C5F4 /* Pods-Miara-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Miara-dummy.m"; sourceTree = "<group>"; };
 		200479576AAE39BC91ADBB2317479F55 /* MDCPanState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPanState.m; path = MDCSwipeToChoose/Public/State/MDCPanState.m; sourceTree = "<group>"; };
-		298BB6DBC6479780576BA1E31F94AA5B /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		221965FF6F696237D15C579E8D80983F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23717E21465BADB5528D26F7368D7038 /* Pods-Miara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Miara.debug.xcconfig"; sourceTree = "<group>"; };
+		298BB6DBC6479780576BA1E31F94AA5B /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		2AFFF66B6D6F7DAF74CA5B3157C8A3CF /* Pods-MiaraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MiaraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2DA1EA3832B2E07E98806EDC58AB00B6 /* MDCGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCGeometry.h; path = MDCSwipeToChoose/Internal/MDCGeometry.h; sourceTree = "<group>"; };
-		2E7734898B3A8BCDC159C475848A6E3A /* Pods-EZRecipeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZRecipeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		315FDFE6E8F8A811FFF9F9D80C920BFA /* Pods-MiaraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MiaraUITests-dummy.m"; sourceTree = "<group>"; };
 		31D84C84BC686501629A9FD7A628AD7A /* MDCSwipeToChooseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseView.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.h; sourceTree = "<group>"; };
-		3666D924124C4C880F4A4FAD0C2A38CC /* Pods-EZRecipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeTests.release.xcconfig"; sourceTree = "<group>"; };
-		412717DA367B453CB74CAFA36100B772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8947B502566B809E51894093180E0C /* Pods-MiaraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MiaraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C352A7C4973D939F7739B3BD061DE70 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAD184AEF9AB555379E52A7CA6CC5AE /* Pods-MiaraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiaraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3DAF49B49D5B134523049F20F7834BFA /* Pods_MiaraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MiaraTests.framework; path = "Pods-MiaraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46618569E2ABA6B1F90A164D02F5C5E4 /* Pods-MiaraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiaraUITests-frameworks.sh"; sourceTree = "<group>"; };
 		46FC04BAF9839B10C2950826D37CDCF8 /* UIView+MDCSwipeToChoose.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCSwipeToChoose.m"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.m"; sourceTree = "<group>"; };
-		4764A332774B7942CCCFE6190CAB00B0 /* Pods-EZRecipeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EZRecipeUITests.modulemap"; sourceTree = "<group>"; };
 		4AA4A715E1BC76C07A27A7716FA2C3EE /* MDCViewState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCViewState.h; path = MDCSwipeToChoose/Internal/State/MDCViewState.h; sourceTree = "<group>"; };
 		4BD938F5BB8E773B5791E9B15700880A /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		4E0FBA1DD1AE9793B20AE62C51C86C64 /* Pods-EZRecipe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipe-resources.sh"; sourceTree = "<group>"; };
-		5FB5EEFE4828C039C386E2F78E0CD0E4 /* Pods-EZRecipeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZRecipeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4F11283D304A89C93A1CC26702E7D443 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F87913C3E1DBCAF7A67C12E29D7175C /* Pods-MiaraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MiaraUITests.modulemap"; sourceTree = "<group>"; };
+		558390A3916B82B0AA4945D10E43E88C /* Pods-Miara-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Miara-frameworks.sh"; sourceTree = "<group>"; };
+		5790F72F1DABA59C27246CF34C8A52E1 /* Pods-MiaraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiaraTests-resources.sh"; sourceTree = "<group>"; };
+		5E1CEE637C93FDA980E02C9985570E5B /* Pods-Miara-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Miara-umbrella.h"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		629EAF4F060B1DDF6DB23F592E0EA4D5 /* Pods-EZRecipe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZRecipe-umbrella.h"; sourceTree = "<group>"; };
 		62B8419CD1393ABEEF4DB2B41DC85C1D /* MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChoose.h; path = MDCSwipeToChoose/Public/MDCSwipeToChoose.h; sourceTree = "<group>"; };
 		62F23BF129FD0F9A4D85FC365BA17539 /* MDCPanState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPanState.h; path = MDCSwipeToChoose/Public/State/MDCPanState.h; sourceTree = "<group>"; };
 		655A2D8FDBB10829AFF70F29FEA03611 /* UIView+MDCBorderedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCBorderedLabel.h"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.h"; sourceTree = "<group>"; };
 		671FDD218EDC2AA8A06694FCF1086CC5 /* MDCSwipeDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeDirection.h; path = MDCSwipeToChoose/Public/State/MDCSwipeDirection.h; sourceTree = "<group>"; };
-		6B453AB6B0CEB04C0113D658B3AAD6EE /* Pods-EZRecipeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6DBCBF5B38FF495FD5EEEDE327F44437 /* Pods-Miara-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Miara-acknowledgements.markdown"; sourceTree = "<group>"; };
 		74CEDA5FDCFB76E3B9FAE7BD23390523 /* MDCSwipeToChooseDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseDelegate.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseDelegate.h; sourceTree = "<group>"; };
+		75639ADF81F66E30429C1A323A8121AD /* MDCSwipeToChoose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDCSwipeToChoose.framework; path = MDCSwipeToChoose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7574E653EB71A9FB8DBE2FEE41F0C4BC /* UIColor+MDCRGB8Bit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MDCRGB8Bit.m"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.m"; sourceTree = "<group>"; };
 		77A4F7CE51B4DDC04BAB2B62E42208A5 /* MDCSwipeResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeResult.m; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.m; sourceTree = "<group>"; };
+		78B17FF30B35B0C8D2442A22A9F2FCC7 /* Pods-Miara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Miara.release.xcconfig"; sourceTree = "<group>"; };
 		7AC4BCDC0263E9ADD201159CF6F256D9 /* MDCSwipeToChooseViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseViewOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.h; sourceTree = "<group>"; };
+		7AFA640A7CCDA314606F86FA83FF5D8D /* Pods-Miara.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Miara.modulemap"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		85B03BA255B3542D089FA5B7330A996C /* Pods-EZRecipeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeUITests-resources.sh"; sourceTree = "<group>"; };
+		7F88B4BE756F2E2E4C070C18C5A7DE70 /* Pods-Miara-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Miara-resources.sh"; sourceTree = "<group>"; };
+		802C8F8D77950343A52D65D237FCD531 /* Pods-MiaraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiaraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83AD4C270EEF892855467A6701BE6156 /* Pods-MiaraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MiaraUITests-umbrella.h"; sourceTree = "<group>"; };
 		8B822F9900EF75E1B517173388B70AE6 /* MDCSwipeToChoose-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDCSwipeToChoose-umbrella.h"; sourceTree = "<group>"; };
-		8D72BE7FF1A9F2D2AB9BCC74CF8F0464 /* Pods-EZRecipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZRecipe-dummy.m"; sourceTree = "<group>"; };
-		8F9422131E4AEA031751D0B4B3649FE1 /* Pods-EZRecipeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EZRecipeTests.modulemap"; sourceTree = "<group>"; };
-		9121A6B4D76789794AA46318F22D7792 /* Pods-EZRecipeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZRecipeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		916BEB283A8A76441B4202A5B42E619C /* MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
-		92658ADA3D4317916096C05C7002207E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C2C9AFD9C5E6D59EC0A49DFC036055 /* Pods-EZRecipeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZRecipeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		954E2C47BBABBC4C352807BB54843176 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A294DCA6B773E518406705FF84723FA5 /* MDCSwipeToChoose.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MDCSwipeToChoose.modulemap; sourceTree = "<group>"; };
-		A4832A8F2EEA261609DE284CC9B076F5 /* Pods_EZRecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8031DE71DFB918C0008110B /* EZRecipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EZRecipe-Bridging-Header.h"; sourceTree = "<group>"; };
+		9C563AEDC91C26D04130A0AC625CA81F /* Pods-MiaraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiaraTests-frameworks.sh"; sourceTree = "<group>"; };
+		9DC42516F505AE83AE93C07F60E1A722 /* Pods-MiaraUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiaraUITests-resources.sh"; sourceTree = "<group>"; };
+		A294DCA6B773E518406705FF84723FA5 /* MDCSwipeToChoose.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MDCSwipeToChoose.modulemap; sourceTree = "<group>"; };
+		A8B3DD096C89060B6491F04512974CA3 /* Pods-MiaraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiaraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A90FEE86B26139641E63D3516734BCAE /* Pods_Miara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Miara.framework; path = "Pods-Miara.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E2D4D6CCE6D30B1E1C488612BDEF0E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		AF4D8296D15343C6C241EF0D55E0D439 /* Pods-EZRecipeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZRecipeUITests-umbrella.h"; sourceTree = "<group>"; };
+		AA2F584142FFD401017E25EED9273B4D /* Pods_MiaraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MiaraUITests.framework; path = "Pods-MiaraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00EA89143614D178F8FE34EE1105672 /* UIView+MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCSwipeToChoose.h"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.h"; sourceTree = "<group>"; };
-		B200DC0B2A66B266C85FE99D0932C9F6 /* Pods-EZRecipeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZRecipeTests-dummy.m"; sourceTree = "<group>"; };
-		B7DD6DB681A916B80A5CAD1EC2A24552 /* Pods-EZRecipeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZRecipeUITests-dummy.m"; sourceTree = "<group>"; };
-		B884A5BFA0C78491CA3AFB1E2DBF4F1F /* Pods-EZRecipeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZRecipeTests-umbrella.h"; sourceTree = "<group>"; };
-		B9328A23C2F734F22FA0F48E026D22B4 /* Pods-EZRecipeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeTests-frameworks.sh"; sourceTree = "<group>"; };
 		BA7E70DA0AA01CFF73EB5C140F433259 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BBF3E9005BA26957C0BDD73152B7B4C5 /* Pods-EZRecipe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EZRecipe.modulemap"; sourceTree = "<group>"; };
+		BA86D8EF9661BD768D975CF578B7D79E /* Pods-MiaraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MiaraTests-umbrella.h"; sourceTree = "<group>"; };
 		BD87B5F37392715E6A2C508FFEE2D48F /* MDCSwipeResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeResult.h; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.h; sourceTree = "<group>"; };
-		BF7198ECE044C8B69DCC53D9EF5D706A /* Pods-EZRecipe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZRecipe-acknowledgements.plist"; sourceTree = "<group>"; };
-		C216309AB1EA4C1784A021F44F588B86 /* Pods_EZRecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2FD91AEEB436BD38BFACDD1460886BB /* MDCSwipeToChoose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDCSwipeToChoose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39116F50B9796D68E3D98896B877C3C /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		C83B0D7407B0BDFB752148F5C0C5CCFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8FEF38A388BF8215B31BEDACAAFF2BD /* MDCSwipeOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.m; sourceTree = "<group>"; };
 		C941F4CA130B4F58AB5C9FD972D54C21 /* MDCViewState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCViewState.m; path = MDCSwipeToChoose/Internal/State/MDCViewState.m; sourceTree = "<group>"; };
-		CA6B693274218ECC511C4FEC174521DD /* Pods-EZRecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4596AC76AC37D93B62D10C385C8D58 /* Pods-MiaraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiaraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF088E46E1DCE35BFCC21016531EC9A4 /* Pods-MiaraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiaraTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6065FF493B0C14F66D3B1D23831008E /* MDCSwipeToChooseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseView.m; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.m; sourceTree = "<group>"; };
-		D7A7CE081A939AD416CE47666D80C665 /* Pods-EZRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipe.release.xcconfig"; sourceTree = "<group>"; };
-		DA856C74DDFC8F5FB6CDFF2970DE0FC3 /* Pods-EZRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD98876638E2B70824EAC38EB64C43D1 /* MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
 		DDEB6DAE6DA0D19B6E39DE611F655580 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E084188D4F3E84075D1A89462A8317EE /* Pods-EZRecipeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipeTests-resources.sh"; sourceTree = "<group>"; };
-		E18A59E6932684EDE65D950D0795FA50 /* Pods-EZRecipe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZRecipe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E1A0961DA01C93EF7D59212F1E41ECF9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E376A733CC4EA1454798AC225651509E /* Pods-EZRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipe.debug.xcconfig"; sourceTree = "<group>"; };
 		E61B332D9B2BC90D3A77D90864D75160 /* MDCGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCGeometry.m; path = MDCSwipeToChoose/Internal/MDCGeometry.m; sourceTree = "<group>"; };
-		E7CB89FC475499163DCD77F0D057FA38 /* Pods-EZRecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZRecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F2B1A384DDC5275719ADDAB6900C2BAA /* Pods-EZRecipe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZRecipe-frameworks.sh"; sourceTree = "<group>"; };
+		EAF13429904F7888A2731084E88CBFE4 /* Pods-Miara-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Miara-acknowledgements.plist"; sourceTree = "<group>"; };
 		FB1311A1B1D839AC0E0E182AC0EC027A /* UIView+MDCBorderedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCBorderedLabel.m"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.m"; sourceTree = "<group>"; };
 		FB427F2C0933A5B70BF956FC65844D6C /* MDCSwipeToChooseViewOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseViewOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.m; sourceTree = "<group>"; };
+		FD359303F89E07C9900B7C433672BB80 /* Pods-MiaraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MiaraTests.modulemap"; sourceTree = "<group>"; };
 		FF2F48B35D3E85D9190908499CB157BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BE81231A0BACFB27E13548DD6CC246F /* Frameworks */ = {
+		3A323EAFCC4816EF555A89BBBB1028D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2274FDBFD091334E34DFA4BC0CFB7B2C /* Foundation.framework in Frameworks */,
+				992BD095ECF01F6EB1FDF3D78D4961BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		783D0ED551E1E6A887D83AF75A3BBAA0 /* Frameworks */ = {
+		468A82FE3D0060123AA74FFC33034219 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90994CB8DEC654634AB6A5C4EAB11D78 /* Foundation.framework in Frameworks */,
+				C34E88BC5C63417CCCE29B3793730FBA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DAB1FECFFAB30496499B5A8BE590267 /* Frameworks */ = {
+		A802A40AF60614D821B0C538416A5657 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5667C70FB1CBDEC8A9FF81F3754825 /* Foundation.framework in Frameworks */,
+				5ACC3390C25BD8949A4FF6139D7A00AF /* Foundation.framework in Frameworks */,
+				8A3F6EF8F762EE5976A948AF733F16F8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C15706329E3DDFD31F2CEE352E4AE415 /* Frameworks */ = {
+		C3B607CB24E000D4FD5FD5FD11B5E229 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE578611AA91EB68DD1691CC7F239FC0 /* Foundation.framework in Frameworks */,
+				C6A96740FE6E724B55BB572F52091A9C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF99D9C19DB76A31944847DE990F247 /* Frameworks */ = {
+		E6C893D84D28E0F6936FE9B2EDC09357 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7FD2A21194D958801BA9807EEB921D4 /* Foundation.framework in Frameworks */,
-				6ED60D38A8DB2375DE5A35CC4F3528CA /* UIKit.framework in Frameworks */,
+				2663BF09B1F076028DB7A71CA67D731A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		112733EF8A38D40615F7E38440430CF6 /* Pods-Miara */ = {
+			isa = PBXGroup;
+			children = (
+				0492710A54C0AFC29F272328BC98537E /* Info.plist */,
+				7AFA640A7CCDA314606F86FA83FF5D8D /* Pods-Miara.modulemap */,
+				6DBCBF5B38FF495FD5EEEDE327F44437 /* Pods-Miara-acknowledgements.markdown */,
+				EAF13429904F7888A2731084E88CBFE4 /* Pods-Miara-acknowledgements.plist */,
+				1CCB239386B9752C89BA95426485C5F4 /* Pods-Miara-dummy.m */,
+				558390A3916B82B0AA4945D10E43E88C /* Pods-Miara-frameworks.sh */,
+				7F88B4BE756F2E2E4C070C18C5A7DE70 /* Pods-Miara-resources.sh */,
+				5E1CEE637C93FDA980E02C9985570E5B /* Pods-Miara-umbrella.h */,
+				23717E21465BADB5528D26F7368D7038 /* Pods-Miara.debug.xcconfig */,
+				78B17FF30B35B0C8D2442A22A9F2FCC7 /* Pods-Miara.release.xcconfig */,
+			);
+			name = "Pods-Miara";
+			path = "Target Support Files/Pods-Miara";
+			sourceTree = "<group>";
+		};
+		14A38C82D2F076762135926D4DE62FF2 /* Pods-MiaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				221965FF6F696237D15C579E8D80983F /* Info.plist */,
+				FD359303F89E07C9900B7C433672BB80 /* Pods-MiaraTests.modulemap */,
+				3B8947B502566B809E51894093180E0C /* Pods-MiaraTests-acknowledgements.markdown */,
+				1B89916D6D941A89356C3E2E634F450C /* Pods-MiaraTests-acknowledgements.plist */,
+				182A5C1A2949682B8AC9BE0390D6B071 /* Pods-MiaraTests-dummy.m */,
+				9C563AEDC91C26D04130A0AC625CA81F /* Pods-MiaraTests-frameworks.sh */,
+				5790F72F1DABA59C27246CF34C8A52E1 /* Pods-MiaraTests-resources.sh */,
+				BA86D8EF9661BD768D975CF578B7D79E /* Pods-MiaraTests-umbrella.h */,
+				A8B3DD096C89060B6491F04512974CA3 /* Pods-MiaraTests.debug.xcconfig */,
+				CF088E46E1DCE35BFCC21016531EC9A4 /* Pods-MiaraTests.release.xcconfig */,
+			);
+			name = "Pods-MiaraTests";
+			path = "Target Support Files/Pods-MiaraTests";
+			sourceTree = "<group>";
+		};
 		2ECEA5CE42EE41658501F2F739C0E760 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,18 +236,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		3BB3CE92A8F734B29A21094EEB0800B7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C2FD91AEEB436BD38BFACDD1460886BB /* MDCSwipeToChoose.framework */,
-				C216309AB1EA4C1784A021F44F588B86 /* Pods_EZRecipe.framework */,
-				141C40055495890C0693DF178339CBBF /* Pods_EZRecipeTests.framework */,
-				A4832A8F2EEA261609DE284CC9B076F5 /* Pods_EZRecipeUITests.framework */,
-				E1A0961DA01C93EF7D59212F1E41ECF9 /* SwiftyJSON.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		40057D88CA2636DC9D245B596F658E39 /* Support Files */ = {
@@ -229,6 +252,24 @@
 			path = "../Target Support Files/MDCSwipeToChoose";
 			sourceTree = "<group>";
 		};
+		40D012CB2DC861E7E8F91726839BFE1F /* Pods-MiaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F11283D304A89C93A1CC26702E7D443 /* Info.plist */,
+				4F87913C3E1DBCAF7A67C12E29D7175C /* Pods-MiaraUITests.modulemap */,
+				2AFFF66B6D6F7DAF74CA5B3157C8A3CF /* Pods-MiaraUITests-acknowledgements.markdown */,
+				3DAD184AEF9AB555379E52A7CA6CC5AE /* Pods-MiaraUITests-acknowledgements.plist */,
+				315FDFE6E8F8A811FFF9F9D80C920BFA /* Pods-MiaraUITests-dummy.m */,
+				46618569E2ABA6B1F90A164D02F5C5E4 /* Pods-MiaraUITests-frameworks.sh */,
+				9DC42516F505AE83AE93C07F60E1A722 /* Pods-MiaraUITests-resources.sh */,
+				83AD4C270EEF892855467A6701BE6156 /* Pods-MiaraUITests-umbrella.h */,
+				802C8F8D77950343A52D65D237FCD531 /* Pods-MiaraUITests.debug.xcconfig */,
+				CE4596AC76AC37D93B62D10C385C8D58 /* Pods-MiaraUITests.release.xcconfig */,
+			);
+			name = "Pods-MiaraUITests";
+			path = "Target Support Files/Pods-MiaraUITests";
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,62 +278,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6643200B45C7CBA2E5C8A343E1EDBA0D /* Pods-EZRecipeTests */ = {
-			isa = PBXGroup;
-			children = (
-				C83B0D7407B0BDFB752148F5C0C5CCFC /* Info.plist */,
-				8F9422131E4AEA031751D0B4B3649FE1 /* Pods-EZRecipeTests.modulemap */,
-				93C2C9AFD9C5E6D59EC0A49DFC036055 /* Pods-EZRecipeTests-acknowledgements.markdown */,
-				9121A6B4D76789794AA46318F22D7792 /* Pods-EZRecipeTests-acknowledgements.plist */,
-				B200DC0B2A66B266C85FE99D0932C9F6 /* Pods-EZRecipeTests-dummy.m */,
-				B9328A23C2F734F22FA0F48E026D22B4 /* Pods-EZRecipeTests-frameworks.sh */,
-				E084188D4F3E84075D1A89462A8317EE /* Pods-EZRecipeTests-resources.sh */,
-				B884A5BFA0C78491CA3AFB1E2DBF4F1F /* Pods-EZRecipeTests-umbrella.h */,
-				CA6B693274218ECC511C4FEC174521DD /* Pods-EZRecipeTests.debug.xcconfig */,
-				3666D924124C4C880F4A4FAD0C2A38CC /* Pods-EZRecipeTests.release.xcconfig */,
-			);
-			name = "Pods-EZRecipeTests";
-			path = "Target Support Files/Pods-EZRecipeTests";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				A8031DE71DFB918C0008110B /* EZRecipe-Bridging-Header.h */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				AED01F3631BAA3D70C0BE99F1E7AA99E /* Pods */,
-				3BB3CE92A8F734B29A21094EEB0800B7 /* Products */,
-				7E9C36EEF5AC5B04E176F2E70E119B8F /* Targets Support Files */,
+				906C3F056AF1CFCB6CB013452A291EA4 /* Products */,
+				FB28B0D5BD93F83461DE1E5DD0128438 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7E9C36EEF5AC5B04E176F2E70E119B8F /* Targets Support Files */ = {
+		906C3F056AF1CFCB6CB013452A291EA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8654670FE7A7A8EEC58FA3816DD7EBCC /* Pods-EZRecipe */,
-				6643200B45C7CBA2E5C8A343E1EDBA0D /* Pods-EZRecipeTests */,
-				EE8CD90403CCA03A9F1BFC690FB8DEF3 /* Pods-EZRecipeUITests */,
+				75639ADF81F66E30429C1A323A8121AD /* MDCSwipeToChoose.framework */,
+				A90FEE86B26139641E63D3516734BCAE /* Pods_Miara.framework */,
+				3DAF49B49D5B134523049F20F7834BFA /* Pods_MiaraTests.framework */,
+				AA2F584142FFD401017E25EED9273B4D /* Pods_MiaraUITests.framework */,
+				3C352A7C4973D939F7739B3BD061DE70 /* SwiftyJSON.framework */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8654670FE7A7A8EEC58FA3816DD7EBCC /* Pods-EZRecipe */ = {
-			isa = PBXGroup;
-			children = (
-				412717DA367B453CB74CAFA36100B772 /* Info.plist */,
-				BBF3E9005BA26957C0BDD73152B7B4C5 /* Pods-EZRecipe.modulemap */,
-				E18A59E6932684EDE65D950D0795FA50 /* Pods-EZRecipe-acknowledgements.markdown */,
-				BF7198ECE044C8B69DCC53D9EF5D706A /* Pods-EZRecipe-acknowledgements.plist */,
-				8D72BE7FF1A9F2D2AB9BCC74CF8F0464 /* Pods-EZRecipe-dummy.m */,
-				F2B1A384DDC5275719ADDAB6900C2BAA /* Pods-EZRecipe-frameworks.sh */,
-				4E0FBA1DD1AE9793B20AE62C51C86C64 /* Pods-EZRecipe-resources.sh */,
-				629EAF4F060B1DDF6DB23F592E0EA4D5 /* Pods-EZRecipe-umbrella.h */,
-				E376A733CC4EA1454798AC225651509E /* Pods-EZRecipe.debug.xcconfig */,
-				D7A7CE081A939AD416CE47666D80C665 /* Pods-EZRecipe.release.xcconfig */,
-			);
-			name = "Pods-EZRecipe";
-			path = "Target Support Files/Pods-EZRecipe";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		946EDE9A3CDA6AD2666E22B9E8FFB7C1 /* SwiftyJSON */ = {
@@ -301,6 +307,7 @@
 				FF2F48B35D3E85D9190908499CB157BF /* SwiftyJSON.swift */,
 				2ECEA5CE42EE41658501F2F739C0E760 /* Support Files */,
 			);
+			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -341,6 +348,7 @@
 				46FC04BAF9839B10C2950826D37CDCF8 /* UIView+MDCSwipeToChoose.m */,
 				40057D88CA2636DC9D245B596F658E39 /* Support Files */,
 			);
+			name = MDCSwipeToChoose;
 			path = MDCSwipeToChoose;
 			sourceTree = "<group>";
 		};
@@ -353,109 +361,118 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EE8CD90403CCA03A9F1BFC690FB8DEF3 /* Pods-EZRecipeUITests */ = {
+		FB28B0D5BD93F83461DE1E5DD0128438 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				92658ADA3D4317916096C05C7002207E /* Info.plist */,
-				4764A332774B7942CCCFE6190CAB00B0 /* Pods-EZRecipeUITests.modulemap */,
-				5FB5EEFE4828C039C386E2F78E0CD0E4 /* Pods-EZRecipeUITests-acknowledgements.markdown */,
-				2E7734898B3A8BCDC159C475848A6E3A /* Pods-EZRecipeUITests-acknowledgements.plist */,
-				B7DD6DB681A916B80A5CAD1EC2A24552 /* Pods-EZRecipeUITests-dummy.m */,
-				6B453AB6B0CEB04C0113D658B3AAD6EE /* Pods-EZRecipeUITests-frameworks.sh */,
-				85B03BA255B3542D089FA5B7330A996C /* Pods-EZRecipeUITests-resources.sh */,
-				AF4D8296D15343C6C241EF0D55E0D439 /* Pods-EZRecipeUITests-umbrella.h */,
-				DA856C74DDFC8F5FB6CDFF2970DE0FC3 /* Pods-EZRecipeUITests.debug.xcconfig */,
-				E7CB89FC475499163DCD77F0D057FA38 /* Pods-EZRecipeUITests.release.xcconfig */,
+				112733EF8A38D40615F7E38440430CF6 /* Pods-Miara */,
+				14A38C82D2F076762135926D4DE62FF2 /* Pods-MiaraTests */,
+				40D012CB2DC861E7E8F91726839BFE1F /* Pods-MiaraUITests */,
 			);
-			name = "Pods-EZRecipeUITests";
-			path = "Target Support Files/Pods-EZRecipeUITests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0192244071629C6F891499A7B8DEB12E /* Headers */ = {
+		00169CCB54F191B65D75C9C9FBE27AB0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3B134B7E07BA26C1922214EF16B241 /* Pods-EZRecipe-umbrella.h in Headers */,
+				CA5624C14B76CE2135A77AE97B367BD7 /* Pods-MiaraUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55C6D3DE6D0B4A816DC808B85C1A7DF4 /* Headers */ = {
+		A48EF4FB1F84A15D1636753B97D2AC4A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8424F3A6A2D3580B973A6B52993C77DB /* SwiftyJSON-umbrella.h in Headers */,
+				40F292DDBD594969F6D6EE8481E2FF03 /* MDCGeometry.h in Headers */,
+				D6869FA45D4A83069762592618FBE507 /* MDCPanState.h in Headers */,
+				45F60F7E783FBA89B95CEE0A1DC0B949 /* MDCSwipeDirection.h in Headers */,
+				56F5DDCFB8969A855C795B5D6FF91AC8 /* MDCSwipeOptions.h in Headers */,
+				F16934C562926B5EA773721A97D83214 /* MDCSwipeResult.h in Headers */,
+				04B4303F28376715E4B3D4D03B116214 /* MDCSwipeToChoose-umbrella.h in Headers */,
+				0D494332BB2E1215D96829CDBB7C08C6 /* MDCSwipeToChoose.h in Headers */,
+				D8B2966A2DF5EA1CF3865E5C5F9D878A /* MDCSwipeToChooseDelegate.h in Headers */,
+				C67902B6879BF3B631A3483E2034483D /* MDCSwipeToChooseView.h in Headers */,
+				67FCAABFEC041FC594FBC3A1EF81EB34 /* MDCSwipeToChooseViewOptions.h in Headers */,
+				596F8A1691807ADCFB2C25EECE0A49B2 /* MDCViewState.h in Headers */,
+				483FF8AF7553AD06CBC75E64B52D7E88 /* UIColor+MDCRGB8Bit.h in Headers */,
+				9A36F47BCCBA3DB56E4A7C2CDB5EF747 /* UIView+MDCBorderedLabel.h in Headers */,
+				6FBA22D290EFE5C7AB0C3AC253967682 /* UIView+MDCSwipeToChoose.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62A9B0568E5A57C3C3272DB12F1A7C5E /* Headers */ = {
+		D13C49EFBBCFDAE692148E594B305A53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D7181DD874BCF80DD01F8B5E2ACD73 /* Pods-EZRecipeTests-umbrella.h in Headers */,
+				782071CEB98C842BC8798B1E4B7048AF /* Pods-Miara-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		637D478887C42A3E7314EB96A6C5EBAC /* Headers */ = {
+		EA232FFC35E05F17AD3744D6BCDA0C2D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A1A995B5CFB8C164CD083D3702D829 /* Pods-EZRecipeUITests-umbrella.h in Headers */,
+				70049E641C24CFDA0159191DAB09EE08 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9213FA1DE5F2192934AB8C1517435DB0 /* Headers */ = {
+		FD690C6E68F9496793E0514199EC462C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF322829F0DD620DC77F2425B09A7D40 /* MDCGeometry.h in Headers */,
-				697889EC085E33FCF7370E19311D4A27 /* MDCPanState.h in Headers */,
-				DD964CDF5FDB083907516271C9BBED6F /* MDCSwipeDirection.h in Headers */,
-				A82ED66146E88CD8B8CF27D5E455DE60 /* MDCSwipeOptions.h in Headers */,
-				AB3BF2439C81987827B65A693014A88B /* MDCSwipeResult.h in Headers */,
-				D4DAE4CCF916DDDDE29645267D8F3648 /* MDCSwipeToChoose-umbrella.h in Headers */,
-				B086B817720B20773BF43029E4C255C1 /* MDCSwipeToChoose.h in Headers */,
-				271811E181389275EC1783330AED0B2A /* MDCSwipeToChooseDelegate.h in Headers */,
-				97BA0608AE3C9CBC317428DB2BDAA8DA /* MDCSwipeToChooseView.h in Headers */,
-				EC6AA485BB88C350631832DE58CAC2DE /* MDCSwipeToChooseViewOptions.h in Headers */,
-				47483B710C59DF1D119D21F1A86765C4 /* MDCViewState.h in Headers */,
-				E5DB37FF784A8F24E177442BF5F3D130 /* UIColor+MDCRGB8Bit.h in Headers */,
-				3A3742978DDA98BF47C1871848E907A9 /* UIView+MDCBorderedLabel.h in Headers */,
-				569CD97C67B06DDDEC93E6A002E986E4 /* UIView+MDCSwipeToChoose.h in Headers */,
+				F1F92E897C894EE0D27E5C60D6B70ECF /* Pods-MiaraTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		426B0141758726EE78FF24EF0D8F8B3F /* Pods-EZRecipe */ = {
+		08224ABD6CC598EE2A7D644A327AEA5E /* Pods-Miara */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BCC1FB5491F6EF13C5EFCE9A57655B6 /* Build configuration list for PBXNativeTarget "Pods-EZRecipe" */;
+			buildConfigurationList = B61319031CD22B8BD2B08F276A886FCE /* Build configuration list for PBXNativeTarget "Pods-Miara" */;
 			buildPhases = (
-				F5FF842ABC9F0BFDD518BB0EC258F59D /* Sources */,
-				C15706329E3DDFD31F2CEE352E4AE415 /* Frameworks */,
-				0192244071629C6F891499A7B8DEB12E /* Headers */,
+				76A5EAE8E177B442E37BA1F9E84EE890 /* Sources */,
+				3A323EAFCC4816EF555A89BBBB1028D8 /* Frameworks */,
+				D13C49EFBBCFDAE692148E594B305A53 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B146447319FAD604134277ED680156E5 /* PBXTargetDependency */,
-				E00A26E2D0420D0287B2FF47DECAFAD2 /* PBXTargetDependency */,
+				4DE0755AA3F54B9B9A77012E7E1A029F /* PBXTargetDependency */,
+				1F28E4FD6DCCF48C94C05D7A2114BB11 /* PBXTargetDependency */,
 			);
-			name = "Pods-EZRecipe";
-			productName = "Pods-EZRecipe";
-			productReference = C216309AB1EA4C1784A021F44F588B86 /* Pods_EZRecipe.framework */;
+			name = "Pods-Miara";
+			productName = "Pods-Miara";
+			productReference = A90FEE86B26139641E63D3516734BCAE /* Pods_Miara.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B78FB5A0F00D8651C3A145F4BD7B0D42 /* MDCSwipeToChoose */ = {
+		0CCC446AEEBD7932D46072DC361DA177 /* Pods-MiaraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A75FA23CB955B5CBAEC519CDA3D18BC9 /* Build configuration list for PBXNativeTarget "MDCSwipeToChoose" */;
+			buildConfigurationList = 3814F8C44A43E920F010AA0FE56E231F /* Build configuration list for PBXNativeTarget "Pods-MiaraUITests" */;
 			buildPhases = (
-				671990CD09F7E16BF625F06F646E26BD /* Sources */,
-				EDF99D9C19DB76A31944847DE990F247 /* Frameworks */,
-				9213FA1DE5F2192934AB8C1517435DB0 /* Headers */,
+				B80A4AA531093C38830D90084FA40B56 /* Sources */,
+				C3B607CB24E000D4FD5FD5FD11B5E229 /* Frameworks */,
+				00169CCB54F191B65D75C9C9FBE27AB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MiaraUITests";
+			productName = "Pods-MiaraUITests";
+			productReference = AA2F584142FFD401017E25EED9273B4D /* Pods_MiaraUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0FA2B3A7D4217A511C3DA3C92A971D33 /* MDCSwipeToChoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A185C851E23B7397D2EB1963D90149 /* Build configuration list for PBXNativeTarget "MDCSwipeToChoose" */;
+			buildPhases = (
+				9BA76DD6A62A835A09E7FC92956D5BE5 /* Sources */,
+				A802A40AF60614D821B0C538416A5657 /* Frameworks */,
+				A48EF4FB1F84A15D1636753B97D2AC4A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -463,16 +480,16 @@
 			);
 			name = MDCSwipeToChoose;
 			productName = MDCSwipeToChoose;
-			productReference = C2FD91AEEB436BD38BFACDD1460886BB /* MDCSwipeToChoose.framework */;
+			productReference = 75639ADF81F66E30429C1A323A8121AD /* MDCSwipeToChoose.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B7B9FBE70B760960E777F9C65BE65048 /* SwiftyJSON */ = {
+		C5EB19EF7EB84F98A94551C2016589A1 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F21577B0471F6613CFB8D6D55B71BD8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 5DEB3EA4CF4FA2CF45631D3FD2D8C5FB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				A067B316DEF08AD89D5A877A720AC97D /* Sources */,
-				0BE81231A0BACFB27E13548DD6CC246F /* Frameworks */,
-				55C6D3DE6D0B4A816DC808B85C1A7DF4 /* Headers */,
+				8E746464060591A06A62669699FD645D /* Sources */,
+				468A82FE3D0060123AA74FFC33034219 /* Frameworks */,
+				EA232FFC35E05F17AD3744D6BCDA0C2D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -480,41 +497,24 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = E1A0961DA01C93EF7D59212F1E41ECF9 /* SwiftyJSON.framework */;
+			productReference = 3C352A7C4973D939F7739B3BD061DE70 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CDCAB7753F8A6999CCA56B7F5AE58644 /* Pods-EZRecipeUITests */ = {
+		F0CC05216DB4565AF43E8A76E84123D6 /* Pods-MiaraTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F7BB1C6061A637765835D76B12B86FD /* Build configuration list for PBXNativeTarget "Pods-EZRecipeUITests" */;
+			buildConfigurationList = A3EA5F7790A77A1AD13B97B161E36DB6 /* Build configuration list for PBXNativeTarget "Pods-MiaraTests" */;
 			buildPhases = (
-				C23C34087C9008AD96FDC3AC0AAAB387 /* Sources */,
-				9DAB1FECFFAB30496499B5A8BE590267 /* Frameworks */,
-				637D478887C42A3E7314EB96A6C5EBAC /* Headers */,
+				11B7DF068451EB2A3B06423C8238AC90 /* Sources */,
+				E6C893D84D28E0F6936FE9B2EDC09357 /* Frameworks */,
+				FD690C6E68F9496793E0514199EC462C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-EZRecipeUITests";
-			productName = "Pods-EZRecipeUITests";
-			productReference = A4832A8F2EEA261609DE284CC9B076F5 /* Pods_EZRecipeUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D6EDAD4D8666BCA6EB33BF252F7A76D5 /* Pods-EZRecipeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5DE825652384C7F3070FB6D9A7E0649D /* Build configuration list for PBXNativeTarget "Pods-EZRecipeTests" */;
-			buildPhases = (
-				4D94F8D52B8691ECE50D963E5DB41D3A /* Sources */,
-				783D0ED551E1E6A887D83AF75A3BBAA0 /* Frameworks */,
-				62A9B0568E5A57C3C3272DB12F1A7C5E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-EZRecipeTests";
-			productName = "Pods-EZRecipeTests";
-			productReference = 141C40055495890C0693DF178339CBBF /* Pods_EZRecipeTests.framework */;
+			name = "Pods-MiaraTests";
+			productName = "Pods-MiaraTests";
+			productReference = 3DAF49B49D5B134523049F20F7834BFA /* Pods_MiaraTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -534,90 +534,160 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3BB3CE92A8F734B29A21094EEB0800B7 /* Products */;
+			productRefGroup = 906C3F056AF1CFCB6CB013452A291EA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B78FB5A0F00D8651C3A145F4BD7B0D42 /* MDCSwipeToChoose */,
-				426B0141758726EE78FF24EF0D8F8B3F /* Pods-EZRecipe */,
-				D6EDAD4D8666BCA6EB33BF252F7A76D5 /* Pods-EZRecipeTests */,
-				CDCAB7753F8A6999CCA56B7F5AE58644 /* Pods-EZRecipeUITests */,
-				B7B9FBE70B760960E777F9C65BE65048 /* SwiftyJSON */,
+				0FA2B3A7D4217A511C3DA3C92A971D33 /* MDCSwipeToChoose */,
+				08224ABD6CC598EE2A7D644A327AEA5E /* Pods-Miara */,
+				F0CC05216DB4565AF43E8A76E84123D6 /* Pods-MiaraTests */,
+				0CCC446AEEBD7932D46072DC361DA177 /* Pods-MiaraUITests */,
+				C5EB19EF7EB84F98A94551C2016589A1 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D94F8D52B8691ECE50D963E5DB41D3A /* Sources */ = {
+		11B7DF068451EB2A3B06423C8238AC90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF665B9FD0009C83CC1812313A05DD0 /* Pods-EZRecipeTests-dummy.m in Sources */,
+				2F82824663CC96B66ABB068884C8AE12 /* Pods-MiaraTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		671990CD09F7E16BF625F06F646E26BD /* Sources */ = {
+		76A5EAE8E177B442E37BA1F9E84EE890 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				099AC9A57DCFD4FBE666872C2D428E5A /* MDCGeometry.m in Sources */,
-				47E59E0DCAF208E6DD94FAD45CAFF2D9 /* MDCPanState.m in Sources */,
-				D711EFA0F42531DF8F99897914F7EB1A /* MDCSwipeOptions.m in Sources */,
-				B76C081B5D58AEADE0E6D3AA8C54DCF8 /* MDCSwipeResult.m in Sources */,
-				4EB76ABD43C7958B40D3563BEACB90AB /* MDCSwipeToChoose-dummy.m in Sources */,
-				900F1E5C1F540EA158E9B5D6A7C3EFE8 /* MDCSwipeToChooseView.m in Sources */,
-				242FBC5631BEC40D0DC291FF13CF3A36 /* MDCSwipeToChooseViewOptions.m in Sources */,
-				3941CF2BFCF55A9F488D15CA4CAA4EDD /* MDCViewState.m in Sources */,
-				067189BB8F49920F08BF5542BF04D73D /* UIColor+MDCRGB8Bit.m in Sources */,
-				A9D14AB519619ED13A1B32B9C137BE92 /* UIView+MDCBorderedLabel.m in Sources */,
-				E654EF07FDC18ECCCA4BF07EB8D1DB9A /* UIView+MDCSwipeToChoose.m in Sources */,
+				284E96985A97466EFA69B1CC217FD777 /* Pods-Miara-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A067B316DEF08AD89D5A877A720AC97D /* Sources */ = {
+		8E746464060591A06A62669699FD645D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F9DDA264E2BECA7D63CE4936C4C4804 /* SwiftyJSON-dummy.m in Sources */,
-				95D907DE78841CE45437C6EDF9B26D37 /* SwiftyJSON.swift in Sources */,
+				01BA622D31AA703446954404F0A05307 /* SwiftyJSON-dummy.m in Sources */,
+				5569C128B3C6F7652BA4ECD01EEC894B /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C23C34087C9008AD96FDC3AC0AAAB387 /* Sources */ = {
+		9BA76DD6A62A835A09E7FC92956D5BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B402DF10172C9FA04C8A12EF2F2D9D /* Pods-EZRecipeUITests-dummy.m in Sources */,
+				B3C0DD4A68E91CD02B481381CA980E00 /* MDCGeometry.m in Sources */,
+				1D5DDFD7F3B69DF4A7BEC7BC2CC6EB5F /* MDCPanState.m in Sources */,
+				EBC7997C6CBC5511857113F381EBDA2E /* MDCSwipeOptions.m in Sources */,
+				D8E5649A23A15D0B18EA03641B403E93 /* MDCSwipeResult.m in Sources */,
+				CF5CFB947CC83A8C68B766128417356D /* MDCSwipeToChoose-dummy.m in Sources */,
+				A918D023AF668681D4FE23AB3F679133 /* MDCSwipeToChooseView.m in Sources */,
+				E994A9BF3B1B252D2BEBE4E1CEB3F846 /* MDCSwipeToChooseViewOptions.m in Sources */,
+				C2D85F704D42E20A6B5B404EF4FC48C0 /* MDCViewState.m in Sources */,
+				8E742C30552816EE2295239B0666F520 /* UIColor+MDCRGB8Bit.m in Sources */,
+				0A351B318729A7740DEEB506327B2341 /* UIView+MDCBorderedLabel.m in Sources */,
+				87264D96567AAAA0744937B20C69632E /* UIView+MDCSwipeToChoose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5FF842ABC9F0BFDD518BB0EC258F59D /* Sources */ = {
+		B80A4AA531093C38830D90084FA40B56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7051CD209E7DDD177E04C1E1AE377C3 /* Pods-EZRecipe-dummy.m in Sources */,
+				2F13E6E8F13C89D2CB1C73440012BDA4 /* Pods-MiaraUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B146447319FAD604134277ED680156E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MDCSwipeToChoose;
-			target = B78FB5A0F00D8651C3A145F4BD7B0D42 /* MDCSwipeToChoose */;
-			targetProxy = 876FD14226CBEE7092058FA9F1DEA044 /* PBXContainerItemProxy */;
-		};
-		E00A26E2D0420D0287B2FF47DECAFAD2 /* PBXTargetDependency */ = {
+		1F28E4FD6DCCF48C94C05D7A2114BB11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = B7B9FBE70B760960E777F9C65BE65048 /* SwiftyJSON */;
-			targetProxy = E79B09AEC7341558A4E501FFBE6E5B1E /* PBXContainerItemProxy */;
+			target = C5EB19EF7EB84F98A94551C2016589A1 /* SwiftyJSON */;
+			targetProxy = 03C9263EDCE54F424968F1E5D7EE416C /* PBXContainerItemProxy */;
+		};
+		4DE0755AA3F54B9B9A77012E7E1A029F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDCSwipeToChoose;
+			target = 0FA2B3A7D4217A511C3DA3C92A971D33 /* MDCSwipeToChoose */;
+			targetProxy = 02E493AA130D46080431A92AF6789E79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D33376144AA1D741FF0988445903B9E /* Release */ = {
+		1269DAC63B4995CC8D1680F8E44050F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B17FF30B35B0C8D2442A22A9F2FCC7 /* Pods-Miara.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Miara/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Miara/Pods-Miara.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Miara;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		165EA61FAEA182417B5A7A07D9441EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF088E46E1DCE35BFCC21016531EC9A4 /* Pods-MiaraTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MiaraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiaraTests/Pods-MiaraTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MiaraTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		171BBE9B6DD5F5005E5F8985F27FE261 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9E2D4D6CCE6D30B1E1C488612BDEF0E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
@@ -649,109 +719,7 @@
 			};
 			name = Release;
 		};
-		43BED05039622B35FAE34CEBA5B2BF33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA6B693274218ECC511C4FEC174521DD /* Pods-EZRecipeTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeTests/Pods-EZRecipeTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EZRecipeTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		64FCC2C5E4FB863C2D6CAE0C3655F39E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7CB89FC475499163DCD77F0D057FA38 /* Pods-EZRecipeUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeUITests/Pods-EZRecipeUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EZRecipeUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6B3BCF5C8A69A5B55AB1A15A72443C2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18D1E796F5F19FBB7990FB502F384185 /* MDCSwipeToChoose.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MDCSwipeToChoose/MDCSwipeToChoose-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MDCSwipeToChoose/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MDCSwipeToChoose/MDCSwipeToChoose.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MDCSwipeToChoose;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6EC0507B8F081997E2BABBEA7371E1CF /* Debug */ = {
+		1DC6B60E55BBC933D32E5C97396EBBAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18D1E796F5F19FBB7990FB502F384185 /* MDCSwipeToChoose.xcconfig */;
 			buildSettings = {
@@ -783,9 +751,49 @@
 			};
 			name = Debug;
 		};
-		814E899FF00578A44A84D5586DFBE21C /* Debug */ = {
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA856C74DDFC8F5FB6CDFF2970DE0FC3 /* Pods-EZRecipeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B4F5C0A6E20A608D7EE0D37ACB434AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23717E21465BADB5528D26F7368D7038 /* Pods-Miara.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -798,27 +806,28 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Miara/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeUITests/Pods-EZRecipeUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Miara/Pods-Miara.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EZRecipeUITests;
+				PRODUCT_NAME = Pods_Miara;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		ABFAB0FACD385ACB8DDF582F7892C8A6 /* Debug */ = {
+		74F198C3526FA3195FD3DB54F3356C21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9E2D4D6CCE6D30B1E1C488612BDEF0E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
@@ -851,43 +860,74 @@
 			};
 			name = Debug;
 		};
-		B4ABD4F8BAD49AB039F99233FE1DAC15 /* Debug */ = {
+		A6A43D4801D5D040F5E55C4F04AD6FB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E376A733CC4EA1454798AC225651509E /* Pods-EZRecipe.debug.xcconfig */;
+			baseConfigurationReference = CE4596AC76AC37D93B62D10C385C8D58 /* Pods-MiaraUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipe/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiaraUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipe/Pods-EZRecipe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EZRecipe;
+				PRODUCT_NAME = Pods_MiaraUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+		A7C7760493938DA8CE070742B63CDC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D1E796F5F19FBB7990FB502F384185 /* MDCSwipeToChoose.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MDCSwipeToChoose/MDCSwipeToChoose-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MDCSwipeToChoose/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MDCSwipeToChoose/MDCSwipeToChoose.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MDCSwipeToChoose;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -923,7 +963,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -931,115 +971,75 @@
 			};
 			name = Debug;
 		};
-		CCFF7445D8CF25B78411411CE42D2E93 /* Release */ = {
+		EDC6F61411702E7E94029192DFA696D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7A7CE081A939AD416CE47666D80C665 /* Pods-EZRecipe.release.xcconfig */;
+			baseConfigurationReference = 802C8F8D77950343A52D65D237FCD531 /* Pods-MiaraUITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipe/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiaraUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipe/Pods-EZRecipe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EZRecipe;
+				PRODUCT_NAME = Pods_MiaraUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+		F81E247B8A0F79E599F44D3206E830EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F71469DFC9E644288F16B6F138A05E0B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3666D924124C4C880F4A4FAD0C2A38CC /* Pods-EZRecipeTests.release.xcconfig */;
+			baseConfigurationReference = A8B3DD096C89060B6491F04512974CA3 /* Pods-MiaraTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EZRecipeTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiaraTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EZRecipeTests/Pods-EZRecipeTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiaraTests/Pods-MiaraTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EZRecipeTests;
+				PRODUCT_NAME = Pods_MiaraTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1047,53 +1047,53 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
-				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F21577B0471F6613CFB8D6D55B71BD8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		3814F8C44A43E920F010AA0FE56E231F /* Build configuration list for PBXNativeTarget "Pods-MiaraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABFAB0FACD385ACB8DDF582F7892C8A6 /* Debug */,
-				0D33376144AA1D741FF0988445903B9E /* Release */,
+				EDC6F61411702E7E94029192DFA696D8 /* Debug */,
+				A6A43D4801D5D040F5E55C4F04AD6FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F7BB1C6061A637765835D76B12B86FD /* Build configuration list for PBXNativeTarget "Pods-EZRecipeUITests" */ = {
+		5DEB3EA4CF4FA2CF45631D3FD2D8C5FB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				814E899FF00578A44A84D5586DFBE21C /* Debug */,
-				64FCC2C5E4FB863C2D6CAE0C3655F39E /* Release */,
+				74F198C3526FA3195FD3DB54F3356C21 /* Debug */,
+				171BBE9B6DD5F5005E5F8985F27FE261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DE825652384C7F3070FB6D9A7E0649D /* Build configuration list for PBXNativeTarget "Pods-EZRecipeTests" */ = {
+		88A185C851E23B7397D2EB1963D90149 /* Build configuration list for PBXNativeTarget "MDCSwipeToChoose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43BED05039622B35FAE34CEBA5B2BF33 /* Debug */,
-				F71469DFC9E644288F16B6F138A05E0B /* Release */,
+				1DC6B60E55BBC933D32E5C97396EBBAB /* Debug */,
+				A7C7760493938DA8CE070742B63CDC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BCC1FB5491F6EF13C5EFCE9A57655B6 /* Build configuration list for PBXNativeTarget "Pods-EZRecipe" */ = {
+		A3EA5F7790A77A1AD13B97B161E36DB6 /* Build configuration list for PBXNativeTarget "Pods-MiaraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4ABD4F8BAD49AB039F99233FE1DAC15 /* Debug */,
-				CCFF7445D8CF25B78411411CE42D2E93 /* Release */,
+				F81E247B8A0F79E599F44D3206E830EB /* Debug */,
+				165EA61FAEA182417B5A7A07D9441EEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A75FA23CB955B5CBAEC519CDA3D18BC9 /* Build configuration list for PBXNativeTarget "MDCSwipeToChoose" */ = {
+		B61319031CD22B8BD2B08F276A886FCE /* Build configuration list for PBXNativeTarget "Pods-Miara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EC0507B8F081997E2BABBEA7371E1CF /* Debug */,
-				6B3BCF5C8A69A5B55AB1A15A72443C2D /* Release */,
+				6B4F5C0A6E20A608D7EE0D37ACB434AB /* Debug */,
+				1269DAC63B4995CC8D1680F8E44050F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

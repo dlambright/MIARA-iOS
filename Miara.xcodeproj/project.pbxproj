@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B9629FD85201B28019CFB2B /* Pods_MiaraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FE1FC7AD86C49254D276BC /* Pods_MiaraTests.framework */; };
+		3A13C8717488CA351840E20B /* Pods_MiaraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605469092D6C2E5DC02B644D /* Pods_MiaraUITests.framework */; };
+		86118F129305FAC5ADB83E78 /* Pods_Miara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */; };
+		A80395EE1E0CDBD4004F9641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80395EC1E0CDBD4004F9641 /* Main.storyboard */; };
+		A80396011E0CDBD4004F9641 /* MiaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396001E0CDBD4004F9641 /* MiaraTests.swift */; };
+		A803960C1E0CDBD4004F9641 /* MiaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803960B1E0CDBD4004F9641 /* MiaraUITests.swift */; };
+		A803962A1E0CDEEF004F9641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396291E0CDEEF004F9641 /* AppDelegate.swift */; };
+		A803962B1E0CDEEF004F9641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396291E0CDEEF004F9641 /* AppDelegate.swift */; };
+		A803962C1E0CDEEF004F9641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396291E0CDEEF004F9641 /* AppDelegate.swift */; };
+		A80396301E0CDF51004F9641 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962E1E0CDF51004F9641 /* CardOrganizer.swift */; };
+		A80396311E0CDF51004F9641 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962E1E0CDF51004F9641 /* CardOrganizer.swift */; };
+		A80396321E0CDF51004F9641 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962E1E0CDF51004F9641 /* CardOrganizer.swift */; };
+		A80396331E0CDF51004F9641 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962F1E0CDF51004F9641 /* Model.swift */; };
+		A80396341E0CDF51004F9641 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962F1E0CDF51004F9641 /* Model.swift */; };
+		A80396351E0CDF51004F9641 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962F1E0CDF51004F9641 /* Model.swift */; };
+		A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */; };
+		A803963E1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */; };
+		A803963F1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */; };
+		A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */; };
+		A80396441E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */; };
+		A80396451E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */; };
+		A80396461E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */; };
+		A80396471E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */; };
+		A80396481E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */; };
+		A80396491E0CDF74004F9641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963C1E0CDF74004F9641 /* ViewController.swift */; };
+		A803964A1E0CDF74004F9641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963C1E0CDF74004F9641 /* ViewController.swift */; };
+		A803964B1E0CDF74004F9641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963C1E0CDF74004F9641 /* ViewController.swift */; };
+		A80396511E0CDF86004F9641 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964D1E0CDF86004F9641 /* download.png */; };
+		A80396521E0CDF86004F9641 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964D1E0CDF86004F9641 /* download.png */; };
+		A80396531E0CDF86004F9641 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964D1E0CDF86004F9641 /* download.png */; };
+		A80396541E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */; };
+		A80396551E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */; };
+		A80396561E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */; };
+		A80396571E0CDF86004F9641 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A803964F1E0CDF86004F9641 /* meme.jpg */; };
+		A80396581E0CDF86004F9641 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A803964F1E0CDF86004F9641 /* meme.jpg */; };
+		A80396591E0CDF86004F9641 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A803964F1E0CDF86004F9641 /* meme.jpg */; };
+		A803965A1E0CDF86004F9641 /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80396501E0CDF86004F9641 /* purple.jpg */; };
+		A803965B1E0CDF86004F9641 /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80396501E0CDF86004F9641 /* purple.jpg */; };
+		A803965C1E0CDF86004F9641 /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80396501E0CDF86004F9641 /* purple.jpg */; };
+		A803965E1E0CDF95004F9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A803965D1E0CDF95004F9641 /* Assets.xcassets */; };
+		A803965F1E0CDF95004F9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A803965D1E0CDF95004F9641 /* Assets.xcassets */; };
+		A80396601E0CDF95004F9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A803965D1E0CDF95004F9641 /* Assets.xcassets */; };
+		A80396631E0CDFAD004F9641 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396621E0CDFAD004F9641 /* Recipe.swift */; };
+		A80396641E0CDFAD004F9641 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396621E0CDFAD004F9641 /* Recipe.swift */; };
+		A80396651E0CDFAD004F9641 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396621E0CDFAD004F9641 /* Recipe.swift */; };
+		A80396671E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
+		A80396681E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
+		A80396691E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
+		A803966D1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
+		A803966E1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
+		A803966F1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
+		A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
+		A80396751E0CE54A004F9641 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80395FD1E0CDBD4004F9641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80395DD1E0CDBD4004F9641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80395E41E0CDBD4004F9641;
+			remoteInfo = Miara;
+		};
+		A80396081E0CDBD4004F9641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80395DD1E0CDBD4004F9641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80395E41E0CDBD4004F9641;
+			remoteInfo = Miara;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27BCA71784E2D00C09273D32 /* Pods-Miara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.debug.xcconfig"; sourceTree = "<group>"; };
+		2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		605469092D6C2E5DC02B644D /* Pods_MiaraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5DBC4F39F0A02650731E8D /* Pods-MiaraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A80395E51E0CDBD4004F9641 /* Miara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80395ED1E0CDBD4004F9641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A80395F01E0CDBD4004F9641 /* Miara.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miara.xcdatamodel; sourceTree = "<group>"; };
+		A80395FC1E0CDBD4004F9641 /* MiaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80396001E0CDBD4004F9641 /* MiaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaraTests.swift; sourceTree = "<group>"; };
+		A80396021E0CDBD4004F9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80396071E0CDBD4004F9641 /* MiaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A803960B1E0CDBD4004F9641 /* MiaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaraUITests.swift; sourceTree = "<group>"; };
+		A803960D1E0CDBD4004F9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80396291E0CDEEF004F9641 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
+		A803962E1E0CDF51004F9641 /* CardOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardOrganizer.swift; path = Miara/Models/CardOrganizer.swift; sourceTree = "<group>"; };
+		A803962F1E0CDF51004F9641 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Miara/Models/Model.swift; sourceTree = "<group>"; };
+		A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeDetailViewController.swift; path = Miara/Controllers/RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeWebViewViewController.swift; path = Miara/Controllers/RecipeWebViewViewController.swift; sourceTree = "<group>"; };
+		A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsViewController.swift; path = Miara/Controllers/SearchResultsViewController.swift; sourceTree = "<group>"; };
+		A803963C1E0CDF74004F9641 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Miara/Controllers/ViewController.swift; sourceTree = "<group>"; };
+		A803964D1E0CDF86004F9641 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = Miara/Images/download.png; sourceTree = "<group>"; };
+		A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "magnifying-glass-3-xxl.png"; path = "Miara/Images/magnifying-glass-3-xxl.png"; sourceTree = "<group>"; };
+		A803964F1E0CDF86004F9641 /* meme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = meme.jpg; path = Miara/Images/meme.jpg; sourceTree = "<group>"; };
+		A80396501E0CDF86004F9641 /* purple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = purple.jpg; path = Miara/Images/purple.jpg; sourceTree = "<group>"; };
+		A803965D1E0CDF95004F9641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Miara/Images/Assets.xcassets; sourceTree = "<group>"; };
+		A80396621E0CDFAD004F9641 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Miara/Classes/Recipe.swift; sourceTree = "<group>"; };
+		A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeTableViewCell.swift; path = Miara/Classes/RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		A803966B1E0CE015004F9641 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "Miara/Supporting Files/ApiKeys.plist"; sourceTree = "<group>"; };
+		A80396741E0CE54A004F9641 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Miara/Info.plist; sourceTree = "<group>"; };
+		AB648165D8F7BFFE9F0BFD4C /* Pods-Miara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.release.xcconfig"; sourceTree = "<group>"; };
+		B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests.release.xcconfig"; sourceTree = "<group>"; };
+		E22172EC15C45C707B0A2168 /* Pods-MiaraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4FE1FC7AD86C49254D276BC /* Pods_MiaraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80395E21E0CDBD4004F9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86118F129305FAC5ADB83E78 /* Pods_Miara.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80395F91E0CDBD4004F9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9629FD85201B28019CFB2B /* Pods_MiaraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80396041E0CDBD4004F9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A13C8717488CA351840E20B /* Pods_MiaraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14C5D79F477801D91365339F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27BCA71784E2D00C09273D32 /* Pods-Miara.debug.xcconfig */,
+				AB648165D8F7BFFE9F0BFD4C /* Pods-Miara.release.xcconfig */,
+				E22172EC15C45C707B0A2168 /* Pods-MiaraTests.debug.xcconfig */,
+				DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */,
+				B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */,
+				7F5DBC4F39F0A02650731E8D /* Pods-MiaraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A80395DC1E0CDBD4004F9641 = {
+			isa = PBXGroup;
+			children = (
+				A803966A1E0CDFEF004F9641 /* Supporting Files */,
+				A80396611E0CDFA1004F9641 /* Classes */,
+				A803964C1E0CDF79004F9641 /* Images */,
+				A80396371E0CDF65004F9641 /* Controllers */,
+				A80396361E0CDF59004F9641 /* Views */,
+				A803962D1E0CDF3C004F9641 /* Models */,
+				A80395E71E0CDBD4004F9641 /* Miara */,
+				A80395FF1E0CDBD4004F9641 /* MiaraTests */,
+				A803960A1E0CDBD4004F9641 /* MiaraUITests */,
+				A80395E61E0CDBD4004F9641 /* Products */,
+				14C5D79F477801D91365339F /* Pods */,
+				DA0ACAED0EA94B871B60233B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A80395E61E0CDBD4004F9641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80395E51E0CDBD4004F9641 /* Miara.app */,
+				A80395FC1E0CDBD4004F9641 /* MiaraTests.xctest */,
+				A80396071E0CDBD4004F9641 /* MiaraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80395E71E0CDBD4004F9641 /* Miara */ = {
+			isa = PBXGroup;
+			children = (
+				A80396291E0CDEEF004F9641 /* AppDelegate.swift */,
+				A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */,
+			);
+			path = Miara;
+			sourceTree = "<group>";
+		};
+		A80395FF1E0CDBD4004F9641 /* MiaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80396001E0CDBD4004F9641 /* MiaraTests.swift */,
+				A80396021E0CDBD4004F9641 /* Info.plist */,
+			);
+			path = MiaraTests;
+			sourceTree = "<group>";
+		};
+		A803960A1E0CDBD4004F9641 /* MiaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A803960B1E0CDBD4004F9641 /* MiaraUITests.swift */,
+				A803960D1E0CDBD4004F9641 /* Info.plist */,
+			);
+			path = MiaraUITests;
+			sourceTree = "<group>";
+		};
+		A803962D1E0CDF3C004F9641 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A803962E1E0CDF51004F9641 /* CardOrganizer.swift */,
+				A803962F1E0CDF51004F9641 /* Model.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A80396361E0CDF59004F9641 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A80395EC1E0CDBD4004F9641 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A80396371E0CDF65004F9641 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */,
+				A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */,
+				A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */,
+				A803963C1E0CDF74004F9641 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A803964C1E0CDF79004F9641 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A803965D1E0CDF95004F9641 /* Assets.xcassets */,
+				A803964D1E0CDF86004F9641 /* download.png */,
+				A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */,
+				A803964F1E0CDF86004F9641 /* meme.jpg */,
+				A80396501E0CDF86004F9641 /* purple.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A80396611E0CDFA1004F9641 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */,
+				A80396621E0CDFAD004F9641 /* Recipe.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A803966A1E0CDFEF004F9641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A80396741E0CE54A004F9641 /* Info.plist */,
+				A803966B1E0CE015004F9641 /* ApiKeys.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA0ACAED0EA94B871B60233B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */,
+				E4FE1FC7AD86C49254D276BC /* Pods_MiaraTests.framework */,
+				605469092D6C2E5DC02B644D /* Pods_MiaraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80395E41E0CDBD4004F9641 /* Miara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80396101E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "Miara" */;
+			buildPhases = (
+				4B1206C6D8F087FC3E154BAC /* [CP] Check Pods Manifest.lock */,
+				A80395E11E0CDBD4004F9641 /* Sources */,
+				A80395E21E0CDBD4004F9641 /* Frameworks */,
+				A80395E31E0CDBD4004F9641 /* Resources */,
+				332FE5A19CC76D9C2B771C11 /* [CP] Embed Pods Frameworks */,
+				D5B01244CA5AFC68BFAF90A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Miara;
+			productName = Miara;
+			productReference = A80395E51E0CDBD4004F9641 /* Miara.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80395FB1E0CDBD4004F9641 /* MiaraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80396131E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraTests" */;
+			buildPhases = (
+				1E6678252D3FE367848B4400 /* [CP] Check Pods Manifest.lock */,
+				A80395F81E0CDBD4004F9641 /* Sources */,
+				A80395F91E0CDBD4004F9641 /* Frameworks */,
+				A80395FA1E0CDBD4004F9641 /* Resources */,
+				EEC4B3C552A5518CEBC0D357 /* [CP] Embed Pods Frameworks */,
+				3D7564B737F3ED7A0345E81E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80395FE1E0CDBD4004F9641 /* PBXTargetDependency */,
+			);
+			name = MiaraTests;
+			productName = MiaraTests;
+			productReference = A80395FC1E0CDBD4004F9641 /* MiaraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A80396061E0CDBD4004F9641 /* MiaraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80396161E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraUITests" */;
+			buildPhases = (
+				A94BED16E390C74FEA2CA3A5 /* [CP] Check Pods Manifest.lock */,
+				A80396031E0CDBD4004F9641 /* Sources */,
+				A80396041E0CDBD4004F9641 /* Frameworks */,
+				A80396051E0CDBD4004F9641 /* Resources */,
+				FEFF1D9C51735FB78E47C7D1 /* [CP] Embed Pods Frameworks */,
+				5EEF5875F039E83101A9C4EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80396091E0CDBD4004F9641 /* PBXTargetDependency */,
+			);
+			name = MiaraUITests;
+			productName = MiaraUITests;
+			productReference = A80396071E0CDBD4004F9641 /* MiaraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80395DD1E0CDBD4004F9641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ChalieBuckets;
+				TargetAttributes = {
+					A80395E41E0CDBD4004F9641 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A80395FB1E0CDBD4004F9641 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A80395E41E0CDBD4004F9641;
+					};
+					A80396061E0CDBD4004F9641 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A80395E41E0CDBD4004F9641;
+					};
+				};
+			};
+			buildConfigurationList = A80395E01E0CDBD4004F9641 /* Build configuration list for PBXProject "Miara" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80395DC1E0CDBD4004F9641;
+			productRefGroup = A80395E61E0CDBD4004F9641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80395E41E0CDBD4004F9641 /* Miara */,
+				A80395FB1E0CDBD4004F9641 /* MiaraTests */,
+				A80396061E0CDBD4004F9641 /* MiaraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80395E31E0CDBD4004F9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80396751E0CE54A004F9641 /* Info.plist in Resources */,
+				A803966D1E0CE015004F9641 /* ApiKeys.plist in Resources */,
+				A80395EE1E0CDBD4004F9641 /* Main.storyboard in Resources */,
+				A80396541E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A803965A1E0CDF86004F9641 /* purple.jpg in Resources */,
+				A80396511E0CDF86004F9641 /* download.png in Resources */,
+				A803965E1E0CDF95004F9641 /* Assets.xcassets in Resources */,
+				A80396571E0CDF86004F9641 /* meme.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80395FA1E0CDBD4004F9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80396551E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A803965B1E0CDF86004F9641 /* purple.jpg in Resources */,
+				A80396581E0CDF86004F9641 /* meme.jpg in Resources */,
+				A80396521E0CDF86004F9641 /* download.png in Resources */,
+				A803965F1E0CDF95004F9641 /* Assets.xcassets in Resources */,
+				A803966E1E0CE015004F9641 /* ApiKeys.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80396051E0CDBD4004F9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80396561E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A803965C1E0CDF86004F9641 /* purple.jpg in Resources */,
+				A80396591E0CDF86004F9641 /* meme.jpg in Resources */,
+				A80396531E0CDF86004F9641 /* download.png in Resources */,
+				A80396601E0CDF95004F9641 /* Assets.xcassets in Resources */,
+				A803966F1E0CE015004F9641 /* ApiKeys.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E6678252D3FE367848B4400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		332FE5A19CC76D9C2B771C11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miara/Pods-Miara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D7564B737F3ED7A0345E81E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B1206C6D8F087FC3E154BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EEF5875F039E83101A9C4EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A94BED16E390C74FEA2CA3A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B01244CA5AFC68BFAF90A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miara/Pods-Miara-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC4B3C552A5518CEBC0D357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFF1D9C51735FB78E47C7D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80395E11E0CDBD4004F9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */,
+				A80396301E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
+				A80396671E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
+				A80396461E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
+				A803962A1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
+				A80396491E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
+				A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A80396331E0CDF51004F9641 /* Model.swift in Sources */,
+				A80396631E0CDFAD004F9641 /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80395F81E0CDBD4004F9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80396311E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
+				A80396681E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
+				A80396471E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
+				A803962B1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
+				A803964A1E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A80396011E0CDBD4004F9641 /* MiaraTests.swift in Sources */,
+				A80396441E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
+				A803963E1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A80396341E0CDF51004F9641 /* Model.swift in Sources */,
+				A80396641E0CDFAD004F9641 /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80396031E0CDBD4004F9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80396321E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
+				A80396691E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
+				A80396481E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
+				A803962C1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
+				A803964B1E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A803960C1E0CDBD4004F9641 /* MiaraUITests.swift in Sources */,
+				A80396451E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
+				A803963F1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A80396351E0CDF51004F9641 /* Model.swift in Sources */,
+				A80396651E0CDFAD004F9641 /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80395FE1E0CDBD4004F9641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80395E41E0CDBD4004F9641 /* Miara */;
+			targetProxy = A80395FD1E0CDBD4004F9641 /* PBXContainerItemProxy */;
+		};
+		A80396091E0CDBD4004F9641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80395E41E0CDBD4004F9641 /* Miara */;
+			targetProxy = A80396081E0CDBD4004F9641 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A80395EC1E0CDBD4004F9641 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80395ED1E0CDBD4004F9641 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Miara;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A803960E1E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A803960F1E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80396111E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BCA71784E2D00C09273D32 /* Pods-Miara.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Miara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.Miara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A80396121E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB648165D8F7BFFE9F0BFD4C /* Pods-Miara.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Miara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.Miara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A80396141E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22172EC15C45C707B0A2168 /* Pods-MiaraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MiaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miara.app/Miara";
+			};
+			name = Debug;
+		};
+		A80396151E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MiaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miara.app/Miara";
+			};
+			name = Release;
+		};
+		A80396171E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MiaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Miara;
+			};
+			name = Debug;
+		};
+		A80396181E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5DBC4F39F0A02650731E8D /* Pods-MiaraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MiaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Miara;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80395E01E0CDBD4004F9641 /* Build configuration list for PBXProject "Miara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A803960E1E0CDBD4004F9641 /* Debug */,
+				A803960F1E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80396101E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "Miara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80396111E0CDBD4004F9641 /* Debug */,
+				A80396121E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80396131E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80396141E0CDBD4004F9641 /* Debug */,
+				A80396151E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80396161E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80396171E0CDBD4004F9641 /* Debug */,
+				A80396181E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A80395F01E0CDBD4004F9641 /* Miara.xcdatamodel */,
+			);
+			currentVersion = A80395F01E0CDBD4004F9641 /* Miara.xcdatamodel */;
+			path = Miara.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A80395DD1E0CDBD4004F9641 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_MiaraTests {
+  umbrella header "Pods-MiaraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

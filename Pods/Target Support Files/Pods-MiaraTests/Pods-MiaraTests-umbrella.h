@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double SwiftyJSONVersionNumber;
-FOUNDATION_EXPORT const unsigned char SwiftyJSONVersionString[];
+FOUNDATION_EXPORT double Pods_MiaraTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MiaraTestsVersionString[];
 
