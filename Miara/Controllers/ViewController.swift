@@ -24,6 +24,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var co = CardOrganizer()
+        
+        var araye = ["2 jalapeno peppers, cut in half lengthwise and seeded",
+            "2 slices sour dough bread",
+            "1 tablespoon butter, room temperature",
+            "2 tablespoons cream cheese, room temperature",
+            "1/2 cup jack and cheddar cheese, shredded",
+            "1 tablespoon tortilla chips, crumbled"]
+        
+        let instructions = co.getDirectionsList(url: "http://www.closetcooking.com/2011/04/jalapeno-popper-grilled-cheese-sandwich.html", recipeIngredientsList: araye)
+        let temp = co.getCardDictionary(ingredientList: araye, instructionList: instructions)
+        
         
         //txtSearchText.text = "taco"
 
