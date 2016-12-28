@@ -21,6 +21,8 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     @IBOutlet var btnLink: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
+    var cardData = [CardData]()
+    var cardOrganizer = CardOrganizer()
     
     var currentRecipe : Recipe! = nil
     
@@ -31,9 +33,15 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
         lblRecipeTitle.text = currentRecipe.title
         
+        cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
+        
     }
     
     func refreshCardStack(){
+        
+        
+        
+        
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
         //        options.likedText = "Keep"
@@ -48,7 +56,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             currentRecipe.ingredients.count == 0){
             currentRecipe.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         }
-        for ingredient in currentRecipe.ingredients{
+        for i in 0...cardData.count-1{
             let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
             newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 20/255, blue: 20/255, alpha: 1).cgColor
             
@@ -56,7 +64,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
             lblItemName.textColor = UIColor.white
             lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.15).cgColor
-            lblItemName.text = ingredient
+            lblItemName.text = cardData[cardData.count-1-i].ingredient  // all weird becuase it needs to be read backward
             lblItemName.textAlignment = NSTextAlignment.center
             newCardView.addSubview(lblItemName)
             
