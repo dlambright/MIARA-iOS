@@ -16,16 +16,16 @@ class ViewController: UIViewController {
     @IBOutlet var txtSearchText: UITextField!
 
     
-    var recipeThree = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 100, new_publisher_url: "qw", new_source_url: "http://thepioneerwoman.com/cooking/cinammon_rolls_/", new_title: "pizza", new_image_url: "http://static.food2fork.com/4364270576_302751a2a4f3c1.jpg")
-    let recipeFour = Recipe(new_f2f_url: "yolo", new_publisher: "dustin", new_recipe_id: "21", new_social_rank: 77.7, new_publisher_url: "yoyo", new_source_url: "http://www.closetcooking.com/2011/08/buffalo-chicken-grilled-cheese-sandwich.html", new_title: "peetz", new_image_url: "http://static.food2fork.com/avocadopizzawithcilantrosauce4bf5.jpg")
-    let recipeTwo = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 50, new_publisher_url: "qw", new_source_url: "http://www.seriouseats.com/2016/03/peepshi-sushi-easter-marshmallow-peeps-how-to.html" , new_title: "za", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
-    let recipeOne = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 1, new_publisher_url: "qw", new_source_url: "http://www.bbcgoodfood.com/recipes/873655/cookie-monster-cupcakes" , new_title: "pizza again", new_image_url: "http://static.food2fork.com/Taco2BQuesadilla2BPizza2B5002B4417a4755e35.jpg")
+//    var recipeThree = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 100, new_publisher_url: "qw", new_source_url: "http://thepioneerwoman.com/cooking/cinammon_rolls_/", new_title: "pizza", new_image_url: "http://static.food2fork.com/4364270576_302751a2a4f3c1.jpg")
+//    let recipeFour = Recipe(new_f2f_url: "yolo", new_publisher: "dustin", new_recipe_id: "21", new_social_rank: 77.7, new_publisher_url: "yoyo", new_source_url: "http://www.closetcooking.com/2011/08/buffalo-chicken-grilled-cheese-sandwich.html", new_title: "peetz", new_image_url: "http://static.food2fork.com/avocadopizzawithcilantrosauce4bf5.jpg")
+//    let recipeTwo = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 50, new_publisher_url: "qw", new_source_url: "http://www.seriouseats.com/2016/03/peepshi-sushi-easter-marshmallow-peeps-how-to.html" , new_title: "za", new_image_url: "http://static.food2fork.com/Strawberry2BBalsamic2BPizza2Bwith2BChicken252C2BSweet2BOnion2Band2BSmoked2BBacon2B5002B300939d125e2.jpg")
+//    let recipeOne = Recipe(new_f2f_url: "no", new_publisher: "no", new_recipe_id: "12", new_social_rank: 1, new_publisher_url: "qw", new_source_url: "http://www.bbcgoodfood.com/recipes/873655/cookie-monster-cupcakes" , new_title: "pizza again", new_image_url: "http://static.food2fork.com/Taco2BQuesadilla2BPizza2B5002B4417a4755e35.jpg")
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //txtSearchText.text = "taco"
+        txtSearchText.text = "cake"
 
 //        recipeOne.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
 //        recipeTwo.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]

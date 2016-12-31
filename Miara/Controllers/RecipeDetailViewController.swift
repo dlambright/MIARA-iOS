@@ -36,9 +36,10 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     func refreshCardStack(){
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
-        //        options.likedText = "Keep"
-        //        options.likedColor = UIColor.blue
-        //        options.nopeText = "Delete"
+                options.likedText = ""
+                options.likedColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0) // hacky way to not have the liked/disliked boxes on the cards
+                options.nopeText = ""
+                options.nopeColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0) // hacky way to not have the liked/disliked boxes on the cards
         options.onPan = { state -> Void in
             if state?.thresholdRatio == 1 && state?.direction == MDCSwipeDirection.left {
                 print("Photo deleted!")
@@ -50,17 +51,35 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
         for ingredient in currentRecipe.ingredients{
             let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
-            newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 20/255, blue: 20/255, alpha: 1).cgColor
+            newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 245/255, green: 245/255, blue: 245/255, alpha: 1).cgColor
             
-            let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 50))
+            let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 60))
             lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
-            lblItemName.textColor = UIColor.white
-            lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.15).cgColor
+            lblItemName.textColor = UIColor.black
+            lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0).cgColor
             lblItemName.text = ingredient
             lblItemName.textAlignment = NSTextAlignment.center
+            lblItemName.lineBreakMode = NSLineBreakMode.byWordWrapping
+            lblItemName.numberOfLines = 0
+            
             newCardView.addSubview(lblItemName)
             
+            let viewRedLine = UIView(frame: CGRect(x: 0, y: lblItemName.frame.height, width: newCardView.layer.frame.width, height: 1))
+            viewRedLine.layer.backgroundColor = UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1).cgColor
+            newCardView.addSubview(viewRedLine)
             
+            let lblItemStep = UILabel(frame: CGRect(x: 16, y: viewRedLine.frame.height + lblItemName.frame.height  + 16, width: newCardView.layer.frame.width - 32, height: newCardView.frame.height - lblItemName.frame.height - viewRedLine.frame.height - 32))
+            let ttext = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim et id est laborum."
+            let range = (ttext as NSString).range(of: " et ")
+            let attributedString = NSMutableAttributedString(string:ttext)
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1) , range: range)
+            
+            lblItemStep.attributedText = attributedString
+            lblItemStep.font = UIFont(name: "Arial Rounded MT Bold", size: 14.0)
+            lblItemName.lineBreakMode = NSLineBreakMode.byWordWrapping
+            lblItemStep.numberOfLines = 0
+            newCardView.addSubview(lblItemStep)
+            lblItemStep.sizeToFit()
             
             self.viewCardViewHolder.addSubview(newCardView)
         }
