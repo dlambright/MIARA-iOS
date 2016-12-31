@@ -52,22 +52,15 @@ class Recipe: NSObject {
         self.source_url = newJson["source_url"].stringValue
         self.title = newJson["title"].stringValue
         self.image_url =  newJson["image_url"].stringValue
+        
+        /*self.ingredients = newJson["ingredients"].arrayObject as! [String]!
         let ingreds = newJson["ingredients"].arrayObject as! [String]!
         self.ingredients = sanitizeIngredientsList(ingredientsToTest: ingreds!)
+        let ingreds = newJson["ingredients"].arrayObject as! [String]!
+        self.ingredients = sanitizeIngredientsList(ingredientsToTest: ingreds!)*/
         self.setActualImage()
-    }
-    
-    private func sanitizeIngredientsList(ingredientsToTest: [String])-> [String]{
-        var newIngredientList = [String]()
-        
-        for ingredient in ingredientsToTest{
-            if (ingredient.characters.last != ":"){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
-                newIngredientList.append(ingredient)
-            }
-        }
-        return newIngredientList
-    
-    }
+    }  
+
     
     func setActualImage(){
         let url = URL(string: self.image_url)
