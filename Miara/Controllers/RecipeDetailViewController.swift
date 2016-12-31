@@ -53,7 +53,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
             newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 245/255, green: 245/255, blue: 245/255, alpha: 1).cgColor
             
-            let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 60))
+            let lblItemName = UILabel(frame: CGRect(x: 8, y: 0, width: newCardView.layer.frame.width-16, height: 60))
             lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
             lblItemName.textColor = UIColor.black
             lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0).cgColor
