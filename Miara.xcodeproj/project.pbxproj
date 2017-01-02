@@ -60,9 +60,7 @@
 		A803966F1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
 		A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
 		A80396751E0CE54A004F9641 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
-		A80396791E0D2ADC004F9641 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396781E0D2ADC004F9641 /* CardData.swift */; };
-		A803967A1E0D2ADC004F9641 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396781E0D2ADC004F9641 /* CardData.swift */; };
-		A803967B1E0D2ADC004F9641 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396781E0D2ADC004F9641 /* CardData.swift */; };
+		A804FB891E1ADF5400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB881E1ADF5400F02ACD /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +110,7 @@
 		A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeTableViewCell.swift; path = Miara/Classes/RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		A803966B1E0CE015004F9641 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "Miara/Supporting Files/ApiKeys.plist"; sourceTree = "<group>"; };
 		A80396741E0CE54A004F9641 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Miara/Info.plist; sourceTree = "<group>"; };
-		A80396781E0D2ADC004F9641 /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		A804FB881E1ADF5400F02ACD /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardData.swift; path = Miara/Classes/CardData.swift; sourceTree = "<group>"; };
 		AB648165D8F7BFFE9F0BFD4C /* Pods-Miara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.release.xcconfig"; sourceTree = "<group>"; };
 		B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 		A80395DC1E0CDBD4004F9641 = {
 			isa = PBXGroup;
 			children = (
-				A80396781E0D2ADC004F9641 /* CardData.swift */,
 				A803966A1E0CDFEF004F9641 /* Supporting Files */,
 				A80396611E0CDFA1004F9641 /* Classes */,
 				A803964C1E0CDF79004F9641 /* Images */,
@@ -260,6 +257,7 @@
 		A80396611E0CDFA1004F9641 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A804FB881E1ADF5400F02ACD /* CardData.swift */,
 				A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */,
 				A80396621E0CDFAD004F9641 /* Recipe.swift */,
 			);
@@ -586,12 +584,12 @@
 				A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */,
 				A80396301E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
 				A80396671E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
-				A80396791E0D2ADC004F9641 /* CardData.swift in Sources */,
 				A80396461E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
 				A803962A1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
 				A80396491E0CDF74004F9641 /* ViewController.swift in Sources */,
 				A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
 				A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A804FB891E1ADF5400F02ACD /* CardData.swift in Sources */,
 				A80396331E0CDF51004F9641 /* Model.swift in Sources */,
 				A80396631E0CDFAD004F9641 /* Recipe.swift in Sources */,
 			);
@@ -604,7 +602,6 @@
 				A80396311E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
 				A80396681E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
 				A80396471E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
-				A803967A1E0D2ADC004F9641 /* CardData.swift in Sources */,
 				A803962B1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
 				A803964A1E0CDF74004F9641 /* ViewController.swift in Sources */,
 				A80396011E0CDBD4004F9641 /* MiaraTests.swift in Sources */,
@@ -622,7 +619,6 @@
 				A80396321E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
 				A80396691E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
 				A80396481E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
-				A803967B1E0D2ADC004F9641 /* CardData.swift in Sources */,
 				A803962C1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
 				A803964B1E0CDF74004F9641 /* ViewController.swift in Sources */,
 				A803960C1E0CDBD4004F9641 /* MiaraUITests.swift in Sources */,
