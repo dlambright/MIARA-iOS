@@ -36,8 +36,9 @@ class ViewController: UIViewController {
             "1/2 cup jack and cheddar cheese, shredded",
             "1 tablespoon tortilla chips, crumbled"]
         
-//        let instructions = co.getDirectionsList(url: "http://www.closetcooking.com/2011/04/jalapeno-popper-grilled-cheese-sandwich.html", recipeIngredientsList: araye)
-//        let temp = co.getCardDictionary(ingredientList: araye, instructionList: instructions)
+        let stringIndicies = co.getIndicesOfWordsIn(theString: "In a mixing bowl, combine flour, sugar, and salt.")
+        
+ //       let temp = co.getCardDictionary(ingredientList: araye, instructionList: instructions)
         
         
         //txtSearchText.text = "taco"
