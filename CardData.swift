@@ -2,8 +2,8 @@
 //  CardData.swift
 //  Miara
 //
-//  Created by Charlie Buckets on 12/23/16.
-//  Copyright © 2016 ChalieBuckets. All rights reserved.
+//  Created by Charlie Buckets on 1/3/17.
+//  Copyright © 2017 ChalieBuckets. All rights reserved.
 //
 
 import UIKit
