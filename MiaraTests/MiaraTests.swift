@@ -22,17 +22,17 @@ class MiaraTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testExample() {
+//        // This is an example of a functional test case.
+//        // Use XCTAssert and related functions to verify your tests produce the correct results.
+//    }
+//    
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
     
     func testSlowCookerTacos() {
         let co : CardOrganizer = CardOrganizer()
@@ -98,14 +98,51 @@ class MiaraTests: XCTestCase {
                                               recipeIngredientsList: ["24 paper cupcake liners", "Batter for 24 cupcakes. Box mix works fine or simply use your favorite chocolate cupcake recipe, its your call.", "48 Mini Cadbury Creme Eggs (24 frozen) Youll use the frozen ones inside the cupcake batter. Freezing the eggs keeps them from completely vanishing inside the baked cake.", "1 batch of buttercream frosting", "yellow dye"])
         
         
-        XCTAssert(testResult.count == 5)
+        XCTAssert(testResult.count == 6)
         
-        /*if (testResult.count == 5){
-            XCTAssert(testResult[0] == "1. To make the sheet cake: Preheat oven to 350 degrees. Grease a sheet pan with cooking spray and set aside. I use an 11 x 17 jelly roll pan.  ")
+        if (testResult.count == 6){
+            XCTAssert(testResult[0] == "Scoop batter into paper liner 2/3 of the way full. Place one frozen Mini Cadbury Creme Egg into the middle of each cupcake. Use a spatula to spread the batter over the egg.")
             
-            XCTAssert(testResult[4] == "5. While the cake is baking, make the peanut butter frosting. In the bowl of a stand mixer, combine the sifted powdered sugar, milk, peanut butter, and vanilla extract. Beat with the beater blade until smooth. Frost the chocolate sheet cake as soon as you remove it from the oven. The peanut butter frosting will spread easily over the warm cake. Sprinkle chopped up Reese\'s Peanut Butter Cups over the frosting, if desired. Let the frosted cake cool to room temperature. Cut into squares and serve."	)
-        }*/
+            XCTAssert(testResult[5] == "Fill in the center of the circle with the yellow buttercream and top with a Mini Cadbury Cream Egg.")
+        }
     }
+    
+    func testKnockYouNakedBrownies() {
+        let co : CardOrganizer = CardOrganizer()
+        let testResult = co.getDirectionsList(url:"http://thepioneerwoman.com/cooking/knock-you-naked-brownies/",
+                                              recipeIngredientsList: ["1 box (18.5 Ounce) German Chocolate Cake Mix (I Used Duncan Hines)", "1 cup Finely Chopped Pecans", "1/3 cup Evaporated Milk", "1/2 cup Evaporated Milk (additional)", "1/2 cup Butter, Melted", "60 whole Caramels, Unwrapped", "1/3 cup Semi-Sweet Chocolate Chips", "1/4 cup Powdered Sugar"])
+        
+        
+        XCTAssert(testResult.count == 7)
+        
+        if (testResult.count == 7){
+            XCTAssert(testResult[0] == "  Preheat oven to 350 degrees.  ")
+            
+            XCTAssert(testResult[3] == "In a double boiler (or a heatproof bowl set over a saucepan of boiling water) melt caramels with additional 1/2 cup evaporated milk. When melted and combined, pour over brownie base. Sprinkle chocolate chips as evenly as you can over the caramel. ")
+            
+            XCTAssert(testResult[6] == "*Adapted from the classic \"Knock You Naked Brownies\" recipe, based on a dessert at the Salt Creek Steakhouse in Breckenridge. These brownies don\'t really knock you naked...but almost. ")
+        }
+    }
+    
+    func testRedVelvetCrinkleCookies() {
+        let co : CardOrganizer = CardOrganizer()
+        let testResult = co.getDirectionsList(url:"http://www.twopeasandtheirpod.com/red-velvet-crinkle-cookies/",
+                                              recipeIngredientsList: ["1 box red velvet cake mix (I used Duncan Hines)", "2 tablespoons all-purpose flour", "2 large eggs", "1/2 cup canola oil", "1 teaspoon vanilla extract", "Powdered sugar, for rolling the cookies", "Heart shaped cookie cutter, optional"])
+        
+        
+        
+        XCTAssert(testResult.count == 4)
+        
+        if (testResult.count == 4){
+            XCTAssert(testResult[0] == "1. Preheat oven to 350 degrees F. Line a large baking sheet with parchment paper or a Silpat and set aside. ")
+            
+            XCTAssert(testResult[3] == "Note-you don\'t have to cut the cookies into heart shapes. They are great round too!")
+        }
+    }
+    
+    
+    
+    
     
 }
 
