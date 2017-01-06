@@ -174,5 +174,5 @@ Temporary Items
 .apdisk
 *.xcbkptlist
 ApiKeys.plist
-Miara/Models/CardOrganizer.swift
+#Miara/Models/CardOrganizer.swift
 

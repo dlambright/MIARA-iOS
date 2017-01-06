@@ -140,9 +140,50 @@ class MiaraTests: XCTestCase {
         }
     }
     
+    func testCadburyCremeEggsBenedict() {
+        let co : CardOrganizer = CardOrganizer()
+        let testResult = co.getDirectionsList(url:"http://www.seriouseats.com/recipes/2010/03/cakespy-cadbury-creme-eggs-benedict-dessert-breakfast-recipe.html",
+                                              recipeIngredientsList: ["2 Cadbury creme eggs", "1 plain cake doughnut", "1 brownie, the fudgier the better", "2 to 4 tablespoons' worth of buttercream frosting, to taste", "1 large slice pound cake, cut into small cubes", "1 tablespoons butter", "Red sugar sprinkles, to garnish"])
+        XCTAssert(testResult.count == 8)
+        
+        if (testResult.count == 8){
+            XCTAssert(testResult[0] == "1. Prepare the \"side potatoes\" by melting 1 tablespoon of butter in a frying pan. Add your cubed pound cake slices and fry on medium heat for about 2 minutes. Flip the pieces and fry for 2 more minutes. Once they are lightly crispy on the edges, they\'re ready; put them on the side of your serving plate, leaving half of it clear for the Benedict stacks.")
+            
+            XCTAssert(testResult[3] == "4. Note: While I realize that brownies might not have an accurate hue to represent the layer of ham, I chose them for their sturdy texture and for their deliciousness quotient. A pink cookie or layer of colored marzipan could be substituted if you really wanted a hammy look, though.")
+            
+            XCTAssert(testResult[7] == "8.")
+        }
+    }
     
+    func testChocolateStrawberryNutellaCake(){
+        let co : CardOrganizer = CardOrganizer()
+        let testResult = co.getDirectionsList(url:"http://thepioneerwoman.com/cooking/2013/05/chocolate-strawberry-nutella-cake/",
+                                              recipeIngredientsList: ["2 sticks Butter", "4 Tablespoons (heaping) Cocoa Powder", "1 cup Boiling Water", "2 cups Flour", "2 cups Sugar", "1/4 teaspoon Salt", "1/2 cup Buttermilk", "2 whole Eggs", "1 teaspoon Baking Soda", "1 teaspoon Vanilla", "1-1/2 cup Nutella", "2 pints Strawberries, Hulled And Sliced", "1/4 cup Sugar", "1 teaspoon Vanilla", "2 cups Heavy Cream", "1/2 cup Powdered Sugar"])
+        XCTAssert(testResult.count == 9)
+        
+        if (testResult.count == 9){
+            XCTAssert(testResult[0] == "  Preheat the oven to 350 degrees. Line 2 round baking pans with parchment, then spray the parchment with baking spray. ")
+            
+            XCTAssert(testResult[4] == "Pour the batter into the pans and bake them for 17-20 minute, until they\'re just set. Remove them from the pans and set them aside to cool completely. "	)
+            
+            XCTAssert(testResult[8] == "Note: Don\'t assemble more than an hour before serving. ")
+        }
+    }
     
-    
+    func testTheBestCoffeeCake(){
+        let co : CardOrganizer = CardOrganizer()
+        let testResult = co.getDirectionsList(url:"http://thepioneerwoman.com/cooking/the-best-coffee-cake-ever/",
+                                              recipeIngredientsList: ["1-1/2 stick Butter, Softened", "2 cups (scant) Sugar", "3 cups Flour, Sifted", "4 teaspoons Baking Powder", "1 teaspoon Salt", "1-1/4 cup Whole Milk", "3 whole Egg Whites, Beaten Until Stiff", "1-1/2 stick Butter, Softened", "3/4 cups Flour", "1-1/2 cup Brown Sugar", "2 Tablespoons Cinnamon", "1-1/2 cup Pecans, Chopped"])
+        XCTAssert(testResult.count == 4)
+        
+        if (testResult.count == 4){
+            XCTAssert(testResult[0] == "  Preheat oven to 350 degrees. Sift together flour, baking powder, and salt. Beat egg whites and set aside.  "	)
+            
+            XCTAssert(testResult[3] == "Bake for 40 to 45 minutes, or until no longer jiggly. Serve warm---delicious! ")
+            
+
+        }
+    }
     
 }
 

@@ -19,8 +19,11 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
 
     @IBOutlet var viewCardViewHolder: UIView!
     @IBOutlet var btnLink: UIButton!
+    @IBOutlet var btnCards: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
+    @IBOutlet var lblIngredientDetail: UILabel!
+    
     var cardData = [CardData]()
     var cardOrganizer = CardOrganizer()
     
@@ -33,7 +36,19 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
         lblRecipeTitle.text = currentRecipe.title
         
-        cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
+        if (currentRecipe.ingredients != nil && currentRecipe.source_url != nil){
+            cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
+        }
+        else{
+            sleep(2)
+            cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
+        }
+        
+        btnCards.isHidden = true
+        if (cardData.count > 0){
+            btnCards.isHidden = false
+        }
+
         
     }
     
@@ -101,7 +116,16 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        refreshCardStack()
+        //refreshCardStack()
+        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
+            lblIngredientDetail.text = "missing ingredients.... try again"
+        }
+        else{
+            lblIngredientDetail.text = ""
+            for ingredient in currentRecipe.ingredients{
+                lblIngredientDetail.text = lblIngredientDetail.text! + ingredient + "\n"
+            }
+        }
     }
     
 
