@@ -19,6 +19,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
 
     @IBOutlet var viewCardViewHolder: UIView!
     @IBOutlet var btnLink: UIButton!
+    @IBOutlet var btnSave: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
     
@@ -113,15 +114,42 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     // This is called then a user swipes the view fully left or right.
     func view(_ view: UIView, wasChosenWith wasChosenWithDirection: MDCSwipeDirection) -> Void{
-        if wasChosenWithDirection == MDCSwipeDirection.left {
+        /*if wasChosenWithDirection == MDCSwipeDirection.left {
             print("Photo deleted!")
         }else{
             print("Photo saved!")
-        }
+        }*/
     }
 
     @IBAction func refreshPress(_ sender: Any) {
         refreshCardStack()
     }
+    
+    @IBAction func btnSaveTouch(_ sender: UIButton) {
+        if (currentRecipe.saved == true){
+            btnSave.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0.15)
+            currentRecipe.saved = false
+            btnSave.setTitle("save", for: .normal)
+        }
+        else{
+            btnSave.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.15)
+            currentRecipe.saved = true
+            btnSave.setTitle("remove", for: .normal)
+            Model.sharedInstance.saveRecipe(recipe: currentRecipe)
+
+        }
+    }
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+

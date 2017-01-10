@@ -12,7 +12,8 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     @IBOutlet var btnSearch: UIButton!
-    @IBOutlet var btnSavedRecipes: UIButton!    
+    @IBOutlet var btnSavedRecipes: UIButton!
+    @IBOutlet var btnShoppingList: UIButton!
     @IBOutlet var txtSearchText: UITextField!
 
     
@@ -37,9 +38,12 @@ class ViewController: UIViewController {
 //        Model.sharedInstance.recipeList.append(recipeFour)
         btnSearch.layer.borderColor = UIColor.white.cgColor
         btnSavedRecipes.layer.borderColor = UIColor.white.cgColor
+        btnShoppingList.layer.borderColor = UIColor.white.cgColor
+        Model.sharedInstance.loadRecipesFromDisk()
         
         ///self.makeHTTPRequest()
         
+        Model.sharedInstance.nukeAllRecipes()
         
     }
     
@@ -85,8 +89,28 @@ class ViewController: UIViewController {
         //newViewController.lblTitle.text = "search results for dank pizza"
    // }
     
-    
 
+    @IBAction func btnSavedRecipesPress(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
+        srvc.searchTerm = "my saved recipes"
+        if let navigator = navigationController {
+            Model.sharedInstance.setSavedRecipesToCurrentRecipes()
+            navigator.pushViewController(srvc, animated: true)
+        }
+        return
+    }
+    
+    @IBAction func btnShoppingLIstPress(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let slvc = storyboard.instantiateViewController(withIdentifier: "shoppingListViewController") as! ShoppingListTableViewController
+        if let navigator = navigationController {
+            Model.sharedInstance.setCartedRecipesToCurrentRecipes()
+            navigator.pushViewController(slvc, animated: true)
+        }
+        return
+        
+    }
 
 }
 
