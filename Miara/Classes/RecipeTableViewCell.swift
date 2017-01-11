@@ -64,9 +64,8 @@ class RecipeTableViewCell: UITableViewCell {
             if recipe.ingredients == nil{
                 Model.sharedInstance.getIngredientsForRecipeWithId(id: recipe.recipe_id)
             }
-            
-            Model.sharedInstance.saveRecipe(recipe: recipe)
         }
+        Model.sharedInstance.saveRecipe(recipe: recipe)
         toggleSavedColoring()
     }
     

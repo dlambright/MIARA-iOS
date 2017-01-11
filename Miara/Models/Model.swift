@@ -106,8 +106,15 @@ class Model: NSObject {
     
     
     func saveRecipe(recipe: Recipe){
+        for alreadyIncludedRecipe in savedRecipes{
+            if alreadyIncludedRecipe.recipe_id == recipe.recipe_id{
+                return
+            }
+        }
         self.savedRecipes.append(recipe)
         saveRecipesToDisk()
+
+        
     }
     
     func removeSavedRecipe(recipe: Recipe){
@@ -117,9 +124,11 @@ class Model: NSObject {
             }
         }
         var toDeleteArray = [Int]()
-        for i in 0...savedRecipes.count-1{
-            if (savedRecipes[i].recipe_id == recipe.recipe_id){
-                toDeleteArray.append(savedRecipes.count-1-i)
+        if (savedRecipes.count > 0){
+            for i in 0...savedRecipes.count-1{
+                if (savedRecipes[i].recipe_id == recipe.recipe_id){
+                    toDeleteArray.append(savedRecipes.count-1-i)
+                }
             }
         }
         

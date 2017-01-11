@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         ///self.makeHTTPRequest()
         
-        Model.sharedInstance.nukeAllRecipes()
+        //Model.sharedInstance.nukeAllRecipes()
         
     }
     

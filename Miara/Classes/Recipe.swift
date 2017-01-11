@@ -120,7 +120,7 @@ class Recipe: NSObject, NSCoding {
         source_url = aDecoder.decodeObject(forKey: Keys.Source_url) as! String
         title = aDecoder.decodeObject(forKey: Keys.Title) as! String
         image_url = aDecoder.decodeObject(forKey: Keys.Image_url) as! String
-        image = aDecoder.decodeObject(forKey: Keys.Image) as! UIImage
+        //image = aDecoder.decodeObject(forKey: Keys.Image) as! UIImage
         saved = aDecoder.decodeObject(forKey: Keys.Saved) as! Bool
         carted = aDecoder.decodeObject(forKey: Keys.Carted) as! Bool
         if (aDecoder.containsValue(forKey: Keys.Ingredients)){

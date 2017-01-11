@@ -9,24 +9,15 @@
 import UIKit
 
 class ShoppingListTableViewController: UITableViewController {
-    var ingredientsList = [String]()
+    //var ingredientsList = [String]()
     var cartedRecipes = [Recipe]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
         for recipe in Model.sharedInstance.cartedRecipes{
             if recipe.ingredients != nil{
                 cartedRecipes.append(recipe)
-                for ingredient in recipe.ingredients{
-                    ingredientsList.append(ingredient)
-                }
             }            
         }
     }
@@ -63,7 +54,7 @@ class ShoppingListTableViewController: UITableViewController {
 
         
         //cell.lblIngredient.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0)
-        cell.lblIngredient.text = ingredientsList[indexPath.row]
+        cell.lblIngredient.text = cartedRecipes[indexPath.section].ingredients[indexPath.row]
 
         return cell
     }
