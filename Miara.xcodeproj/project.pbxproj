@@ -59,7 +59,6 @@
 		A803966E1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
 		A803966F1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
 		A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
-		A80396751E0CE54A004F9641 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
 		A855AEAB1E22CA54005E57AC /* shopping_list.png in Resources */ = {isa = PBXBuildFile; fileRef = A855AEAA1E22CA54005E57AC /* shopping_list.png */; };
 		A855AEB51E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
 		A855AEB61E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
@@ -409,7 +408,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80396751E0CE54A004F9641 /* Info.plist in Resources */,
 				A803966D1E0CE015004F9641 /* ApiKeys.plist in Resources */,
 				A80395EE1E0CDBD4004F9641 /* Main.storyboard in Resources */,
 				A80396541E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,

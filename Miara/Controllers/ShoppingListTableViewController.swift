@@ -64,8 +64,8 @@ class ShoppingListTableViewController: UITableViewController {
         
         if (cell.backgroundColor == UIColor.white){
             
-            cell.backgroundColor = UIColor(colorLiteralRed: 32/255, green: 232/255, blue: 101/255, alpha: 1)
-            cell.textLabel?.backgroundColor = UIColor(colorLiteralRed: 32/255, green: 232/255, blue: 101/255, alpha: 1)
+            cell.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
+            //cell.textLabel?.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 232/255, blue: 101/255, alpha: 1)
             
             // change selected color from gray to green
             let bgColorView = UIView()

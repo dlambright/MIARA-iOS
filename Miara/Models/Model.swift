@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+    
 
 class Model: NSObject {
     
@@ -57,7 +58,11 @@ class Model: NSObject {
                 
                 if (count > 0){
                     for i in (0...count-1){
-                        let newRecipe:Recipe = Recipe(newJson: recipeArray[i])
+                        var newRecipe:Recipe = Recipe(newJson: recipeArray[i])
+                        
+                        newRecipe = self.checkIfSearchResultRecipeIsAlreadySaved(recipe: newRecipe)
+                        newRecipe = self.checkIfSearchResultRecipeIsAlreadyCarted(recipe: newRecipe)
+                        
                         self.recipeList.append(newRecipe)
                     }
                 }
@@ -106,38 +111,60 @@ class Model: NSObject {
     
     
     func saveRecipe(recipe: Recipe){
+        
+        let queue = DispatchQueue(label: "Buckets.Charlie.Miara", attributes: .concurrent, target: .main)
+        let myGroup = DispatchGroup()
+        
         for alreadyIncludedRecipe in savedRecipes{
             if alreadyIncludedRecipe.recipe_id == recipe.recipe_id{
                 return
             }
         }
-        self.savedRecipes.append(recipe)
-        saveRecipesToDisk()
+                
+        myGroup.enter()
+        queue.async (group:myGroup){
+            self.savedRecipes.append(recipe)
+            self.getIngredientsForRecipeWithId(id: recipe.recipe_id)
+                        
+            myGroup.leave()
+        }
+        
+        
+        myGroup.notify(queue: DispatchQueue.main) {
+            self.saveRecipesToDisk()
+        }
+        
+
 
         
     }
     
     func removeSavedRecipe(recipe: Recipe){
-        for listRecipe in recipeList{
-            if (listRecipe.recipe_id == recipe.recipe_id){
-                listRecipe.saved = false
-            }
-        }
-        var toDeleteArray = [Int]()
-        if (savedRecipes.count > 0){
-            for i in 0...savedRecipes.count-1{
-                if (savedRecipes[i].recipe_id == recipe.recipe_id){
-                    toDeleteArray.append(savedRecipes.count-1-i)
+        for i in 0...recipeList.count-1{
+            if (recipeList[i].recipe_id == recipe.recipe_id){
+                recipeList[i].saved = false
+                recipeList[i].carted = false
+                
+                if savedRecipes.count > 0{
+                    for j in 0...savedRecipes.count-1{
+                        if savedRecipes[j].recipe_id == recipe.recipe_id{
+                            savedRecipes.remove(at: j)
+                            break
+                        }
+                    }
                 }
+                
+                if cartedRecipes.count > 0{
+                    for j in 0...cartedRecipes.count-1{
+                        if cartedRecipes[j].recipe_id == recipe.recipe_id{
+                            cartedRecipes.remove(at: j)
+                            break
+                        }
+                    }
+                }
+                break
             }
         }
-        
-        if (toDeleteArray.count > 0){
-            for i in 0...toDeleteArray.count-1{
-                savedRecipes.remove(at: toDeleteArray[i])
-            }
-        }
-
         saveRecipesToDisk()
     }
     
@@ -170,21 +197,26 @@ class Model: NSObject {
         }
     }
     
+    func checkIfSearchResultRecipeIsAlreadySaved(recipe: Recipe)->Recipe{
+        for savedRecipe in savedRecipes{
+            if savedRecipe.recipe_id == recipe.recipe_id{
+                return savedRecipe
+            }
+        }
+        return recipe
+    }
+    
+    func checkIfSearchResultRecipeIsAlreadyCarted(recipe: Recipe)->Recipe{
+        for cartedRecipe in cartedRecipes{
+            if cartedRecipe.recipe_id == recipe.recipe_id{
+                return cartedRecipe
+            }
+        }
+        return recipe
+    }
+    
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

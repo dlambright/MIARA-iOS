@@ -62,6 +62,34 @@ class Recipe: NSObject, NSCoding {
         self.setActualImage()
     }
     
+    
+    init(new_f2f_url : String,
+         new_publisher : String,
+         new_recipe_id : String,
+         new_social_rank : Double,
+         new_publisher_url : String,
+         new_source_url : String,
+         new_title : String,
+         new_image_url : String,
+         new_saved : Bool,
+         new_carted : Bool,
+         new_image : UIImage,
+         new_ingredients : [String]){
+        super.init()
+        self.f2f_url = new_f2f_url
+        self.publisher = new_publisher
+        self.recipe_id = new_recipe_id
+        self.social_rank = new_social_rank
+        self.publisher_url = new_publisher_url
+        self.source_url = new_source_url
+        self.title = new_title
+        self.image_url =  new_image_url
+        self.saved = new_saved
+        self.carted = new_carted
+        self.image = new_image
+        self.ingredients = new_ingredients
+    }
+    
     required init(newJson: JSON){
         super.init()
         self.f2f_url = newJson["f2f_url"].stringValue
@@ -105,28 +133,45 @@ class Recipe: NSObject, NSCoding {
         aCoder.encode(image_url, forKey: Keys.Image_url)
         aCoder.encode(image, forKey: Keys.Image)
         aCoder.encode(saved, forKey: Keys.Saved)
-        aCoder.encode(carted, forKey: Keys.Carted)
-        aCoder.encode(ingredients, forKey: Keys.Ingredients)
+        aCoder.encode(carted, forKey: Keys.Carted)        
+        
+        if ingredients != nil{
+            aCoder.encode(ingredients, forKey: Keys.Ingredients)
+        } 
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init()
-        f2f_url = aDecoder.decodeObject(forKey: Keys.F2f_url) as! String
-        publisher_url = aDecoder.decodeObject(forKey: Keys.Publisher_url) as! String
-        recipe_id = aDecoder.decodeObject(forKey: Keys.Recipe_id) as! String
-        social_rank = aDecoder.decodeObject(forKey: Keys.Social_rank) as! Double
-        publisher_url = aDecoder.decodeObject(forKey: Keys.Publisher_url) as! String
-        source_url = aDecoder.decodeObject(forKey: Keys.Source_url) as! String
-        title = aDecoder.decodeObject(forKey: Keys.Title) as! String
-        image_url = aDecoder.decodeObject(forKey: Keys.Image_url) as! String
-        //image = aDecoder.decodeObject(forKey: Keys.Image) as! UIImage
-        saved = aDecoder.decodeObject(forKey: Keys.Saved) as! Bool
-        carted = aDecoder.decodeObject(forKey: Keys.Carted) as! Bool
-        if (aDecoder.containsValue(forKey: Keys.Ingredients)){
-           ingredients = aDecoder.decodeObject(forKey: Keys.Ingredients) as? [String]
-        }
+    required convenience init(coder aDecoder: NSCoder) {
+        //super.init()
         
+
+        let f2f_url = aDecoder.decodeObject(forKey: Keys.F2f_url) as! String
+        let publisher = aDecoder.decodeObject(forKey: Keys.Publisher) as! String
+        let recipe_id = aDecoder.decodeObject(forKey: Keys.Recipe_id) as! String
+        let social_rank = aDecoder.decodeObject(forKey: Keys.Social_rank) as! Double
+        let publisher_url = aDecoder.decodeObject(forKey: Keys.Publisher_url) as! String
+        let source_url = aDecoder.decodeObject(forKey: Keys.Source_url) as! String
+        let title = aDecoder.decodeObject(forKey: Keys.Title) as! String
+        let image_url = aDecoder.decodeObject(forKey: Keys.Image_url) as! String
+        let image = aDecoder.decodeObject(forKey: Keys.Image) as! UIImage
+        let saved = aDecoder.decodeObject(forKey: Keys.Saved) as! Bool
+        let carted = aDecoder.decodeObject(forKey: Keys.Carted) as! Bool
+        var ingredients = [String]()
+        if (aDecoder.containsValue(forKey: Keys.Ingredients)){
+           ingredients = (aDecoder.decodeObject(forKey: Keys.Ingredients) as? [String])!
+        }
+        self.init(new_f2f_url : f2f_url,
+                  new_publisher : publisher,
+                  new_recipe_id : recipe_id,
+                  new_social_rank : social_rank,
+                  new_publisher_url : publisher_url,
+                  new_source_url : source_url,
+                  new_title : title,
+                  new_image_url : image_url,
+                  new_saved : saved,
+                  new_carted : carted,
+                  new_image : image,
+                  new_ingredients : ingredients)
         
     }
 
