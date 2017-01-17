@@ -20,6 +20,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     @IBOutlet var viewCardViewHolder: UIView!
     @IBOutlet var btnLink: UIButton!
     @IBOutlet var btnSave: UIButton!
+     @IBOutlet var btnCart: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
     
@@ -31,6 +32,13 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             imgFoodImage.image = currentRecipe.image
         }
         lblRecipeTitle.text = currentRecipe.title
+        if currentRecipe.saved == true{
+            btnSave.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.25)
+        }
+        
+        if currentRecipe.carted == true{
+            btnCart.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 231/255, blue: 93/255, alpha: 0.25)
+        }
         
     }
     
@@ -56,7 +64,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             let lblItemName = UILabel(frame: CGRect(x: 0, y: 0, width: newCardView.layer.frame.width, height: 50))
             lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
             lblItemName.textColor = UIColor.white
-            lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.15).cgColor
+            lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.25).cgColor
             lblItemName.text = ingredient
             lblItemName.textAlignment = NSTextAlignment.center
             newCardView.addSubview(lblItemName)
@@ -127,19 +135,36 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     @IBAction func btnSaveTouch(_ sender: UIButton) {
         if (currentRecipe.saved == true){
-            btnSave.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0.15)
+            btnSave.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0.25)
             currentRecipe.saved = false
-            btnSave.setTitle("save", for: .normal)
+            
+            btnCart.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0.25)
+            currentRecipe.carted = false
         }
         else{
-            btnSave.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.15)
+            btnSave.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.25)
             currentRecipe.saved = true
-            btnSave.setTitle("remove", for: .normal)
             Model.sharedInstance.saveRecipe(recipe: currentRecipe)
-
         }
     }
     
+    @IBAction func btnCartTouch(_ sender: UIButton) {
+        if (currentRecipe.carted == true){
+            btnCart.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0.25)
+            currentRecipe.carted = false
+        }
+        else{
+            btnSave.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.25)
+            currentRecipe.saved = true
+            
+            btnCart.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 231/255, blue: 93/255, alpha: 0.25)
+            currentRecipe.carted = true
+            
+            Model.sharedInstance.saveRecipe(recipe: currentRecipe)
+            
+        }
+        
+    }
 
 }
 

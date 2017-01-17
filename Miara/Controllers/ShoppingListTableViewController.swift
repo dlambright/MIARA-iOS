@@ -11,6 +11,7 @@ import UIKit
 class ShoppingListTableViewController: UITableViewController {
     //var ingredientsList = [String]()
     var cartedRecipes = [Recipe]()
+    var greenIndices = [[Int]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class ShoppingListTableViewController: UITableViewController {
                 cartedRecipes.append(recipe)
             }            
         }
+        self.initGreenIndices()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +57,26 @@ class ShoppingListTableViewController: UITableViewController {
         
         //cell.lblIngredient.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0)
         cell.lblIngredient.text = cartedRecipes[indexPath.section].ingredients[indexPath.row]
+        
+        
+        if greenIndices[indexPath.section][indexPath.row] != 0 {
+            cell.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
+            cell.textLabel?.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
+            
+            // change selected color from gray to green
+            let bgColorView = UIView()
+            bgColorView.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
+            cell.selectedBackgroundView = bgColorView
+        }
+        else{
+            cell.backgroundColor = UIColor.white
+            cell.textLabel?.backgroundColor = UIColor.white
+            
+            // change selection color from gray to white
+            let bgColorView = UIView()
+            bgColorView.backgroundColor = UIColor.white
+            cell.selectedBackgroundView = bgColorView
+        }
 
         return cell
     }
@@ -65,12 +87,15 @@ class ShoppingListTableViewController: UITableViewController {
         if (cell.backgroundColor == UIColor.white){
             
             cell.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
-            //cell.textLabel?.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 232/255, blue: 101/255, alpha: 1)
+            cell.textLabel?.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
             
             // change selected color from gray to green
             let bgColorView = UIView()
-            bgColorView.backgroundColor = UIColor(colorLiteralRed: 32/255, green: 232/255, blue: 101/255, alpha: 1)
+            bgColorView.backgroundColor = UIColor(colorLiteralRed: 20/255, green: 145/255, blue: 63/255, alpha: 1)
             cell.selectedBackgroundView = bgColorView
+            
+            greenIndices[indexPath.section][indexPath.row] = 1
+            
         }
         else{
             cell.backgroundColor = UIColor.white
@@ -78,10 +103,23 @@ class ShoppingListTableViewController: UITableViewController {
             
             // change selection color from gray to white
             let bgColorView = UIView()
-            bgColorView.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
+            bgColorView.backgroundColor = UIColor.white
             cell.selectedBackgroundView = bgColorView
+            greenIndices[indexPath.section][indexPath.row] = 0
+            
         }
     }
+    
+    func initGreenIndices(){
+        for i in 0...cartedRecipes.count-1{
+            var tempArray = [Int]()
+            for _ in 0...cartedRecipes[i].ingredients.count{
+                tempArray.append(0)
+            }
+            greenIndices.append(tempArray)
+        }
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

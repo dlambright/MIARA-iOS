@@ -65,7 +65,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
         cell.lblTitle.text = Model.sharedInstance.recipeList[indexPath.row].title
-        cell.lblRating.text = String(Int(Model.sharedInstance.recipeList[indexPath.row].social_rank))
+        cell.lblRating.text = "rank: \( String(Int(Model.sharedInstance.recipeList[indexPath.row].social_rank)))/100"
         cell.recipe = Model.sharedInstance.recipeList[indexPath.row]
         cell.toggleSavedColoring()          
         //cell.viewBackground.backgroundColor = colors[indexPath.row]
