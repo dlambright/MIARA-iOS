@@ -19,8 +19,13 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
 
     @IBOutlet var viewCardViewHolder: UIView!
     @IBOutlet var btnLink: UIButton!
+    @IBOutlet var btnCards: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
+    @IBOutlet var lblIngredientDetail: UILabel!
+    
+    var cardData = [CardData]()
+    var cardOrganizer = CardOrganizer()
     
     var currentRecipe : Recipe! = nil
     
@@ -31,9 +36,27 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
         lblRecipeTitle.text = currentRecipe.title
         
+        if (currentRecipe.ingredients != nil && currentRecipe.source_url != nil){
+            cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
+        }
+        else{
+            sleep(2)
+            cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
+        }
+        
+        btnCards.isHidden = true
+        if (cardData.count > 0){
+            btnCards.isHidden = false
+        }
+
+        
     }
     
     func refreshCardStack(){
+        
+        
+        
+        
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
                 options.likedText = ""
@@ -42,14 +65,14 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
                 options.nopeColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0) // hacky way to not have the liked/disliked boxes on the cards
         options.onPan = { state -> Void in
             if state?.thresholdRatio == 1 && state?.direction == MDCSwipeDirection.left {
-                print("Photo deleted!")
+                //print("Photo deleted!")
             }
         }
         if (currentRecipe.ingredients == nil ||
             currentRecipe.ingredients.count == 0){
             currentRecipe.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         }
-        for ingredient in currentRecipe.ingredients{
+        for i in 0...cardData.count-1{
             let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
             newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 245/255, green: 245/255, blue: 245/255, alpha: 1).cgColor
             
@@ -57,7 +80,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
             lblItemName.textColor = UIColor.black
             lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0).cgColor
-            lblItemName.text = ingredient
+            lblItemName.text = cardData[cardData.count-1-i].ingredient  // all weird becuase it needs to be read backward
             lblItemName.textAlignment = NSTextAlignment.center
             lblItemName.lineBreakMode = NSLineBreakMode.byWordWrapping
             lblItemName.numberOfLines = 0
@@ -69,9 +92,10 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             newCardView.addSubview(viewRedLine)
             
             let lblItemStep = UILabel(frame: CGRect(x: 16, y: viewRedLine.frame.height + lblItemName.frame.height  + 16, width: newCardView.layer.frame.width - 32, height: newCardView.frame.height - lblItemName.frame.height - viewRedLine.frame.height - 32))
-            let ttext = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim et id est laborum."
-            let range = (ttext as NSString).range(of: " et ")
-            let attributedString = NSMutableAttributedString(string:ttext)
+            
+            let ttext = cardData[cardData.count-1-i].instruction
+            let range = NSMakeRange(cardData[cardData.count-1-i].rangeLow, cardData[cardData.count-1-i].rangeHigh - cardData[cardData.count-1-i].rangeLow)
+            let attributedString = NSMutableAttributedString(string:ttext!)
             attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1) , range: range)
             
             lblItemStep.attributedText = attributedString
@@ -92,7 +116,16 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        refreshCardStack()
+        //refreshCardStack()
+        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
+            lblIngredientDetail.text = "missing ingredients.... try again"
+        }
+        else{
+            lblIngredientDetail.text = ""
+            for ingredient in currentRecipe.ingredients{
+                lblIngredientDetail.text = lblIngredientDetail.text! + ingredient + "\n"
+            }
+        }
     }
     
 
@@ -111,7 +144,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     // This is called when a user didn't fully swipe left or right.
     func viewDidCancelSwipe(_ view: UIView) -> Void{
-        print("Couldn't decide, huh?")
+        //print("Couldn't decide, huh?")
     }
     
     // Sent before a choice is made. Cancel the choice by returning `false`. Otherwise return `true`.
@@ -133,9 +166,9 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     // This is called then a user swipes the view fully left or right.
     func view(_ view: UIView, wasChosenWith wasChosenWithDirection: MDCSwipeDirection) -> Void{
         if wasChosenWithDirection == MDCSwipeDirection.left {
-            print("Photo deleted!")
+            //print("Photo deleted!")
         }else{
-            print("Photo saved!")
+           // print("Photo saved!")
         }
     }
 

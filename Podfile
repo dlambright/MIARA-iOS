@@ -6,6 +6,7 @@ target ‘Miara’ do
   use_frameworks!
   pod 'SwiftyJSON'
   pod 'MDCSwipeToChoose'
+  pod 'SwiftSoup'
   # Pods for Miara
 
   target ‘MiaraTests’ do

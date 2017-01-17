@@ -63,7 +63,7 @@ class Model: NSObject {
             if let jsonData = data {
                 
                 let swiftyJson:JSON = JSON(data: jsonData)
-                ingredients = swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!
+                ingredients = self.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
                 
                 self.setIngredientsForRecipeWithId(id: id, ingredients: ingredients)
             }
@@ -77,6 +77,18 @@ class Model: NSObject {
                 break
             }
         }
+    }
+    
+    private func sanitizeIngredientsList(ingredientsToTest: [String])->[String]{
+        var newIngredientList = [String]()
+        
+        for ingredient in ingredientsToTest{
+            if (ingredient.characters.last != ":"){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
+                newIngredientList.append(ingredient)
+            }
+        }
+        return newIngredientList
+        
     }
     
     

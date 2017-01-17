@@ -52,9 +52,15 @@ class Recipe: NSObject {
         self.source_url = newJson["source_url"].stringValue
         self.title = newJson["title"].stringValue
         self.image_url =  newJson["image_url"].stringValue
-        self.ingredients = newJson["ingredients"].arrayObject as! [String]!
+        
+        /*self.ingredients = newJson["ingredients"].arrayObject as! [String]!
+        let ingreds = newJson["ingredients"].arrayObject as! [String]!
+        self.ingredients = sanitizeIngredientsList(ingredientsToTest: ingreds!)
+        let ingreds = newJson["ingredients"].arrayObject as! [String]!
+        self.ingredients = sanitizeIngredientsList(ingredientsToTest: ingreds!)*/
         self.setActualImage()
-    }
+    }  
+
     
     func setActualImage(){
         let url = URL(string: self.image_url)
