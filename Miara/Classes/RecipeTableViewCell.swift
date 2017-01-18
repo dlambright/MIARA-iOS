@@ -46,7 +46,13 @@ class RecipeTableViewCell: UITableViewCell {
         }
         else{
             recipe.saved = true
-            Model.sharedInstance.saveRecipe(recipe: recipe)
+            
+            DispatchQueue.global(qos: .background).async {
+                if self.self.recipe.ingredients == nil{
+                    Model.sharedInstance.getIngredientsForRecipeWithId(id: self.recipe.recipe_id)
+                }
+                Model.sharedInstance.saveRecipe(recipe: self.recipe)
+            }
         }
         toggleSavedColoring()
     }
@@ -62,7 +68,9 @@ class RecipeTableViewCell: UITableViewCell {
             recipe.saved = true
             
             if recipe.ingredients == nil{
-                Model.sharedInstance.getIngredientsForRecipeWithId(id: recipe.recipe_id)
+                DispatchQueue.global(qos: .background).async {
+                    Model.sharedInstance.getIngredientsForRecipeWithId(id: self.recipe.recipe_id)
+                }
             }
         }
         Model.sharedInstance.saveRecipe(recipe: recipe)

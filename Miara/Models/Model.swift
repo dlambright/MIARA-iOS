@@ -99,13 +99,17 @@ class Model: NSObject {
         }
     }
     
-    private func sanitizeIngredientsList(ingredientsToTest: [String])->[String]{
+   func sanitizeIngredientsList(ingredientsToTest: [String])->[String]{
         var newIngredientList = [String]()
         
         for ingredient in ingredientsToTest{
-            if (ingredient.characters.last != ":"){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
+            if (ingredient.characters.last != ":" &&
+                ingredient.characters.last != ";" &&
+                ingredient.characters.last != "_" &&
+                ingredient.characters.first != "&" ){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
                 newIngredientList.append(ingredient)
             }
+
         }
         return newIngredientList
         
@@ -136,8 +140,10 @@ class Model: NSObject {
         myGroup.enter()
         queue.async (group:myGroup){
             self.savedRecipes.append(recipe)
-            self.getIngredientsForRecipeWithId(id: recipe.recipe_id)
-                        
+            if recipe.ingredients == nil || recipe.ingredients.count == 0{
+                self.getIngredientsForRecipeWithId(id: recipe.recipe_id)
+            }
+            
             myGroup.leave()
         }
         

@@ -99,22 +99,24 @@ class CardOrganizer: NSObject {
         }
         
         // Take out measurement words
-        for i in 0...newIngredientList.count-1{
-            for measurement in measurementArray{
-                newIngredientList[i] = newIngredientList[i].replacingOccurrences(of: measurement, with: "")
+        if newIngredientList.count > 0{
+            for i in 0...newIngredientList.count-1{
+                for measurement in measurementArray{
+                    newIngredientList[i] = newIngredientList[i].replacingOccurrences(of: measurement, with: "")
+                }
             }
-        }
-        
-        // Take out the stuff after a comma, if it exists
-        for i in 0...newIngredientList.count-1{
-            // This chicken breast stuff has come up twice now in tow tries....
-            if (newIngredientList[i].lowercased().range(of:"chicken breast") != nil){
-                newIngredientList[i] = "chicken breast"
-                break
-            }
-            let matches = matchesForRegexInText(regex: commaPattern, text: newIngredientList[i])
-            if (matches.count > 0){
-                newIngredientList[i] = newIngredientList[i].replacingOccurrences(of: matches[0], with: "")
+            
+            // Take out the stuff after a comma, if it exists
+            for i in 0...newIngredientList.count-1{
+                // This chicken breast stuff has come up twice now in tow tries....
+                if (newIngredientList[i].lowercased().range(of:"chicken breast") != nil){
+                    newIngredientList[i] = "chicken breast"
+                    break
+                }
+                let matches = matchesForRegexInText(regex: commaPattern, text: newIngredientList[i])
+                if (matches.count > 0){
+                    newIngredientList[i] = newIngredientList[i].replacingOccurrences(of: matches[0], with: "")
+                }
             }
         }
         return newIngredientList

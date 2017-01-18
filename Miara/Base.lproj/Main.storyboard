@@ -266,7 +266,21 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Ve-h8i">
                                 <rect key="frame" x="8" y="248" width="359" height="403"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-4z-zac">
+                                        <rect key="frame" x="8" y="8" width="343" height="387"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25020973154362414" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9uO-4z-zac" secondAttribute="trailing" constant="8" id="1J8-hd-1cL"/>
+                                    <constraint firstAttribute="bottom" secondItem="9uO-4z-zac" secondAttribute="bottom" constant="8" id="ADy-i2-NKm"/>
+                                    <constraint firstItem="9uO-4z-zac" firstAttribute="leading" secondItem="Wkd-Ve-h8i" secondAttribute="leading" constant="8" id="VfL-XY-u2F"/>
+                                    <constraint firstItem="9uO-4z-zac" firstAttribute="top" secondItem="Wkd-Ve-h8i" secondAttribute="top" constant="8" id="jx4-Ya-JPj"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-L7-AIO">
                                 <rect key="frame" x="279" y="188" width="88" height="52"/>
@@ -274,7 +288,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="tIb-4V-O9j"/>
                                 </constraints>
-                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="6"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="4"/>
                                 <state key="normal" image="download.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -330,6 +344,7 @@
                         <outlet property="btnLink" destination="2dF-Tl-lON" id="0FL-Lm-jMH"/>
                         <outlet property="btnSave" destination="i3a-L7-AIO" id="Z6C-4I-axC"/>
                         <outlet property="imgFoodImage" destination="SQr-fS-H9e" id="zs0-MW-hmv"/>
+                        <outlet property="lblIngredientDetail" destination="9uO-4z-zac" id="yVK-7T-Ylf"/>
                         <outlet property="lblRecipeTitle" destination="rLa-L3-FS1" id="5lD-tP-S8x"/>
                         <outlet property="viewCardViewHolder" destination="Wkd-Ve-h8i" id="cNP-cv-2Zw"/>
                     </connections>

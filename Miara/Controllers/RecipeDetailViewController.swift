@@ -63,9 +63,6 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     func refreshCardStack(){
         
-        
-        
-        
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
                 options.likedText = ""
@@ -126,15 +123,15 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         //refreshCardStack()
-        /*if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
-            lblIngredientDetail.text = "missing ingredients.... try again"
+        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
+            lblIngredientDetail.text = "missing ingredients....try again"
         }
         else{
             lblIngredientDetail.text = ""
             for ingredient in currentRecipe.ingredients{
                 lblIngredientDetail.text = lblIngredientDetail.text! + ingredient + "\n"
             }
-        }*/
+        }
     }
     
 
