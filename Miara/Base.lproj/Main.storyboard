@@ -236,28 +236,28 @@
                                     <constraint firstItem="rLa-L3-FS1" firstAttribute="leading" secondItem="fqH-MB-VWa" secondAttribute="leading" constant="16" id="cSM-zE-6UK"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-Tl-lON">
-                                <rect key="frame" x="8" y="188" width="88.5" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-Tl-lON">
+                                <rect key="frame" x="8" y="188" width="88" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="F2J-yf-xZK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <state key="normal" title="link">
+                                <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="4"/>
+                                <state key="normal" image="link.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="ZHf-yb-JLW" kind="show" id="JWl-AT-1OY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-mQ-fAo">
-                                <rect key="frame" x="98.5" y="188" width="88" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-mQ-fAo">
+                                <rect key="frame" x="98" y="188" width="88.5" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="mRi-AD-8JT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <state key="normal" title="refresh">
+                                <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="4"/>
+                                <state key="normal" image="card_stack.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -269,12 +269,12 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25020973154362414" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-L7-AIO">
-                                <rect key="frame" x="278.5" y="188" width="88.5" height="52"/>
+                                <rect key="frame" x="279" y="188" width="88" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="tIb-4V-O9j"/>
                                 </constraints>
-                                <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="4"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="6"/>
                                 <state key="normal" image="download.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -283,7 +283,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-Za-Wfs">
-                                <rect key="frame" x="188.5" y="188" width="88" height="52"/>
+                                <rect key="frame" x="188.5" y="188" width="88.5" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="4"/>
                                 <state key="normal" image="shopping_list.png"/>
@@ -325,6 +325,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3G5-sl-tSM"/>
                     <connections>
+                        <outlet property="btnCards" destination="CYc-mQ-fAo" id="tn8-Gw-BME"/>
                         <outlet property="btnCart" destination="8hn-Za-Wfs" id="I5F-Nz-MG4"/>
                         <outlet property="btnLink" destination="2dF-Tl-lON" id="0FL-Lm-jMH"/>
                         <outlet property="btnSave" destination="i3a-L7-AIO" id="Z6C-4I-axC"/>
@@ -597,7 +598,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="card_stack.png" width="228" height="190"/>
         <image name="download.png" width="300" height="300"/>
+        <image name="link.png" width="512" height="512"/>
         <image name="magnifying-glass-3-xxl.png" width="256" height="256"/>
         <image name="meme.jpg" width="400" height="354"/>
         <image name="purple.jpg" width="1080" height="1920"/>

@@ -100,11 +100,13 @@ class Recipe: NSObject, NSCoding {
         self.source_url = newJson["source_url"].stringValue
         self.title = newJson["title"].stringValue
         self.image_url =  newJson["image_url"].stringValue
-        self.ingredients = newJson["ingredients"].arrayObject as! [String]!
         self.saved = false
         self.carted = false
+        let ingreds = newJson["ingredients"].arrayObject as! [String]?
+        self.ingredients = sanitizeIngredientsList(ingredients: ingreds!)
         self.setActualImage()
-    }
+    }  
+
     
     func setActualImage(){
         let url = URL(string: self.image_url)
@@ -173,6 +175,16 @@ class Recipe: NSObject, NSCoding {
                   new_image : image,
                   new_ingredients : ingredients)
         
+    }
+
+    func sanitizeIngredientsList(ingredients: [String])->[String]{
+        var ingredientsToReturn = [String]()
+        for ingred in ingredients{
+            if ingred[0] != "&"{
+                ingredientsToReturn.append(ingred)
+            }
+        }
+        return ingredientsToReturn
     }
 
 }

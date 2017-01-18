@@ -22,6 +22,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        txtSearchText.text = "cake"
+        
+        
+//        var araye = ["2 jalapeno peppers, cut in half lengthwise and seeded",
+//            "2 slices sour dough bread",
+//            "1 tablespoon butter, room temperature",
+//            "2 tablespoons cream cheese, room temperature",
+//            "1/2 cup jack and cheddar cheese, shredded",
+//            "1 tablespoon tortilla chips, crumbled"]
+//        
+//        let stringIndicies = co.getIndicesOfWordsIn(theString: "In a mixing bowl, combine flour, sugar, and salt.")
+        
+ //       let temp = co.getCardDictionary(ingredientList: araye, instructionList: instructions)
+        
+        //var co = CardOrganizer()  
         btnSearch.layer.borderColor = UIColor.white.cgColor
         btnSavedRecipes.layer.borderColor = UIColor.white.cgColor
         btnShoppingList.layer.borderColor = UIColor.white.cgColor
