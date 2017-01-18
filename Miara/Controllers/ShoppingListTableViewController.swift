@@ -143,7 +143,16 @@ class ShoppingListTableViewController: UITableViewController {
         }
     }
     
-
+    /*func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
+    {
+        let complete =  UITableViewRowAction(style: .default, title: "deleate")
+        { action, index in
+            print("more button tapped")
+        }
+        complete.backgroundColor = UIColor(colorLiteralRed: /*229*/0/255, green: 64/255, blue: 70/255, alpha: 1)
+        return [complete]
+    }*/
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
