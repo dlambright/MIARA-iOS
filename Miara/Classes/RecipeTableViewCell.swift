@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class RecipeTableViewCell: UITableViewCell {
 
@@ -47,33 +48,35 @@ class RecipeTableViewCell: UITableViewCell {
         else{
             recipe.saved = true
             
-            DispatchQueue.global(qos: .background).async {
-                if self.self.recipe.ingredients == nil{
-                    Model.sharedInstance.getIngredientsForRecipeWithId(id: self.recipe.recipe_id)
-                }
-                Model.sharedInstance.saveRecipe(recipe: self.recipe)
+            if self.self.recipe.ingredients == nil || recipe.ingredients.count == 0{
+                Model.sharedInstance.setIngredientsAndSave(recipe: recipe)
+            }
+            else{
+                Model.sharedInstance.saveRecipe(recipe: recipe)
             }
         }
         toggleSavedColoring()
+        
     }
     
     @IBAction func btnCartPress(_ sender: UIButton) {
         
         if (recipe.carted == true){
             recipe.carted = false
+            Model.sharedInstance.saveRecipe(recipe: recipe)
             
         }
         else{
             recipe.carted = true
             recipe.saved = true
             
-            if recipe.ingredients == nil{
-                DispatchQueue.global(qos: .background).async {
-                    Model.sharedInstance.getIngredientsForRecipeWithId(id: self.recipe.recipe_id)
-                }
+            if recipe.ingredients == nil || recipe.ingredients.count == 0{
+               Model.sharedInstance.setIngredientsAndSave(recipe: recipe)
+            }
+            else{
+                Model.sharedInstance.saveRecipe(recipe: recipe)
             }
         }
-        Model.sharedInstance.saveRecipe(recipe: recipe)
         toggleSavedColoring()
     }
     

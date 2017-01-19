@@ -40,7 +40,7 @@ class Model: NSObject {
         self.apiKey = plist?.object(forKey: "Food2Fork_Api_Key") as! String
     }
     
-    func searchRecipesWithString(searchString: String){
+    private func searchRecipesWithString(searchString: String, callback: @escaping (_ data: NSData) -> ()) {
         
         let basicUrl = "http://www.food2fork.com/api/search?key=" + apiKey + "&q=" + searchString
         let eurl = URL(string: basicUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
@@ -50,29 +50,36 @@ class Model: NSObject {
         self.recipeList = [Recipe]()
         
         session.dataTask(with: request) {data, response, err in
-            if let jsonData = data {
-                
-                let swiftyJson:JSON = JSON(data: jsonData)
-                let count = swiftyJson["count"].intValue
-                let recipeArray = swiftyJson["recipes"].arrayValue
-                
-                if (count > 0){
-                    for i in (0...count-1){
-                        var newRecipe:Recipe = Recipe(newJson: recipeArray[i])
-                        
-                        newRecipe = self.checkIfSearchResultRecipeIsAlreadySaved(recipe: newRecipe)
-                        newRecipe = self.checkIfSearchResultRecipeIsAlreadyCarted(recipe: newRecipe)
-                        
-                        self.recipeList.append(newRecipe)
-                    }
-                }
-            }
+            callback(data! as NSData)
         }.resume()
     }
     
-    func getIngredientsForRecipeWithId(id: String){
+    func searchRecipesWithString(searchString: String){
         
-        var ingredients = [String]()
+        self.searchRecipesWithString(searchString: searchString, callback: { (data) in
+            let jsonData = data
+                
+            let swiftyJson:JSON = JSON(data: jsonData as Data)
+            let count = swiftyJson["count"].intValue
+            let recipeArray = swiftyJson["recipes"].arrayValue
+            
+            if (count > 0){
+                for i in (0...count-1){
+                    var newRecipe:Recipe = Recipe(newJson: recipeArray[i])
+                    
+                    newRecipe = self.checkIfSearchResultRecipeIsAlreadySaved(recipe: newRecipe)
+                    newRecipe = self.checkIfSearchResultRecipeIsAlreadyCarted(recipe: newRecipe)
+                    
+                    self.recipeList.append(newRecipe)
+                }
+            }
+        })
+    }
+    
+    
+
+    func getIngredientsForRecipeWithId(id: String, callback: @escaping (_ data: NSData) -> ()) {
+        
         let basicUrl = "http://food2fork.com/api/get?key=" + apiKey + "&rId=" + id
         let eurl = URL(string: basicUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
         
@@ -80,14 +87,28 @@ class Model: NSObject {
         let session = URLSession.shared
         
         session.dataTask(with: request) {data, response, err in
-            if let jsonData = data {
-                
-                let swiftyJson:JSON = JSON(data: jsonData)
-                ingredients = self.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
-                
-                self.setIngredientsForRecipeWithId(id: id, ingredients: ingredients)
-            }
+            callback(data! as NSData)
         }.resume()
+    }
+    
+    func setIngredientsAndSave(recipe: Recipe){
+        self.getIngredientsForRecipeWithId(id: recipe.recipe_id, callback: { (data) in
+            let jsonData = data
+            let swiftyJson:JSON = JSON(data: jsonData as Data)
+            let ingredients = self.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
+            self.setIngredientsForRecipeWithId(id: recipe.recipe_id, ingredients: ingredients)
+            self.saveRecipe(recipe: recipe)
+
+        })
+    }
+    
+    func setIngredients(recipe: Recipe){
+        self.getIngredientsForRecipeWithId(id: recipe.recipe_id, callback: { (data) in
+            let jsonData = data
+            let swiftyJson:JSON = JSON(data: jsonData as Data)
+            let ingredients = self.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
+            self.setIngredientsForRecipeWithId(id: recipe.recipe_id, ingredients: ingredients)
+        })
     }
     
     private func setIngredientsForRecipeWithId(id: String, ingredients : [String]){
@@ -128,33 +149,19 @@ class Model: NSObject {
     
     func saveRecipe(recipe: Recipe){
         
-        let queue = DispatchQueue(label: "Buckets.Charlie.Miara", attributes: .concurrent, target: .main)
-        let myGroup = DispatchGroup()
-        
         for alreadyIncludedRecipe in savedRecipes{
             if alreadyIncludedRecipe.recipe_id == recipe.recipe_id{
+                self.saveRecipesToDisk()
                 return
             }
         }
-                
-        myGroup.enter()
-        queue.async (group:myGroup){
-            self.savedRecipes.append(recipe)
-            if recipe.ingredients == nil || recipe.ingredients.count == 0{
-                self.getIngredientsForRecipeWithId(id: recipe.recipe_id)
-            }
-            
-            myGroup.leave()
+        
+        if recipe.ingredients == nil || recipe.ingredients.count == 0{
+            self.setIngredients(recipe: recipe)
         }
         
-        
-        myGroup.notify(queue: DispatchQueue.main) {
-            self.saveRecipesToDisk()
-        }
-        
-
-
-        
+        self.savedRecipes.append(recipe)
+        self.saveRecipesToDisk()
     }
     
     func removeSavedRecipe(recipe: Recipe){

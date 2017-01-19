@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class SearchResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -80,8 +81,8 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "recipeDetailViewController") as? RecipeDetailViewController{
             
             if (selectedRecipe?.ingredients == nil || selectedRecipe?.ingredients.count == 0){
-                Model.sharedInstance.getIngredientsForRecipeWithId(id: (selectedRecipe?.recipe_id)!)
-                sleep(1)
+                Model.sharedInstance.setIngredients(recipe: self.selectedRecipe!)
+
             }
             
             tblSearchResults.deselectRow(at: indexPath, animated: true)

@@ -29,6 +29,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     var cardData = [CardData]()
     var cardOrganizer = CardOrganizer()
     
+    
     var currentRecipe : Recipe! = nil
     
     override func viewDidLoad() {
@@ -171,15 +172,18 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     // This is called then a user swipes the view fully left or right.
     func view(_ view: UIView, wasChosenWith wasChosenWithDirection: MDCSwipeDirection) -> Void{
-        /*if wasChosenWithDirection == MDCSwipeDirection.left {
-            //print("Photo deleted!")
-        }else{
-           // print("Photo saved!")
-        }*/
+
     }
 
     @IBAction func refreshPress(_ sender: Any) {
-        refreshCardStack()
+        for view in viewCardViewHolder.subviews {
+            if view is MDCSwipeToChooseView {
+                view.removeFromSuperview()
+            }
+            
+        }
+            refreshCardStack()
+        
     }
     
     @IBAction func btnSaveTouch(_ sender: UIButton) {
