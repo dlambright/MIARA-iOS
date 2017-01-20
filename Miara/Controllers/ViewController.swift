@@ -41,14 +41,18 @@ class ViewController: UIViewController {
         let searchTerm = txtSearchText.text
         
         if (searchTerm != ""){
-            Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!)
+            Model.sharedInstance.recipeList = [Recipe]()
+            Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!, pageNumber: 1)
+            Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!, pageNumber: 2)
             
             for _ in 0...2{
                 if(Model.sharedInstance.recipeList.count > 0){
                     sleep(1)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
-                    srvc.searchTerm = "search results for \"" + searchTerm! + "\""
+                    srvc.searchTermUserText = "search results for \"\((searchTerm! as String))\""
+                    srvc.searchTerm = searchTerm
+                    srvc.searchDepth = 3
                     if let navigator = navigationController {
                         navigator.pushViewController(srvc, animated: true)
                     }
@@ -82,7 +86,8 @@ class ViewController: UIViewController {
     @IBAction func btnSavedRecipesPress(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
-        srvc.searchTerm = "my saved recipes"
+        srvc.searchTermUserText = "my saved recipes"
+        srvc.searchTerm = "recipes ThAt are saved"
         if let navigator = navigationController {
             Model.sharedInstance.setSavedRecipesToCurrentRecipes()
             navigator.pushViewController(srvc, animated: true)

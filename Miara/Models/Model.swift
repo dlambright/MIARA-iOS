@@ -40,23 +40,23 @@ class Model: NSObject {
         self.apiKey = plist?.object(forKey: "Food2Fork_Api_Key") as! String
     }
     
-    private func searchRecipesWithString(searchString: String, callback: @escaping (_ data: NSData) -> ()) {
+    private func searchRecipesWithString(searchString: String, pageNumber: Int, callback: @escaping (_ data: NSData) -> ()) {
         
-        let basicUrl = "http://www.food2fork.com/api/search?key=" + apiKey + "&q=" + searchString
+        let basicUrl = "http://www.food2fork.com/api/search?key=\(apiKey as String)&q=\(searchString)&page=\(String(pageNumber))"
         let eurl = URL(string: basicUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
         
         let request = URLRequest(url: eurl)
         let session = URLSession.shared
-        self.recipeList = [Recipe]()
+//        self.recipeList = [Recipe]()
         
         session.dataTask(with: request) {data, response, err in
             callback(data! as NSData)
         }.resume()
     }
     
-    func searchRecipesWithString(searchString: String){
+    func searchRecipesWithString(searchString: String, pageNumber: Int){
         
-        self.searchRecipesWithString(searchString: searchString, callback: { (data) in
+        self.searchRecipesWithString(searchString: searchString, pageNumber : pageNumber , callback: { (data) in
             let jsonData = data
                 
             let swiftyJson:JSON = JSON(data: jsonData as Data)

@@ -14,7 +14,9 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet var lblTitle: UILabel!
     //var recipeList = [Recipe]()
     var selectedRecipe : Recipe?
+    var searchTermUserText : String!
     var searchTerm : String!
+    var searchDepth: Int!
     @IBOutlet var tblSearchResults: UITableView!
     
     init(_ coder: NSCoder? = nil) {
@@ -35,7 +37,8 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         tblSearchResults.delegate = self
         tblSearchResults.dataSource = self
-        lblTitle.text = searchTerm
+        lblTitle.text = searchTermUserText
+        searchDepth = 1
 
         // Do any additional setup after loading the view.
     }
@@ -70,7 +73,11 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         cell.recipe = Model.sharedInstance.recipeList[indexPath.row]
         cell.toggleSavedColoring()          
         //cell.viewBackground.backgroundColor = colors[indexPath.row]
-        
+        if indexPath.row % 29 == 15 && searchTerm != "recipes ThAt are saved" && searchDepth == Model.sharedInstance.recipeList.count/30{
+            searchDepth = searchDepth + 1
+            Model.sharedInstance.searchRecipesWithString(searchString: searchTerm, pageNumber: searchDepth)
+            tblSearchResults.reloadData()
+        }
         return cell
     }
     
@@ -85,10 +92,13 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
 
             }
             
+
+            
             tblSearchResults.deselectRow(at: indexPath, animated: true)
             vc.currentRecipe = selectedRecipe
             self.navigationController?.pushViewController(vc, animated: true)
         }
+
         
     }
     
