@@ -21,7 +21,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.44394513964653015" green="0.1961885392665863" blue="0.36660164594650269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
@@ -32,9 +32,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrX-Ti-5yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-724" y="107"/>
+            <point key="canvasLocation" x="-681" y="124"/>
         </scene>
-        <!--MIARA IS A RECIPE APP-->
+        <!--miara is a recipe app-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Miara" customModuleProvider="target" sceneMemberID="viewController">
@@ -186,7 +186,9 @@
                             <constraint firstAttribute="trailing" secondItem="Orx-vI-BL6" secondAttribute="trailing" constant="32" id="y1w-26-RrJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MIARA IS A RECIPE APP" id="eJ2-Ve-cwi"/>
+                    <navigationItem key="navigationItem" title="miara is a recipe app" id="eJ2-Ve-cwi">
+                        <barButtonItem key="backBarButtonItem" title="    " id="A6F-WL-Zt7"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnSavedRecipes" destination="eWQ-eW-7KF" id="Dfw-tq-z3Y"/>
                         <outlet property="btnSearch" destination="Orx-vI-BL6" id="jcC-a5-hIJ"/>

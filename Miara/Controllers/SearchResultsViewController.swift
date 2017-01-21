@@ -38,7 +38,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         tblSearchResults.delegate = self
         tblSearchResults.dataSource = self
         lblTitle.text = searchTermUserText
-        searchDepth = 1
+        //searchDepth = 1
 
         // Do any additional setup after loading the view.
     }
@@ -73,7 +73,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         cell.recipe = Model.sharedInstance.recipeList[indexPath.row]
         cell.toggleSavedColoring()          
         //cell.viewBackground.backgroundColor = colors[indexPath.row]
-        if indexPath.row % 29 == 15 && searchTerm != "recipes ThAt are saved" && searchDepth == Model.sharedInstance.recipeList.count/30{
+        if indexPath.row % 29 == 15 && searchTerm != "recipes ThAt are saved" && searchDepth <= Model.sharedInstance.recipeList.count/30{
             searchDepth = searchDepth + 1
             Model.sharedInstance.searchRecipesWithString(searchString: searchTerm, pageNumber: searchDepth)
             tblSearchResults.reloadData()

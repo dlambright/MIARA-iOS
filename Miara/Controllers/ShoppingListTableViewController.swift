@@ -23,12 +23,26 @@ class ShoppingListTableViewController: UITableViewController {
         }
         self.initGreenIndices()
         
+        
+       
+//        let backItem = UIBarButtonItem()
+//        backItem.title = "back"
+//        
+//        if let font = UIFont(name: "Arial Rounded MT Bold", size: 15) {
+//            backItem.setTitleTextAttributes([NSFontAttributeName: font], for: UIControlState.normal)
+//        }
+//        navigationItem.backBarButtonItem = backItem
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+//    }
 
     
     

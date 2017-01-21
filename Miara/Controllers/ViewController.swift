@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var btnSearch: UIButton!
     @IBOutlet var btnSavedRecipes: UIButton!
     @IBOutlet var btnShoppingList: UIButton!
-    @IBOutlet var txtSearchText: UITextField!
-
-    
+    @IBOutlet var txtSearchText: UITextField!  
     
     
     override func viewDidLoad() {
@@ -29,6 +27,9 @@ class ViewController: UIViewController {
         btnShoppingList.layer.borderColor = UIColor.white.cgColor
         
         txtSearchText.text = "taco"
+        
+        //navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Arial Rounded MT Bold", size: 20.0)!]
+        //navigationController?.navigationBar.tit
         //Model.sharedInstance.nukeAllRecipes()
         
     }
@@ -45,14 +46,14 @@ class ViewController: UIViewController {
             Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!, pageNumber: 1)
             Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!, pageNumber: 2)
             
-            for _ in 0...2{
+            for _ in 0...5{
                 if(Model.sharedInstance.recipeList.count > 0){
                     sleep(1)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
                     srvc.searchTermUserText = "search results for \"\((searchTerm! as String))\""
                     srvc.searchTerm = searchTerm
-                    srvc.searchDepth = 3
+                    srvc.searchDepth = 2
                     if let navigator = navigationController {
                         navigator.pushViewController(srvc, animated: true)
                     }
@@ -100,7 +101,9 @@ class ViewController: UIViewController {
         let slvc = storyboard.instantiateViewController(withIdentifier: "shoppingListViewController") as! ShoppingListTableViewController
         if let navigator = navigationController {
             Model.sharedInstance.setCartedRecipesToCurrentRecipes()
+            navigator.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
             navigator.pushViewController(slvc, animated: true)
+            
         }
         return
         
