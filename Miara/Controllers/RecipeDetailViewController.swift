@@ -24,7 +24,8 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     @IBOutlet var btnCart: UIButton!
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
-    @IBOutlet var lblIngredientDetail: UILabel!
+    @IBOutlet var txtIngredientDetail: UITextView!
+    
     
     var cardData = [CardData]()
     var cardOrganizer = CardOrganizer()
@@ -125,12 +126,12 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     override func viewDidAppear(_ animated: Bool) {
         //refreshCardStack()
         if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
-            lblIngredientDetail.text = "missing ingredients....try again"
+            txtIngredientDetail.text = "missing ingredients....try again"
         }
         else{
-            lblIngredientDetail.text = ""
+            txtIngredientDetail.text = ""
             for ingredient in currentRecipe.ingredients{
-                lblIngredientDetail.text = lblIngredientDetail.text! + ingredient + "\n"
+                txtIngredientDetail.text = txtIngredientDetail.text! + ingredient + "\n"
             }
         }
     }
