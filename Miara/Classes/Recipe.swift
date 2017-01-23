@@ -39,6 +39,11 @@ class Recipe: NSObject, NSCoding {
     var carted: Bool!
     var ingredients : [String]!
     
+    init(name: String){
+        super.init()
+        self.title = name
+        self.ingredients = [String]()
+    }
     
     init(new_f2f_url : String,
          new_publisher : String,

@@ -12,6 +12,7 @@ class ShoppingListTableViewController: UITableViewController {
     //var ingredientsList = [String]()
     var cartedRecipes = [Recipe]()
     var greenIndices = [[Int]]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +22,37 @@ class ShoppingListTableViewController: UITableViewController {
                 cartedRecipes.append(recipe)
             }            
         }
+        Model.sharedInstance.loadCustomRecipeFromDisk()
+        
+        cartedRecipes.append(Model.sharedInstance.customItemsRecipe)
         self.initGreenIndices()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addTapped))
         
-       
-//        let backItem = UIBarButtonItem()
-//        backItem.title = "back"
-//        
-//        if let font = UIFont(name: "Arial Rounded MT Bold", size: 15) {
-//            backItem.setTitleTextAttributes([NSFontAttributeName: font], for: UIControlState.normal)
-//        }
-//        navigationItem.backBarButtonItem = backItem
+
         
+    }
+    
+    func addTapped(){
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Enter new list item:", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.text = ""
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            Model.sharedInstance.addItemToCustomRecipe(item: (textField?.text!)!)
+            self.addGreenIndex()
+            self.tableView.reloadData()
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -128,7 +148,9 @@ class ShoppingListTableViewController: UITableViewController {
         }
     }
     
-
+    func addGreenIndex(){
+        greenIndices[greenIndices.count-1].append(0)
+    }
     
     func initGreenIndices(){
         for i in 0...cartedRecipes.count-1{
@@ -152,7 +174,11 @@ class ShoppingListTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            cartedRecipes[indexPath.section].ingredients.remove(at: indexPath.row)
+            if (indexPath.section == cartedRecipes.count-1){ // If we just took an item from the custom ingredients
+                Model.sharedInstance.removeItemFromCustomRecipe(index: indexPath.row)
+            }
+            
+            //cartedRecipes[indexPath.section].ingredients.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

@@ -13,6 +13,7 @@ import SwiftyJSON
 class Model: NSObject {
     
     private var apiKey : String!
+    var customItemsRecipe : Recipe!
     var recipeList = [Recipe]()
     var savedRecipes = [Recipe]()
     var cartedRecipes = [Recipe]()
@@ -27,6 +28,12 @@ class Model: NSObject {
         let manager = FileManager.default
         let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first as! NSURL
         return url.appendingPathComponent("objectsArray")!.path
+    }
+    
+    var customRecipeFilePath : String {
+        let manager = FileManager.default
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first as! NSURL
+        return url.appendingPathComponent("custom")!.path
     }
     
     
@@ -136,6 +143,32 @@ class Model: NSObject {
         
     }
     
+    func addItemToCustomRecipe(item: String){
+        self.customItemsRecipe.ingredients.append(item)
+        self.saveCustomIngredientsRecipe()
+    }
+    
+    func removeItemFromCustomRecipe(index: Int){
+        self.customItemsRecipe.ingredients.remove(at: index)
+        self.saveCustomIngredientsRecipe() 
+    }
+    
+    
+    func saveCustomIngredientsRecipe()
+    {
+        NSKeyedArchiver.archiveRootObject(self.customItemsRecipe, toFile: customRecipeFilePath)
+    }
+    
+    func loadCustomRecipeFromDisk(){
+        if let recipe = NSKeyedUnarchiver.unarchiveObject(withFile: customRecipeFilePath) as? Recipe {
+            self.customItemsRecipe = recipe
+        }
+        else{
+            self.customItemsRecipe = Recipe(new_f2f_url: "NONE", new_publisher: "NONE", new_recipe_id: "NONE", new_social_rank: 00.00, new_publisher_url: "NONE", new_source_url: "NONE", new_title: "Other", new_image_url: "NONE", new_saved: false, new_carted: false, new_image: UIImage() , new_ingredients: [String]())
+        }
+    }
+    
+    
     private func saveRecipesToDisk(){
         NSKeyedArchiver.archiveRootObject(self.savedRecipes, toFile: recipeFilePath)
     }
@@ -145,7 +178,6 @@ class Model: NSObject {
             self.savedRecipes = array
         }
     }
-    
     
     func saveRecipe(recipe: Recipe){
         
