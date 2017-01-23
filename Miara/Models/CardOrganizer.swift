@@ -84,17 +84,36 @@ class CardOrganizer: NSObject {
     func stripIngredientsToBase(ingredientList : [String])->[String]{
         var newIngredientList = [String]()
         let numberPattern = "\\d+\\/?\\d?\\s?(\\(.*\\))?"
+        let numberOrPattern = "\\d [Oo][Rr] \\d "
+        let numberToPattern = "\\d [Tt][Oo] \\d "
         let commaPattern = ",.*"
         
         
         // Take out numbers
         for ingredient in ingredientList{
-            let matches = matchesForRegexInText(regex: numberPattern, text: ingredient)
+            var tempIngredient = ingredient
+            
+            var matches = matchesForRegexInText(regex: numberOrPattern, text: tempIngredient)
             if (matches.count > 0){
-                newIngredientList.append(ingredient.replacingOccurrences(of: matches[0], with: ""))
+                tempIngredient = ingredient.replacingOccurrences(of: matches[0], with: "")
+                newIngredientList.append(tempIngredient)
+                continue
             }
-            else if (ingredient.characters.last != ":"){ // : bullshit dividers
-                newIngredientList.append(ingredient)
+            
+            matches = matchesForRegexInText(regex: numberToPattern, text: tempIngredient)
+            if (matches.count > 0){
+                tempIngredient = ingredient.replacingOccurrences(of: matches[0], with: "")
+                newIngredientList.append(tempIngredient)
+                continue
+            }
+            
+            matches = matchesForRegexInText(regex: numberPattern, text: tempIngredient)
+            if (matches.count > 0){
+                tempIngredient = ingredient.replacingOccurrences(of: matches[0], with: "")
+                newIngredientList.append(tempIngredient)
+            }
+            else if (tempIngredient.characters.last != ":"){ // : bullshit dividers
+                newIngredientList.append(tempIngredient)
             }
         }
         
@@ -145,68 +164,73 @@ class CardOrganizer: NSObject {
         var maxHits = 0
         var ingredientForInstructionFound = false
         
-        for h in 0...tokenizedInstructionList.count-1{
-            maxHits = 0
-            ingredientForInstructionFound = false
-            let wordIndexArray = getIndicesOfWordsIn(theString: instructionList[h])
-            var i = 0
-            var lowWord = i
-            var highWord = 0
-            
-            while i < tokenizedInstructionList[h].count{
-            //for i in 0...tokenizedInstructionList[h].count-1{
+        if tokenizedInstructionList.count > 0{
+            for h in 0...tokenizedInstructionList.count-1{
+                maxHits = 0
+                ingredientForInstructionFound = false
+                let wordIndexArray = getIndicesOfWordsIn(theString: instructionList[h])
+                var i = 0
+                var lowWord = i
+                var highWord = 0
                 
-                for j in 0...tokenizedIngredientList.count-1{
+                while i < tokenizedInstructionList[h].count{
+                //for i in 0...tokenizedInstructionList[h].count-1{
                     
-                    for k in 0...tokenizedIngredientList[j].count-1{
-                        if (tokenizedInstructionList[h][i] == tokenizedIngredientList[j][k]){
-                            var tempMaxHits = 0
-                            var tempI = i
-                            var tempK = k
-                            
-                            while (lowWord < tokenizedInstructionList[h].count &&
-                                tempK < tokenizedIngredientList[j].count &&
-                                tokenizedInstructionList[h][tempI] == tokenizedIngredientList[j][tempK] &&
-                                tokenizedInstructionList[h][tempI].lowercased().range(of: "and ") == nil &&
-                                tokenizedInstructionList[h][tempI].lowercased().range(of: "with ") == nil &&
-                                tokenizedInstructionList[h][tempI].lowercased().range(of: " of ") == nil){
-                                tempMaxHits = tempMaxHits + 1
-                                if (tempMaxHits > maxHits){
-                                    hitInstructionIndex = h
-                                    hitIngredientIndex = j
-                                    maxHits = tempMaxHits
-                                    lowWord = i
+                    for j in 0...tokenizedIngredientList.count-1{
+                        
+                        for k in 0...tokenizedIngredientList[j].count-1{
+                            if (tokenizedInstructionList[h][i] == tokenizedIngredientList[j][k]){
+                                var tempMaxHits = 0
+                                var tempI = i
+                                var tempK = k
+                                
+                                while (lowWord < tokenizedInstructionList[h].count &&
+                                    tempK < tokenizedIngredientList[j].count &&
+                                    tokenizedInstructionList[h][tempI] == tokenizedIngredientList[j][tempK] &&
+                                    tokenizedInstructionList[h][tempI].lowercased().range(of: "and ") == nil &&
+                                    tokenizedInstructionList[h][tempI].lowercased().range(of: "with ") == nil &&
+                                    tokenizedInstructionList[h][tempI].lowercased().range(of: " of ") == nil){
+                                    tempMaxHits = tempMaxHits + 1
+                                    if (tempMaxHits > maxHits){
+                                        hitInstructionIndex = h
+                                        hitIngredientIndex = j
+                                        maxHits = tempMaxHits
+                                        lowWord = i
+                                        highWord = tempI
+                                    }
+                                    tempI = tempI + 1
+                                    tempK = tempK + 1
                                     highWord = tempI
-                                }
-                                tempI = tempI + 1
-                                tempK = tempK + 1
-                                highWord = tempI
-                                    if (tempI > tokenizedInstructionList[h].count-1){
-                                    break
+                                        if (tempI > tokenizedInstructionList[h].count-1){
+                                        break
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                if (maxHits > 0){
-                    let tempCardData = CardData(newIngredient: ingredientList[hitIngredientIndex], newInstruction: instructionList[hitInstructionIndex], newRangeLow: wordIndexArray[i], newRangeHigh: wordIndexArray[lowWord + 1])
-                    
-                    if (tempCardData.ingredient != returnCardDataArray.last?.ingredient ||
-                        tempCardData.instruction != returnCardDataArray.last?.instruction){
-                        returnCardDataArray.append(CardData(newIngredient: ingredientList[hitIngredientIndex], newInstruction:instructionList[hitInstructionIndex], newRangeLow: wordIndexArray[i], newRangeHigh: wordIndexArray[highWord]))
-                        i = i + (maxHits-1) // advance the marker the number of hits to avoid any possible repeats
+                    if (maxHits > 0){
+                        print (ingredientList[hitIngredientIndex])
+                        print (instructionList[hitInstructionIndex])
+                        print ( wordIndexArray[i])
+                        let tempCardData = CardData(newIngredient: ingredientList[hitIngredientIndex], newInstruction: instructionList[hitInstructionIndex], newRangeLow: wordIndexArray[i], newRangeHigh: wordIndexArray[lowWord + 1])
+                        
+                        if (tempCardData.ingredient != returnCardDataArray.last?.ingredient ||
+                            tempCardData.instruction != returnCardDataArray.last?.instruction){
+                            returnCardDataArray.append(CardData(newIngredient: ingredientList[hitIngredientIndex], newInstruction:instructionList[hitInstructionIndex], newRangeLow: wordIndexArray[i], newRangeHigh: wordIndexArray[highWord]))
+                            i = i + (maxHits-1) // advance the marker the number of hits to avoid any possible repeats
+                        }
+                        maxHits = 0
+                        ingredientForInstructionFound = true
                     }
-                    maxHits = 0
-                    ingredientForInstructionFound = true
+                    i = i + 1
                 }
-                i = i + 1
+                if (maxHits == 0 && !ingredientForInstructionFound){
+                    returnCardDataArray.append(CardData(newIngredient: "", newInstruction:instructionList[h], newRangeLow: 0, newRangeHigh: 0))
+                }
+                lowWord = 0
+                highWord = 0
+                
             }
-            if (maxHits == 0 && !ingredientForInstructionFound){
-                returnCardDataArray.append(CardData(newIngredient: "", newInstruction:instructionList[h], newRangeLow: 0, newRangeHigh: 0))
-            }
-            lowWord = 0
-            highWord = 0
-            
         }
         
         return returnCardDataArray
