@@ -380,6 +380,7 @@
 				TargetAttributes = {
 					A80395E41E0CDBD4004F9641 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S26ZP2M35G;
 						ProvisioningStyle = Automatic;
 					};
 					A80395FB1E0CDBD4004F9641 = {
@@ -785,6 +786,7 @@
 			baseConfigurationReference = 27BCA71784E2D00C09273D32 /* Pods-Miara.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S26ZP2M35G;
 				INFOPLIST_FILE = Miara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.Miara;
@@ -798,6 +800,7 @@
 			baseConfigurationReference = AB648165D8F7BFFE9F0BFD4C /* Pods-Miara.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S26ZP2M35G;
 				INFOPLIST_FILE = Miara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.Miara;

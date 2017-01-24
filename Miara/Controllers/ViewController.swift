@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         btnSavedRecipes.layer.borderColor = UIColor.white.cgColor
         btnShoppingList.layer.borderColor = UIColor.white.cgColor
         
-        txtSearchText.text = "taco"
+        //txtSearchText.text = "taco"
         
         //navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Arial Rounded MT Bold", size: 20.0)!]
         //navigationController?.navigationBar.tit
