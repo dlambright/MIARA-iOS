@@ -174,12 +174,19 @@ class ShoppingListTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if (indexPath.section == cartedRecipes.count-1){ // If we just took an item from the custom ingredients
+            let hostRecipe = cartedRecipes[indexPath.section]
+            hostRecipe.ingredients.remove(at: indexPath.row)
+        
+            if (indexPath.section == cartedRecipes.count-1){ // If we just took an item from the custom ingredients                
                 Model.sharedInstance.removeItemFromCustomRecipe(index: indexPath.row)
             }
             
             //cartedRecipes[indexPath.section].ingredients.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+
+            
+            
+
         }
     }
     

@@ -149,7 +149,7 @@ class Model: NSObject {
     }
     
     func removeItemFromCustomRecipe(index: Int){
-        self.customItemsRecipe.ingredients.remove(at: index)
+        //self.customItemsRecipe.ingredients.remove(at: index)
         self.saveCustomIngredientsRecipe() 
     }
     
