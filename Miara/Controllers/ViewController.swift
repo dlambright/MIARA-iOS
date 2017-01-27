@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         btnSearch.layer.borderColor = UIColor.white.cgColor
         btnSavedRecipes.layer.borderColor = UIColor.white.cgColor
         btnShoppingList.layer.borderColor = UIColor.white.cgColor
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
         //txtSearchText.text = "taco"
         
@@ -39,22 +41,25 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnSearchPress(_ sender: Any) {
+
+        view.endEditing(true)
         let searchTerm = txtSearchText.text
         
         if (searchTerm != ""){
+            btnSearch.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
             Model.sharedInstance.recipeList = [Recipe]()
             Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!, pageNumber: 1)
             Model.sharedInstance.searchRecipesWithString(searchString: searchTerm!, pageNumber: 2)
             
-            for _ in 0...5{
+            for _ in 0...10{
                 if(Model.sharedInstance.recipeList.count > 0){
-                    sleep(1)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
                     srvc.searchTermUserText = "search results for \"\((searchTerm! as String))\""
                     srvc.searchTerm = searchTerm
                     srvc.searchDepth = 2
                     if let navigator = navigationController {
+                        btnSearch.backgroundColor = UIColor(colorLiteralRed: 34/255, green: 245/255, blue: 107/255, alpha: 0.5)
                         navigator.pushViewController(srvc, animated: true)
                     }
                     return
@@ -68,6 +73,8 @@ class ViewController: UIViewController {
             let alert = UIAlertController(title: "", message: "Unable to retrieve data from server", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
+            btnSearch.backgroundColor = UIColor(colorLiteralRed: 34/255, green: 245/255, blue: 107/255, alpha: 0.5)
         
         }
     }
@@ -106,7 +113,12 @@ class ViewController: UIViewController {
             
         }
         return
-        
+    }
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
 }
