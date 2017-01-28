@@ -223,7 +223,9 @@ class CardOrganizer: NSObject {
                     i = i + 1
                 }
                 if (maxHits == 0 && !ingredientForInstructionFound){
-                    returnCardDataArray.append(CardData(newIngredient: "", newInstruction:instructionList[h], newRangeLow: 0, newRangeHigh: 0))
+                    if (instructionList[h] != ""){
+                        returnCardDataArray.append(CardData(newIngredient: "", newInstruction:instructionList[h], newRangeLow: 0, newRangeHigh: 0))
+                    }
                 }
                 lowWord = 0
                 highWord = 0
@@ -325,7 +327,11 @@ class CardOrganizer: NSObject {
                         for i in 0...matches.count-1{
                             tempItem = tempItem.replacingOccurrences(of: matches[i], with: "")
                         }
-                        listItems.append(tempItem)
+                        
+                        if ( tempItem != ""){
+                            listItems.append(tempItem)
+                        }
+                        
                         
                     }
                     else{
