@@ -187,20 +187,18 @@ class CardOrganizer: NSObject {
                                 while (lowWord < tokenizedInstructionList[h].count &&
                                     tempK < tokenizedIngredientList[j].count &&
                                     tokenizedInstructionList[h][tempI] == tokenizedIngredientList[j][tempK] &&
-                                    tokenizedInstructionList[h][tempI].lowercased().range(of: "and ") == nil &&
-                                    tokenizedInstructionList[h][tempI].lowercased().range(of: "with ") == nil &&
-                                    tokenizedInstructionList[h][tempI].lowercased().range(of: " of ") == nil){
-                                    tempMaxHits = tempMaxHits + 1
-                                    if (tempMaxHits > maxHits){
-                                        hitInstructionIndex = h
-                                        hitIngredientIndex = j
-                                        maxHits = tempMaxHits
-                                        lowWord = i
+                                    !self.wordIsFillerWord(word: tokenizedInstructionList[h][tempI])){
+                                        tempMaxHits = tempMaxHits + 1
+                                        if (tempMaxHits > maxHits){
+                                            hitInstructionIndex = h
+                                            hitIngredientIndex = j
+                                            maxHits = tempMaxHits
+                                            lowWord = i
+                                            highWord = tempI
+                                        }
+                                        tempI = tempI + 1
+                                        tempK = tempK + 1
                                         highWord = tempI
-                                    }
-                                    tempI = tempI + 1
-                                    tempK = tempK + 1
-                                    highWord = tempI
                                         if (tempI > tokenizedInstructionList[h].count-1){
                                         break
                                     }
@@ -234,6 +232,16 @@ class CardOrganizer: NSObject {
         }
         
         return returnCardDataArray
+    }
+    
+    func wordIsFillerWord(word: String)->Bool{
+        let fillerWords = ["and", "with", "or", "are", "of", "for"]
+        for fillerWord in fillerWords{
+            if word.lowercased() == fillerWord.lowercased(){
+                return true
+            }
+        }
+        return false
     }
     
     
@@ -309,12 +317,16 @@ class CardOrganizer: NSObject {
                 let tempArray = tempString.components(separatedBy: "<p>")
                 
                 for item in tempArray{
-                    let tempItem = item.replacingOccurrences(of: "\n", with: "")
+                    var tempItem = item.replacingOccurrences(of: "\n", with: "")
                     
                     let matches = matchesForRegexInText(regex: "<.*?>", text: tempItem)
                     
                     if (matches.count > 0){
-                        listItems.append(tempItem.replacingOccurrences(of: matches[0], with: ""))
+                        for i in 0...matches.count-1{
+                            tempItem = tempItem.replacingOccurrences(of: matches[i], with: "")
+                        }
+                        listItems.append(tempItem)
+                        
                     }
                     else{
                         if (tempItem != "" && tempItem != " "){
