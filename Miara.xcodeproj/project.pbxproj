@@ -55,16 +55,16 @@
 		A80396671E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
 		A80396681E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
 		A80396691E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
-		A803966D1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
-		A803966E1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
-		A803966F1E0CE015004F9641 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A803966B1E0CE015004F9641 /* ApiKeys.plist */; };
 		A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
 		A804FB8B1E1C938400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB8A1E1C938400F02ACD /* CardData.swift */; };
 		A804FB8C1E1C938400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB8A1E1C938400F02ACD /* CardData.swift */; };
 		A804FB8D1E1C938400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB8A1E1C938400F02ACD /* CardData.swift */; };
-		A842C21A1E3915CA00FB9FC5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842C2191E3915CA00FB9FC5 /* Launch Screen.storyboard */; };
-		A842C21B1E3915CA00FB9FC5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842C2191E3915CA00FB9FC5 /* Launch Screen.storyboard */; };
-		A842C21C1E3915CA00FB9FC5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842C2191E3915CA00FB9FC5 /* Launch Screen.storyboard */; };
+		A83DB28D1E3D82B700AB5822 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */; };
+		A83DB28E1E3D82B700AB5822 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */; };
+		A83DB28F1E3D82B700AB5822 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */; };
+		A83DB2911E3D82D400AB5822 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */; };
+		A83DB2921E3D82D400AB5822 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */; };
+		A83DB2931E3D82D400AB5822 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */; };
 		A855AEAB1E22CA54005E57AC /* shopping_list.png in Resources */ = {isa = PBXBuildFile; fileRef = A855AEAA1E22CA54005E57AC /* shopping_list.png */; };
 		A855AEB51E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
 		A855AEB61E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
@@ -121,10 +121,10 @@
 		A803965D1E0CDF95004F9641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Miara/Images/Assets.xcassets; sourceTree = "<group>"; };
 		A80396621E0CDFAD004F9641 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Miara/Classes/Recipe.swift; sourceTree = "<group>"; };
 		A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeTableViewCell.swift; path = Miara/Classes/RecipeTableViewCell.swift; sourceTree = "<group>"; };
-		A803966B1E0CE015004F9641 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "Miara/Supporting Files/ApiKeys.plist"; sourceTree = "<group>"; };
 		A80396741E0CE54A004F9641 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Miara/Info.plist; sourceTree = "<group>"; };
 		A804FB8A1E1C938400F02ACD /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
-		A842C2191E3915CA00FB9FC5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "Miara/Supporting Files/ApiKeys.plist"; sourceTree = "<group>"; };
+		A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Miara/Views/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A855AEAA1E22CA54005E57AC /* shopping_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shopping_list.png; path = Miara/Images/shopping_list.png; sourceTree = "<group>"; };
 		A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewController.swift; path = Miara/Controllers/ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewCell.swift; path = Miara/Classes/ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
@@ -245,8 +245,8 @@
 		A80396361E0CDF59004F9641 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */,
 				A80395EC1E0CDBD4004F9641 /* Main.storyboard */,
-				A842C2191E3915CA00FB9FC5 /* Launch Screen.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -292,8 +292,8 @@
 		A803966A1E0CDFEF004F9641 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */,
 				A80396741E0CE54A004F9641 /* Info.plist */,
-				A803966B1E0CE015004F9641 /* ApiKeys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -425,13 +425,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A803966D1E0CE015004F9641 /* ApiKeys.plist in Resources */,
 				A8FCF03E1E2F17AC003AC5F4 /* link.png in Resources */,
 				A8FCF03C1E2F15CF003AC5F4 /* card_stack.png in Resources */,
 				A80395EE1E0CDBD4004F9641 /* Main.storyboard in Resources */,
+				A83DB28D1E3D82B700AB5822 /* ApiKeys.plist in Resources */,
 				A80396541E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
 				A803965A1E0CDF86004F9641 /* purple.jpg in Resources */,
-				A842C21A1E3915CA00FB9FC5 /* Launch Screen.storyboard in Resources */,
+				A83DB2911E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
 				A855AEAB1E22CA54005E57AC /* shopping_list.png in Resources */,
 				A80396511E0CDF86004F9641 /* download.png in Resources */,
 				A803965E1E0CDF95004F9641 /* Assets.xcassets in Resources */,
@@ -443,13 +443,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83DB28E1E3D82B700AB5822 /* ApiKeys.plist in Resources */,
 				A80396551E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A83DB2921E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
 				A803965B1E0CDF86004F9641 /* purple.jpg in Resources */,
 				A80396581E0CDF86004F9641 /* meme.jpg in Resources */,
 				A80396521E0CDF86004F9641 /* download.png in Resources */,
 				A803965F1E0CDF95004F9641 /* Assets.xcassets in Resources */,
-				A803966E1E0CE015004F9641 /* ApiKeys.plist in Resources */,
-				A842C21B1E3915CA00FB9FC5 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,13 +457,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83DB28F1E3D82B700AB5822 /* ApiKeys.plist in Resources */,
 				A80396561E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A83DB2931E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
 				A803965C1E0CDF86004F9641 /* purple.jpg in Resources */,
 				A80396591E0CDF86004F9641 /* meme.jpg in Resources */,
 				A80396531E0CDF86004F9641 /* download.png in Resources */,
 				A80396601E0CDF95004F9641 /* Assets.xcassets in Resources */,
-				A803966F1E0CE015004F9641 /* ApiKeys.plist in Resources */,
-				A842C21C1E3915CA00FB9FC5 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
