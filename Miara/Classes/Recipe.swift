@@ -60,7 +60,7 @@ class Recipe: NSObject, NSCoding {
         self.social_rank = new_social_rank
         self.publisher_url = new_publisher_url
         self.source_url = new_source_url
-        self.title = new_title
+        self.title = self.cleanString(string: new_title)
         self.image_url =  new_image_url
         self.saved = false
         self.carted = false
@@ -90,7 +90,7 @@ class Recipe: NSObject, NSCoding {
         self.social_rank = new_social_rank
         self.publisher_url = new_publisher_url
         self.source_url = new_source_url
-        self.title = new_title
+        self.title = cleanString(string: new_title)
         self.image_url =  new_image_url
         self.saved = new_saved
         self.carted = new_carted
@@ -106,7 +106,7 @@ class Recipe: NSObject, NSCoding {
         self.social_rank = newJson["social_rank"].doubleValue
         self.publisher_url = newJson["publisher_url"].stringValue
         self.source_url = newJson["source_url"].stringValue
-        self.title = newJson["title"].stringValue
+        self.title = self.cleanString(string: newJson["title"].stringValue)
         self.image_url =  newJson["image_url"].stringValue
         self.saved = false
         self.carted = false
@@ -157,7 +157,7 @@ class Recipe: NSObject, NSCoding {
     }
     
     required convenience init(coder aDecoder: NSCoder) {
-        //super.init()
+        ///super.init()
         
 
         let f2f_url = aDecoder.decodeObject(forKey: Keys.F2f_url) as! String
@@ -188,5 +188,13 @@ class Recipe: NSObject, NSCoding {
                   new_image : image,
                   new_ingredients : ingredients)
         
+        self.title = cleanString(string: self.title)
+        
+    }
+    
+    func cleanString(string: String)->String{
+        var newString = string.replacingOccurrences(of: "&amp;", with: "&")
+        newString = newString.replacingOccurrences(of: "&#8217;", with: "+")
+        return newString
     }
 }
