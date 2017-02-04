@@ -39,6 +39,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             imgFoodImage.image = currentRecipe.image
         }
         lblRecipeTitle.text = currentRecipe.title
+        
         if currentRecipe.saved == true{
             btnSave.backgroundColor = UIColor(colorLiteralRed: 68/255, green: 111/255, blue: 255/255, alpha: 0.25)
         }
@@ -47,18 +48,33 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             btnCart.backgroundColor = UIColor(colorLiteralRed: 255/255, green: 231/255, blue: 93/255, alpha: 0.25)
         }
         
-        if (currentRecipe.ingredients != nil && currentRecipe.source_url != nil){
-            cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
-        }
-        else{
-            sleep(2)
-            cardData = cardOrganizer.getCardDictionary(ingredientList: currentRecipe.ingredients, instructionURL: currentRecipe.source_url)
-        }
+        self.btnCards.isEnabled = false
+        //self.btnCards.imageView?.image = nil
+        //self.btnCards.titleLabel?.text = "loading"
+        self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.05)
         
-        btnCards.isHidden = true
-        if (cardData.count > 0){
-            btnCards.isHidden = false
+        DispatchQueue.global(qos: .background).async {
+            for _ in 0...10{
+                if (self.currentRecipe.ingredients != nil && self.currentRecipe.source_url != nil){
+                    self.cardData = self.cardOrganizer.getCardDictionary(ingredientList: self.currentRecipe.ingredients, instructionURL: self.currentRecipe.source_url)
+                    break
+                }
+                sleep(1)
+            }
+            
+            DispatchQueue.main.async {
+                
+                if (self.cardData.count > 0){
+                    self.btnCards.isEnabled = true
+                    self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.25)
+                    //self.btnCards.imageView?.image = UIImage(named: "card_stack.png")
+                    //self.btnCards.titleLabel?.text = ""
+                }
+            }
         }
+
+        
+
 
         
     }

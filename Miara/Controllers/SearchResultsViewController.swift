@@ -80,9 +80,13 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         cell.toggleSavedColoring()          
         //cell.viewBackground.backgroundColor = colors[indexPath.row]
         if indexPath.row % 29 == 15 && searchTerm != "recipes ThAt are saved" && searchDepth <= Model.sharedInstance.recipeList.count/30{
-            searchDepth = searchDepth + 1
-            Model.sharedInstance.searchRecipesWithString(searchString: searchTerm, pageNumber: searchDepth)
-            tblSearchResults.reloadData()
+            DispatchQueue.global(qos: .background).async {
+                self.searchDepth = self.searchDepth + 1
+                Model.sharedInstance.searchRecipesWithString(searchString: self.searchTerm, pageNumber: self.searchDepth)
+                sleep(3)
+                self.tblSearchResults.reloadData()
+            }
+
         }
         return cell
     }

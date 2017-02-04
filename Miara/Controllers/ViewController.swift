@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-      
+        super.viewDidLoad()      
 
         btnSearch.layer.borderColor = UIColor.white.cgColor
         btnSavedRecipes.layer.borderColor = UIColor.white.cgColor

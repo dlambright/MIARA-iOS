@@ -64,7 +64,10 @@ class Recipe: NSObject, NSCoding {
         self.image_url =  new_image_url
         self.saved = false
         self.carted = false
-        self.setActualImage()
+        
+        DispatchQueue.global(qos: .background).async {
+            self.setActualImage()
+        }
     }
     
     
@@ -111,7 +114,10 @@ class Recipe: NSObject, NSCoding {
         if ingreds != nil && ingreds!.count > 0{
             self.ingredients = Model.sharedInstance.sanitizeIngredientsList(ingredientsToTest: ingreds!)
         }
-        self.setActualImage()
+        DispatchQueue.global(qos: .background).async {
+            self.setActualImage()
+        }
+
     }  
 
     
