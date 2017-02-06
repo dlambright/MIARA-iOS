@@ -2,8 +2,8 @@
 //  SearchResultsViewController.swift
 //  Miara
 //
-//  Created by Charlie Buckets on 12/8/16.
-//  Copyright © 2016 ChalieBuckets. All rights reserved.
+//  Created by Dustin Lambright on 12/8/16.
+//  Copyright © 2016 DustinLambright. All rights reserved.
 //
 
 import UIKit

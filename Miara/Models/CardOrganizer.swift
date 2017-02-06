@@ -207,9 +207,6 @@ class CardOrganizer: NSObject {
                         }
                     }
                     if (maxHits > 0){
-                        print (ingredientList[hitIngredientIndex])
-                        print (instructionList[hitInstructionIndex])
-                        print ( wordIndexArray[i])
                         let tempCardData = CardData(newIngredient: ingredientList[hitIngredientIndex], newInstruction: instructionList[hitInstructionIndex], newRangeLow: wordIndexArray[i], newRangeHigh: wordIndexArray[lowWord + 1])
                         
                         if (tempCardData.ingredient != returnCardDataArray.last?.ingredient ||
@@ -363,10 +360,6 @@ class CardOrganizer: NSObject {
                     classString.lowercased().range(of:"preparation") != nil){
                     
                     listItems = try! element.select("li")
-                    
-                    for leestItem in listItems.array(){
-                        print (try! leestItem.text())
-                    }
                     
                     break
                 }

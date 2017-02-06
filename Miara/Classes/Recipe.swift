@@ -124,7 +124,7 @@ class Recipe: NSObject, NSCoding {
     func setActualImage(){
         let url = URL(string: self.image_url)
         
-            DispatchQueue.global().async {
+            DispatchQueue.global(qos: .background).async {
                 let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
                 
                 if (data != nil){
@@ -194,7 +194,7 @@ class Recipe: NSObject, NSCoding {
     
     func cleanString(string: String)->String{
         var newString = string.replacingOccurrences(of: "&amp;", with: "&")
-        newString = newString.replacingOccurrences(of: "&#8217;", with: "+")
+        newString = newString.replacingOccurrences(of: "&#8217;", with: "'")
         return newString
     }
 }

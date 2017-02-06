@@ -72,6 +72,9 @@
 		A855AEB91E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */; };
 		A855AEBA1E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */; };
 		A855AEBB1E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */; };
+		A87C998E1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */; };
+		A87C998F1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */; };
+		A87C99901E4902FB00D7BE7C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */; };
 		A8FCF03C1E2F15CF003AC5F4 /* card_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */; };
 		A8FCF03E1E2F17AC003AC5F4 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03D1E2F17AC003AC5F4 /* link.png */; };
 /* End PBXBuildFile section */
@@ -128,6 +131,7 @@
 		A855AEAA1E22CA54005E57AC /* shopping_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shopping_list.png; path = Miara/Images/shopping_list.png; sourceTree = "<group>"; };
 		A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewController.swift; path = Miara/Controllers/ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewCell.swift; path = Miara/Classes/ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = Miara/Views/ProgressHUD.swift; sourceTree = "<group>"; };
 		A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_stack.png; path = Miara/Images/card_stack.png; sourceTree = "<group>"; };
 		A8FCF03D1E2F17AC003AC5F4 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link.png; path = Miara/Images/link.png; sourceTree = "<group>"; };
 		AB648165D8F7BFFE9F0BFD4C /* Pods-Miara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 			children = (
 				A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */,
 				A80395EC1E0CDBD4004F9641 /* Main.storyboard */,
+				A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 				A80396461E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
 				A803962A1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
 				A80396491E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A87C998E1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
 				A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
 				A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
 				A855AEB91E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */,
@@ -639,6 +645,7 @@
 				A804FB8C1E1C938400F02ACD /* CardData.swift in Sources */,
 				A803962B1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
 				A803964A1E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A87C998F1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
 				A80396011E0CDBD4004F9641 /* MiaraTests.swift in Sources */,
 				A80396441E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
 				A803963E1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
@@ -659,6 +666,7 @@
 				A804FB8D1E1C938400F02ACD /* CardData.swift in Sources */,
 				A803962C1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
 				A803964B1E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A87C99901E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
 				A803960C1E0CDBD4004F9641 /* MiaraUITests.swift in Sources */,
 				A80396451E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
 				A803963F1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
