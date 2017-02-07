@@ -69,8 +69,14 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
         cell.lblTitle.text = Model.sharedInstance.recipeList[indexPath.row].title
+        let modelName = UIDevice.current.model
         if ( Model.sharedInstance.recipeList[indexPath.row].ingredients != nil){
-             cell.lblRating.text = "\(Model.sharedInstance.recipeList[indexPath.row].ingredients.count) ingr."
+            if cell.lblRating.frame.width > 100{
+             cell.lblRating.text = "\(Model.sharedInstance.recipeList[indexPath.row].ingredients.count) ingredients"
+            }
+            else{
+                cell.lblRating.text = "\(Model.sharedInstance.recipeList[indexPath.row].ingredients.count) ingr"
+            }
         }
         else{
              cell.lblRating.text = ""
