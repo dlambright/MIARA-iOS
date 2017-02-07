@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         progressHud.hide()
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         Model.sharedInstance.loadRecipesFromDisk()
     }

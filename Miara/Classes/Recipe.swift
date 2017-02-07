@@ -195,6 +195,7 @@ class Recipe: NSObject, NSCoding {
     func cleanString(string: String)->String{
         var newString = string.replacingOccurrences(of: "&amp;", with: "&")
         newString = newString.replacingOccurrences(of: "&#8217;", with: "'")
+        newString = newString.replacingOccurrences(of: "&nbsp;", with: " ")
         return newString
     }
 }
