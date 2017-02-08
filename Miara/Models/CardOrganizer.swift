@@ -54,8 +54,10 @@ class CardOrganizer: NSObject {
                     listToReturn = findInstructionsInDivsWithBreaks(doc: doc)
                 }
                 
-
-                listToReturn = self.cleanInstructions(instructions: listToReturn)
+                if (listToReturn.count > 0){
+                    listToReturn = self.cleanInstructions(instructions: listToReturn)
+                }
+                
 
             } catch {
                 // contents could not be loaded

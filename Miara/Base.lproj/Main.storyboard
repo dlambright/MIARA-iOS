@@ -14,7 +14,7 @@
         <scene sceneID="jyA-j1-kyD">
             <objects>
                 <navigationController id="vxd-Lo-5eu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vrR-GA-7TM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="vrR-GA-7TM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -258,7 +258,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Ve-h8i">
                                 <rect key="frame" x="8" y="210" width="359" height="449"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-Xy-AEP">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="loading ingredients...." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-Xy-AEP">
                                         <rect key="frame" x="2" y="2" width="355" height="445"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -331,10 +331,15 @@
                                     <constraint firstAttribute="width" constant="128" id="ioC-mc-Zgr"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-9k-chf">
+                                <rect key="frame" x="123" y="158" width="37" height="37"/>
+                                <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8hn-Za-Wfs" firstAttribute="width" secondItem="CYc-mQ-fAo" secondAttribute="width" id="1aG-8T-qeH"/>
+                            <constraint firstItem="jtf-9k-chf" firstAttribute="centerX" secondItem="CYc-mQ-fAo" secondAttribute="centerX" id="1pF-fE-QXR"/>
                             <constraint firstItem="Wkd-Ve-h8i" firstAttribute="top" secondItem="CYc-mQ-fAo" secondAttribute="bottom" constant="8" id="2Z4-nU-KeS"/>
                             <constraint firstItem="tYT-c7-L3Z" firstAttribute="leading" secondItem="Kca-Vk-mPs" secondAttribute="leadingMargin" constant="-24" id="43M-Xy-sLG"/>
                             <constraint firstItem="fqH-MB-VWa" firstAttribute="leading" secondItem="yPg-4I-NxQ" secondAttribute="trailing" constant="2" id="5Bj-Ja-l5l"/>
@@ -346,6 +351,7 @@
                             <constraint firstItem="yPg-4I-NxQ" firstAttribute="leading" secondItem="Wkd-Ve-h8i" secondAttribute="leading" id="IIl-0D-1KI"/>
                             <constraint firstItem="CYc-mQ-fAo" firstAttribute="leading" secondItem="2dF-Tl-lON" secondAttribute="trailing" constant="2" id="ILK-Vr-66l"/>
                             <constraint firstItem="8hn-Za-Wfs" firstAttribute="top" secondItem="fqH-MB-VWa" secondAttribute="bottom" constant="2" id="Rs9-24-pbT"/>
+                            <constraint firstItem="jtf-9k-chf" firstAttribute="centerY" secondItem="CYc-mQ-fAo" secondAttribute="centerY" id="RzT-3m-CUv"/>
                             <constraint firstItem="i3a-L7-AIO" firstAttribute="height" secondItem="8hn-Za-Wfs" secondAttribute="height" id="Sx0-f9-B4H"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tYT-c7-L3Z" secondAttribute="trailing" constant="-24" id="XDZ-Jq-GMz"/>
                             <constraint firstItem="Wkd-Ve-h8i" firstAttribute="leading" secondItem="Kca-Vk-mPs" secondAttribute="leading" constant="8" id="XeO-05-uex"/>
@@ -365,6 +371,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3G5-sl-tSM"/>
                     <connections>
+                        <outlet property="actCardindicator" destination="jtf-9k-chf" id="30f-8I-g44"/>
                         <outlet property="btnCards" destination="CYc-mQ-fAo" id="tn8-Gw-BME"/>
                         <outlet property="btnCart" destination="8hn-Za-Wfs" id="I5F-Nz-MG4"/>
                         <outlet property="btnLink" destination="2dF-Tl-lON" id="0FL-Lm-jMH"/>

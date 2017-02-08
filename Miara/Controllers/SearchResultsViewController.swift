@@ -102,10 +102,9 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "recipeDetailViewController") as? RecipeDetailViewController{
             
-            if (selectedRecipe?.ingredients == nil || selectedRecipe?.ingredients.count == 0){
-                Model.sharedInstance.setIngredients(recipe: self.selectedRecipe!)
-                
-            }
+//            if (selectedRecipe?.ingredients == nil || selectedRecipe?.ingredients.count == 0){
+//                Model.sharedInstance.setIngredients(recipe: self.selectedRecipe!)
+//            }
             
             tblSearchResults.deselectRow(at: indexPath, animated: true)
             vc.currentRecipe = selectedRecipe

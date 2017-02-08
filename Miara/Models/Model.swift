@@ -118,7 +118,7 @@ class Model: NSObject {
         })
     }
     
-    private func setIngredientsForRecipeWithId(id: String, ingredients : [String]){
+    func setIngredientsForRecipeWithId(id: String, ingredients : [String]){
         for recipe in recipeList{
             if recipe.recipe_id == id{
                 recipe.ingredients = ingredients

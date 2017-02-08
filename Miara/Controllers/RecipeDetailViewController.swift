@@ -13,6 +13,7 @@
 
 import UIKit
 import MDCSwipeToChoose
+import SwiftyJSON
 
 
 class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
@@ -25,7 +26,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     @IBOutlet var lblRecipeTitle: UILabel!
     @IBOutlet var imgFoodImage: UIImageView!
     @IBOutlet var txtIngredientDetail: UITextView!
-    
+    @IBOutlet var actCardindicator: UIActivityIndicatorView!
     
     var cardData = [CardData]()
     var cardOrganizer = CardOrganizer()
@@ -35,6 +36,10 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
+            self.setIngredientsForCurrentRecipe()
+        }
+        
         if (currentRecipe.image != nil){
             imgFoodImage.image = currentRecipe.image
         }
@@ -49,12 +54,12 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
         
         self.btnCards.isEnabled = false
-        //self.btnCards.imageView?.image = nil
-        //self.btnCards.titleLabel?.text = "loading"
         self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.05)
         
+        
+        
         DispatchQueue.global(qos: .background).async {
-            for _ in 0...10{
+            for _ in 0...15{
                 if (self.currentRecipe.ingredients != nil && self.currentRecipe.source_url != nil){
                     self.cardData = self.cardOrganizer.getCardDictionary(ingredientList: self.currentRecipe.ingredients, instructionURL: self.currentRecipe.source_url)
                     break
@@ -63,12 +68,15 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             }
             
             DispatchQueue.main.async {
-                
+                self.actCardindicator.stopAnimating()
                 if (self.cardData.count > 0){
                     self.btnCards.isEnabled = true
                     self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.25)
                     //self.btnCards.imageView?.image = UIImage(named: "card_stack.png")
                     //self.btnCards.titleLabel?.text = ""
+                }
+                else{
+                    self.btnCards.isHidden = true
                 }
             }
         }
@@ -141,15 +149,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         //refreshCardStack()
-        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
-            txtIngredientDetail.text = "missing ingredients....try again"
-        }
-        else{
-            txtIngredientDetail.text = ""
-            for ingredient in currentRecipe.ingredients{
-                txtIngredientDetail.text = txtIngredientDetail.text! + ingredient + "\n"
-            }
-        }
+        self.refreshIngredientsList()
     }
     
 
@@ -234,6 +234,33 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             
         }
         
+    }
+    
+    func setIngredientsForCurrentRecipe(){
+        Model.sharedInstance.getIngredientsForRecipeWithId(id: currentRecipe.recipe_id, callback: { (data) in
+            let jsonData = data
+            let swiftyJson:JSON = JSON(data: jsonData as Data)
+            let ingredients = Model.sharedInstance.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
+            Model.sharedInstance.setIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, ingredients: ingredients)
+            self.currentRecipe.ingredients = ingredients
+            self.refreshIngredientsList()
+        })
+    }
+
+    func refreshIngredientsList(){
+        DispatchQueue.main.async {
+            /* Do UI work here */
+            
+            if (self.currentRecipe.ingredients == nil || self.currentRecipe.ingredients.count == 0){
+                self.txtIngredientDetail.text = "missing ingredients....try again"
+            }
+            else{
+                self.txtIngredientDetail.text = ""
+                for ingredient in self.currentRecipe.ingredients{
+                    self.txtIngredientDetail.text = self.txtIngredientDetail.text! + ingredient + "\n"
+                }
+            }
+        }
     }
 
 }
