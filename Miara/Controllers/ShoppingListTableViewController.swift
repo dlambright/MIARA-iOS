@@ -27,7 +27,15 @@ class ShoppingListTableViewController: UITableViewController {
         cartedRecipes.append(Model.sharedInstance.customItemsRecipe)
         self.initGreenIndices()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addTapped))
+        
+        
+        
+        let rightItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addTapped))
+        rightItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Arial Rounded MT Bold", size: 30.0)!], for: .normal)
+        let topInset = CGFloat(16.0)
+        rightItem.imageInsets = UIEdgeInsetsMake(topInset, 0.0, -topInset, 0.0);
+        
+        navigationItem.rightBarButtonItem = rightItem
         
 
         

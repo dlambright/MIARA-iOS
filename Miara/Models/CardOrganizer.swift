@@ -236,7 +236,7 @@ class CardOrganizer: NSObject {
     }
     
     func wordIsFillerWord(word: String)->Bool{
-        let fillerWords = ["and", "with", "or", "are", "of", "for"]
+        let fillerWords = ["and", "with", "or", "are", "of", "for", "your"]
         for fillerWord in fillerWords{
             if word.lowercased() == fillerWord.lowercased(){
                 return true
@@ -454,7 +454,10 @@ class CardOrganizer: NSObject {
             var newItem = instructions[i].replacingOccurrences(of: "&amp;", with: "&")
             newItem = newItem.replacingOccurrences(of: "&#8217;", with: "'")
             newItem = newItem.replacingOccurrences(of: "&nbsp;", with: " ")
-            toReturn.append(newItem)
+            newItem = newItem.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            if newItem != "" && newItem != "Method"{
+                toReturn.append(newItem)
+            }
         }
         return toReturn
     }

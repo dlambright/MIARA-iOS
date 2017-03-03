@@ -80,11 +80,6 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
                 }
             }
         }
-
-        
-
-
-        
     }
     
     func refreshCardStack(){
@@ -131,7 +126,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1) , range: range)
             
             lblItemStep.attributedText = attributedString
-            lblItemStep.font = UIFont(name: "Arial Rounded MT Bold", size: 14.0)
+            lblItemStep.font = UIFont(name: "Arial Rounded MT Bold", size: 15.0)
             lblItemName.lineBreakMode = NSLineBreakMode.byWordWrapping
             lblItemStep.numberOfLines = 0
             newCardView.addSubview(lblItemStep)

@@ -185,6 +185,14 @@ class MiaraTests: XCTestCase {
         }
     }
     
+    /*
+     http://calaba.sh/
+     https://github.com/calabash/calabash-ios/wiki/Tutorial%3A-How-to-add-Calabash-to-Xcode
+     https://github.com/calabash/calabash-ios
+     http://ce.sharif.edu/courses/92-93/1/ce724-1/resources/root/ESE-TDD.pdf
+     https://pdfs.semanticscholar.org/6f9b/725d10cbae1a189529eee54e9f23e0dbe1ff.pdf
+    */
+    
 }
 
 
