@@ -14,7 +14,7 @@
         <scene sceneID="jyA-j1-kyD">
             <objects>
                 <navigationController id="vxd-Lo-5eu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="vrR-GA-7TM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vrR-GA-7TM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -282,7 +282,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="tIb-4V-O9j"/>
                                 </constraints>
-                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="4"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="2"/>
                                 <state key="normal" image="download.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
