@@ -56,6 +56,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         self.btnCards.isEnabled = false
         self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.05)
+
         
         
         
@@ -80,6 +81,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
                     self.btnCards.isHidden = true
                 }
             }
+            self.view.sendSubview(toBack: <#T##UIView#>)
         }
     }
     
@@ -134,6 +136,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             lblItemStep.sizeToFit()
             
             self.viewCardViewHolder.addSubview(newCardView)
+            
         }
     }
     
