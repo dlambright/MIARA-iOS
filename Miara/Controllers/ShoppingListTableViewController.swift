@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Recipe
 
 class ShoppingListTableViewController: UITableViewController {
     //var ingredientsList = [String]()
@@ -41,6 +42,7 @@ class ShoppingListTableViewController: UITableViewController {
         //2. Add the text field. You can configure it however you need.
         alert.addTextField { (textField) in
             textField.text = ""
+            textField.accessibilityLabel = "popup"
         }
         
         // 3. Grab the value from the text field, and print it when the user clicks OK.

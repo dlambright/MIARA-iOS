@@ -1,0 +1,1015 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD35DB5741A21F57AB72C4A /* Pods_MiaraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6593F51D46A06815C67017A0 /* Pods_MiaraTests.framework */; };
+		86118F129305FAC5ADB83E78 /* Pods_Miara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */; };
+		A80395EE1E0CDBD4004F9641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80395EC1E0CDBD4004F9641 /* Main.storyboard */; };
+		A80396011E0CDBD4004F9641 /* MiaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396001E0CDBD4004F9641 /* MiaraTests.swift */; };
+		A803960C1E0CDBD4004F9641 /* MiaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803960B1E0CDBD4004F9641 /* MiaraUITests.swift */; };
+		A803962A1E0CDEEF004F9641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396291E0CDEEF004F9641 /* AppDelegate.swift */; };
+		A803962B1E0CDEEF004F9641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396291E0CDEEF004F9641 /* AppDelegate.swift */; };
+		A803962C1E0CDEEF004F9641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396291E0CDEEF004F9641 /* AppDelegate.swift */; };
+		A80396301E0CDF51004F9641 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962E1E0CDF51004F9641 /* CardOrganizer.swift */; };
+		A80396311E0CDF51004F9641 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962E1E0CDF51004F9641 /* CardOrganizer.swift */; };
+		A80396321E0CDF51004F9641 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962E1E0CDF51004F9641 /* CardOrganizer.swift */; };
+		A80396331E0CDF51004F9641 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962F1E0CDF51004F9641 /* Model.swift */; };
+		A80396341E0CDF51004F9641 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962F1E0CDF51004F9641 /* Model.swift */; };
+		A80396351E0CDF51004F9641 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803962F1E0CDF51004F9641 /* Model.swift */; };
+		A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */; };
+		A803963E1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */; };
+		A803963F1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */; };
+		A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */; };
+		A80396441E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */; };
+		A80396451E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */; };
+		A80396461E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */; };
+		A80396471E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */; };
+		A80396481E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */; };
+		A80396491E0CDF74004F9641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963C1E0CDF74004F9641 /* ViewController.swift */; };
+		A803964A1E0CDF74004F9641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963C1E0CDF74004F9641 /* ViewController.swift */; };
+		A803964B1E0CDF74004F9641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803963C1E0CDF74004F9641 /* ViewController.swift */; };
+		A80396511E0CDF86004F9641 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964D1E0CDF86004F9641 /* download.png */; };
+		A80396521E0CDF86004F9641 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964D1E0CDF86004F9641 /* download.png */; };
+		A80396531E0CDF86004F9641 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964D1E0CDF86004F9641 /* download.png */; };
+		A80396541E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */; };
+		A80396551E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */; };
+		A80396561E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */; };
+		A80396571E0CDF86004F9641 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A803964F1E0CDF86004F9641 /* meme.jpg */; };
+		A80396581E0CDF86004F9641 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A803964F1E0CDF86004F9641 /* meme.jpg */; };
+		A80396591E0CDF86004F9641 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A803964F1E0CDF86004F9641 /* meme.jpg */; };
+		A803965A1E0CDF86004F9641 /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80396501E0CDF86004F9641 /* purple.jpg */; };
+		A803965B1E0CDF86004F9641 /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80396501E0CDF86004F9641 /* purple.jpg */; };
+		A803965C1E0CDF86004F9641 /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80396501E0CDF86004F9641 /* purple.jpg */; };
+		A803965E1E0CDF95004F9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A803965D1E0CDF95004F9641 /* Assets.xcassets */; };
+		A803965F1E0CDF95004F9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A803965D1E0CDF95004F9641 /* Assets.xcassets */; };
+		A80396601E0CDF95004F9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A803965D1E0CDF95004F9641 /* Assets.xcassets */; };
+		A80396671E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
+		A80396681E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
+		A80396691E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */; };
+		A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
+		A804FB8B1E1C938400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB8A1E1C938400F02ACD /* CardData.swift */; };
+		A804FB8C1E1C938400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB8A1E1C938400F02ACD /* CardData.swift */; };
+		A804FB8D1E1C938400F02ACD /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804FB8A1E1C938400F02ACD /* CardData.swift */; };
+		A83DB28D1E3D82B700AB5822 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */; };
+		A83DB28E1E3D82B700AB5822 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */; };
+		A83DB28F1E3D82B700AB5822 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */; };
+		A83DB2911E3D82D400AB5822 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */; };
+		A83DB2921E3D82D400AB5822 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */; };
+		A83DB2931E3D82D400AB5822 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */; };
+		A83DC6DA1E8AD12B00438B03 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DC6D91E8AD12B00438B03 /* Recipe.swift */; };
+		A84FBEC11E70895300348FC4 /* shopping_list.png in Resources */ = {isa = PBXBuildFile; fileRef = A855AEAA1E22CA54005E57AC /* shopping_list.png */; };
+		A84FBEC21E70895300348FC4 /* shopping_list.png in Resources */ = {isa = PBXBuildFile; fileRef = A855AEAA1E22CA54005E57AC /* shopping_list.png */; };
+		A84FBEC31E70895700348FC4 /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A855E9C51E498DA400280116 /* launch_screen.png */; };
+		A84FBEC41E70895700348FC4 /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A855E9C51E498DA400280116 /* launch_screen.png */; };
+		A84FBEC51E70895900348FC4 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03D1E2F17AC003AC5F4 /* link.png */; };
+		A84FBEC61E70895A00348FC4 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03D1E2F17AC003AC5F4 /* link.png */; };
+		A84FBEC71E70895C00348FC4 /* card_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */; };
+		A84FBEC81E70895D00348FC4 /* card_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */; };
+		A84FBEC91E70897700348FC4 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
+		A84FBECA1E70897800348FC4 /* Miara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */; };
+		A84FBECD1E70897E00348FC4 /* MiaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80396001E0CDBD4004F9641 /* MiaraTests.swift */; };
+		A855AEAB1E22CA54005E57AC /* shopping_list.png in Resources */ = {isa = PBXBuildFile; fileRef = A855AEAA1E22CA54005E57AC /* shopping_list.png */; };
+		A855AEB51E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
+		A855AEB61E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
+		A855AEB71E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */; };
+		A855AEB91E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */; };
+		A855AEBA1E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */; };
+		A855AEBB1E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */; };
+		A855E9C61E498DA400280116 /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A855E9C51E498DA400280116 /* launch_screen.png */; };
+		A87C998E1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */; };
+		A87C998F1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */; };
+		A87C99901E4902FB00D7BE7C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */; };
+		A889093F1E497CED00D2B922 /* BLACKJAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A889093E1E497CED00D2B922 /* BLACKJAR.TTF */; };
+		A88909401E497F4E00D2B922 /* BLACKJAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A889093E1E497CED00D2B922 /* BLACKJAR.TTF */; };
+		A88909411E497F4E00D2B922 /* BLACKJAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A889093E1E497CED00D2B922 /* BLACKJAR.TTF */; };
+		A88909421E497F9700D2B922 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
+		A88909431E497F9800D2B922 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
+		A88909441E497F9800D2B922 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
+		A89A094F1E82FACE00D738DA /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89A094E1E82FACE00D738DA /* calabash.framework */; };
+		A8FCF03C1E2F15CF003AC5F4 /* card_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */; };
+		A8FCF03E1E2F17AC003AC5F4 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03D1E2F17AC003AC5F4 /* link.png */; };
+		BBD9F52AEA2483A718A598AF /* Pods_Miara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */; };
+		F6C3EF5B9241D2B3BAB804AD /* Pods_MiaraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BAB449A94AA6EBAA22F754 /* Pods_MiaraUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80395FD1E0CDBD4004F9641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80395DD1E0CDBD4004F9641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80395E41E0CDBD4004F9641;
+			remoteInfo = Miara;
+		};
+		A80396081E0CDBD4004F9641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80395DD1E0CDBD4004F9641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80395E41E0CDBD4004F9641;
+			remoteInfo = Miara;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		221DEACCEC889873C3A1E6A9 /* Pods-Miara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.debug.xcconfig"; sourceTree = "<group>"; };
+		25C8A5E9D011FA04B2CD9182 /* Pods_Miara_Miara_cal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miara_Miara_cal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		289632C1A50042DA7396A5DA /* Pods-Miara-Miara-cal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara-Miara-cal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miara-Miara-cal/Pods-Miara-Miara-cal.release.xcconfig"; sourceTree = "<group>"; };
+		2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6593F51D46A06815C67017A0 /* Pods_MiaraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BAB449A94AA6EBAA22F754 /* Pods_MiaraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5DBC4F39F0A02650731E8D /* Pods-MiaraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		924DFD137DE841A92577AD17 /* Pods-Miara-Miara-cal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara-Miara-cal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miara-Miara-cal/Pods-Miara-Miara-cal.debug.xcconfig"; sourceTree = "<group>"; };
+		A80395E51E0CDBD4004F9641 /* Miara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80395ED1E0CDBD4004F9641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A80395F01E0CDBD4004F9641 /* Miara.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miara.xcdatamodel; sourceTree = "<group>"; };
+		A80395FC1E0CDBD4004F9641 /* MiaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80396001E0CDBD4004F9641 /* MiaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaraTests.swift; sourceTree = "<group>"; };
+		A80396021E0CDBD4004F9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80396071E0CDBD4004F9641 /* MiaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A803960B1E0CDBD4004F9641 /* MiaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaraUITests.swift; sourceTree = "<group>"; };
+		A803960D1E0CDBD4004F9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80396291E0CDEEF004F9641 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
+		A803962E1E0CDF51004F9641 /* CardOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardOrganizer.swift; path = Miara/Models/CardOrganizer.swift; sourceTree = "<group>"; };
+		A803962F1E0CDF51004F9641 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Miara/Models/Model.swift; sourceTree = "<group>"; };
+		A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeDetailViewController.swift; path = Miara/Controllers/RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeWebViewViewController.swift; path = Miara/Controllers/RecipeWebViewViewController.swift; sourceTree = "<group>"; };
+		A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsViewController.swift; path = Miara/Controllers/SearchResultsViewController.swift; sourceTree = "<group>"; };
+		A803963C1E0CDF74004F9641 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Miara/Controllers/ViewController.swift; sourceTree = "<group>"; };
+		A803964D1E0CDF86004F9641 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = Miara/Images/download.png; sourceTree = "<group>"; };
+		A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "magnifying-glass-3-xxl.png"; path = "Miara/Images/magnifying-glass-3-xxl.png"; sourceTree = "<group>"; };
+		A803964F1E0CDF86004F9641 /* meme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = meme.jpg; path = Miara/Images/meme.jpg; sourceTree = "<group>"; };
+		A80396501E0CDF86004F9641 /* purple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = purple.jpg; path = Miara/Images/purple.jpg; sourceTree = "<group>"; };
+		A803965D1E0CDF95004F9641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Miara/Images/Assets.xcassets; sourceTree = "<group>"; };
+		A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeTableViewCell.swift; path = Miara/Classes/RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		A80396741E0CE54A004F9641 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Miara/Info.plist; sourceTree = "<group>"; };
+		A804FB8A1E1C938400F02ACD /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "Miara/Supporting Files/ApiKeys.plist"; sourceTree = "<group>"; };
+		A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Miara/Views/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A83DC6D91E8AD12B00438B03 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Miara/Classes/Recipe.swift; sourceTree = "<group>"; };
+		A855AEAA1E22CA54005E57AC /* shopping_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shopping_list.png; path = Miara/Images/shopping_list.png; sourceTree = "<group>"; };
+		A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewController.swift; path = Miara/Controllers/ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewCell.swift; path = Miara/Classes/ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		A855E9C51E498DA400280116 /* launch_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_screen.png; path = Miara/Images/launch_screen.png; sourceTree = "<group>"; };
+		A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = Miara/Views/ProgressHUD.swift; sourceTree = "<group>"; };
+		A889093E1E497CED00D2B922 /* BLACKJAR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = BLACKJAR.TTF; path = "Miara/Supporting Files/BLACKJAR.TTF"; sourceTree = "<group>"; };
+		A89A094E1E82FACE00D738DA /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_stack.png; path = Miara/Images/card_stack.png; sourceTree = "<group>"; };
+		A8FCF03D1E2F17AC003AC5F4 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link.png; path = Miara/Images/link.png; sourceTree = "<group>"; };
+		B7EA3127478FAC9293224310 /* Pods-Miara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.release.xcconfig"; sourceTree = "<group>"; };
+		B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests.release.xcconfig"; sourceTree = "<group>"; };
+		E22172EC15C45C707B0A2168 /* Pods-MiaraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		c2e8467cf365011d6614d3b8 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80395E21E0CDBD4004F9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86118F129305FAC5ADB83E78 /* Pods_Miara.framework in Frameworks */,
+				A89A094F1E82FACE00D738DA /* calabash.framework in Frameworks */,
+				BBD9F52AEA2483A718A598AF /* Pods_Miara.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80395F91E0CDBD4004F9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD35DB5741A21F57AB72C4A /* Pods_MiaraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80396041E0CDBD4004F9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3EF5B9241D2B3BAB804AD /* Pods_MiaraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14C5D79F477801D91365339F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E22172EC15C45C707B0A2168 /* Pods-MiaraTests.debug.xcconfig */,
+				DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */,
+				B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */,
+				7F5DBC4F39F0A02650731E8D /* Pods-MiaraUITests.release.xcconfig */,
+				221DEACCEC889873C3A1E6A9 /* Pods-Miara.debug.xcconfig */,
+				B7EA3127478FAC9293224310 /* Pods-Miara.release.xcconfig */,
+				924DFD137DE841A92577AD17 /* Pods-Miara-Miara-cal.debug.xcconfig */,
+				289632C1A50042DA7396A5DA /* Pods-Miara-Miara-cal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A80395DC1E0CDBD4004F9641 = {
+			isa = PBXGroup;
+			children = (
+				A803966A1E0CDFEF004F9641 /* Supporting Files */,
+				A80396611E0CDFA1004F9641 /* Classes */,
+				A803964C1E0CDF79004F9641 /* Images */,
+				A80396371E0CDF65004F9641 /* Controllers */,
+				A80396361E0CDF59004F9641 /* Views */,
+				A803962D1E0CDF3C004F9641 /* Models */,
+				A80395E71E0CDBD4004F9641 /* Miara */,
+				A80395FF1E0CDBD4004F9641 /* MiaraTests */,
+				A803960A1E0CDBD4004F9641 /* MiaraUITests */,
+				A80395E61E0CDBD4004F9641 /* Products */,
+				14C5D79F477801D91365339F /* Pods */,
+				DA0ACAED0EA94B871B60233B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A80395E61E0CDBD4004F9641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80395E51E0CDBD4004F9641 /* Miara.app */,
+				A80395FC1E0CDBD4004F9641 /* MiaraTests.xctest */,
+				A80396071E0CDBD4004F9641 /* MiaraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80395E71E0CDBD4004F9641 /* Miara */ = {
+			isa = PBXGroup;
+			children = (
+				A80396291E0CDEEF004F9641 /* AppDelegate.swift */,
+				A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */,
+			);
+			path = Miara;
+			sourceTree = "<group>";
+		};
+		A80395FF1E0CDBD4004F9641 /* MiaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80396001E0CDBD4004F9641 /* MiaraTests.swift */,
+				A80396021E0CDBD4004F9641 /* Info.plist */,
+			);
+			path = MiaraTests;
+			sourceTree = "<group>";
+		};
+		A803960A1E0CDBD4004F9641 /* MiaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A803960B1E0CDBD4004F9641 /* MiaraUITests.swift */,
+				A803960D1E0CDBD4004F9641 /* Info.plist */,
+			);
+			path = MiaraUITests;
+			sourceTree = "<group>";
+		};
+		A803962D1E0CDF3C004F9641 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A803962E1E0CDF51004F9641 /* CardOrganizer.swift */,
+				A803962F1E0CDF51004F9641 /* Model.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A80396361E0CDF59004F9641 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A83DB2901E3D82D400AB5822 /* Launch Screen.storyboard */,
+				A80395EC1E0CDBD4004F9641 /* Main.storyboard */,
+				A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A80396371E0CDF65004F9641 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A80396381E0CDF73004F9641 /* RecipeDetailViewController.swift */,
+				A803963A1E0CDF74004F9641 /* RecipeWebViewViewController.swift */,
+				A803963B1E0CDF74004F9641 /* SearchResultsViewController.swift */,
+				A803963C1E0CDF74004F9641 /* ViewController.swift */,
+				A855AEB41E23AF7B005E57AC /* ShoppingListTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A803964C1E0CDF79004F9641 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A855E9C51E498DA400280116 /* launch_screen.png */,
+				A8FCF03D1E2F17AC003AC5F4 /* link.png */,
+				A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */,
+				A803965D1E0CDF95004F9641 /* Assets.xcassets */,
+				A803964D1E0CDF86004F9641 /* download.png */,
+				A803964E1E0CDF86004F9641 /* magnifying-glass-3-xxl.png */,
+				A803964F1E0CDF86004F9641 /* meme.jpg */,
+				A80396501E0CDF86004F9641 /* purple.jpg */,
+				A855AEAA1E22CA54005E57AC /* shopping_list.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A80396611E0CDFA1004F9641 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A855AEB81E23AF93005E57AC /* ShoppingListTableViewCell.swift */,
+				A80396661E0CDFE8004F9641 /* RecipeTableViewCell.swift */,
+				A804FB8A1E1C938400F02ACD /* CardData.swift */,
+				A83DC6D91E8AD12B00438B03 /* Recipe.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A803966A1E0CDFEF004F9641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A83DB28C1E3D82B700AB5822 /* ApiKeys.plist */,
+				A80396741E0CE54A004F9641 /* Info.plist */,
+				A889093E1E497CED00D2B922 /* BLACKJAR.TTF */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA0ACAED0EA94B871B60233B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A89A094E1E82FACE00D738DA /* calabash.framework */,
+				2C9AA5B26ACA4A0A20E0098E /* Pods_Miara.framework */,
+				c2e8467cf365011d6614d3b8 /* CFNetwork.framework */,
+				6593F51D46A06815C67017A0 /* Pods_MiaraTests.framework */,
+				73BAB449A94AA6EBAA22F754 /* Pods_MiaraUITests.framework */,
+				25C8A5E9D011FA04B2CD9182 /* Pods_Miara_Miara_cal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80395E41E0CDBD4004F9641 /* Miara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80396101E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "Miara" */;
+			buildPhases = (
+				4B1206C6D8F087FC3E154BAC /* [CP] Check Pods Manifest.lock */,
+				A80395E11E0CDBD4004F9641 /* Sources */,
+				A80395E21E0CDBD4004F9641 /* Frameworks */,
+				A80395E31E0CDBD4004F9641 /* Resources */,
+				332FE5A19CC76D9C2B771C11 /* [CP] Embed Pods Frameworks */,
+				D5B01244CA5AFC68BFAF90A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Miara;
+			productName = Miara;
+			productReference = A80395E51E0CDBD4004F9641 /* Miara.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80395FB1E0CDBD4004F9641 /* MiaraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80396131E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraTests" */;
+			buildPhases = (
+				1E6678252D3FE367848B4400 /* [CP] Check Pods Manifest.lock */,
+				A80395F81E0CDBD4004F9641 /* Sources */,
+				A80395F91E0CDBD4004F9641 /* Frameworks */,
+				A80395FA1E0CDBD4004F9641 /* Resources */,
+				EEC4B3C552A5518CEBC0D357 /* [CP] Embed Pods Frameworks */,
+				3D7564B737F3ED7A0345E81E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80395FE1E0CDBD4004F9641 /* PBXTargetDependency */,
+			);
+			name = MiaraTests;
+			productName = MiaraTests;
+			productReference = A80395FC1E0CDBD4004F9641 /* MiaraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A80396061E0CDBD4004F9641 /* MiaraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80396161E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraUITests" */;
+			buildPhases = (
+				A94BED16E390C74FEA2CA3A5 /* [CP] Check Pods Manifest.lock */,
+				A80396031E0CDBD4004F9641 /* Sources */,
+				A80396041E0CDBD4004F9641 /* Frameworks */,
+				A80396051E0CDBD4004F9641 /* Resources */,
+				FEFF1D9C51735FB78E47C7D1 /* [CP] Embed Pods Frameworks */,
+				5EEF5875F039E83101A9C4EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80396091E0CDBD4004F9641 /* PBXTargetDependency */,
+			);
+			name = MiaraUITests;
+			productName = MiaraUITests;
+			productReference = A80396071E0CDBD4004F9641 /* MiaraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80395DD1E0CDBD4004F9641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ChalieBuckets;
+				TargetAttributes = {
+					A80395E41E0CDBD4004F9641 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S26ZP2M35G;
+						ProvisioningStyle = Automatic;
+					};
+					A80395FB1E0CDBD4004F9641 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A80395E41E0CDBD4004F9641;
+					};
+					A80396061E0CDBD4004F9641 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A80395E41E0CDBD4004F9641;
+					};
+				};
+			};
+			buildConfigurationList = A80395E01E0CDBD4004F9641 /* Build configuration list for PBXProject "Miara" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80395DC1E0CDBD4004F9641;
+			productRefGroup = A80395E61E0CDBD4004F9641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80395E41E0CDBD4004F9641 /* Miara */,
+				A80395FB1E0CDBD4004F9641 /* MiaraTests */,
+				A80396061E0CDBD4004F9641 /* MiaraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80395E31E0CDBD4004F9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A889093F1E497CED00D2B922 /* BLACKJAR.TTF in Resources */,
+				A8FCF03E1E2F17AC003AC5F4 /* link.png in Resources */,
+				A8FCF03C1E2F15CF003AC5F4 /* card_stack.png in Resources */,
+				A80395EE1E0CDBD4004F9641 /* Main.storyboard in Resources */,
+				A83DB28D1E3D82B700AB5822 /* ApiKeys.plist in Resources */,
+				A80396541E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A855E9C61E498DA400280116 /* launch_screen.png in Resources */,
+				A803965A1E0CDF86004F9641 /* purple.jpg in Resources */,
+				A83DB2911E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
+				A855AEAB1E22CA54005E57AC /* shopping_list.png in Resources */,
+				A80396511E0CDF86004F9641 /* download.png in Resources */,
+				A803965E1E0CDF95004F9641 /* Assets.xcassets in Resources */,
+				A80396571E0CDF86004F9641 /* meme.jpg in Resources */,
+				A88909421E497F9700D2B922 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80395FA1E0CDBD4004F9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A83DB28E1E3D82B700AB5822 /* ApiKeys.plist in Resources */,
+				A80396551E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A88909431E497F9800D2B922 /* Info.plist in Resources */,
+				A88909401E497F4E00D2B922 /* BLACKJAR.TTF in Resources */,
+				A83DB2921E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
+				A84FBEC51E70895900348FC4 /* link.png in Resources */,
+				A84FBEC21E70895300348FC4 /* shopping_list.png in Resources */,
+				A84FBEC71E70895C00348FC4 /* card_stack.png in Resources */,
+				A803965B1E0CDF86004F9641 /* purple.jpg in Resources */,
+				A84FBEC31E70895700348FC4 /* launch_screen.png in Resources */,
+				A80396581E0CDF86004F9641 /* meme.jpg in Resources */,
+				A80396521E0CDF86004F9641 /* download.png in Resources */,
+				A803965F1E0CDF95004F9641 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80396051E0CDBD4004F9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A83DB28F1E3D82B700AB5822 /* ApiKeys.plist in Resources */,
+				A80396561E0CDF86004F9641 /* magnifying-glass-3-xxl.png in Resources */,
+				A88909441E497F9800D2B922 /* Info.plist in Resources */,
+				A88909411E497F4E00D2B922 /* BLACKJAR.TTF in Resources */,
+				A83DB2931E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
+				A84FBEC61E70895A00348FC4 /* link.png in Resources */,
+				A84FBEC11E70895300348FC4 /* shopping_list.png in Resources */,
+				A84FBEC81E70895D00348FC4 /* card_stack.png in Resources */,
+				A803965C1E0CDF86004F9641 /* purple.jpg in Resources */,
+				A84FBEC41E70895700348FC4 /* launch_screen.png in Resources */,
+				A80396591E0CDF86004F9641 /* meme.jpg in Resources */,
+				A80396531E0CDF86004F9641 /* download.png in Resources */,
+				A80396601E0CDF95004F9641 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E6678252D3FE367848B4400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		332FE5A19CC76D9C2B771C11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miara/Pods-Miara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D7564B737F3ED7A0345E81E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B1206C6D8F087FC3E154BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EEF5875F039E83101A9C4EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A94BED16E390C74FEA2CA3A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B01244CA5AFC68BFAF90A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miara/Pods-Miara-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC4B3C552A5518CEBC0D357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFF1D9C51735FB78E47C7D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80395E11E0CDBD4004F9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A855AEB51E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */,
+				A80396731E0CE0B1004F9641 /* Miara.xcdatamodeld in Sources */,
+				A80396301E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
+				A80396671E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
+				A80396461E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
+				A803962A1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
+				A80396491E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A87C998E1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
+				A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
+				A83DC6DA1E8AD12B00438B03 /* Recipe.swift in Sources */,
+				A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A855AEB91E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */,
+				A804FB8B1E1C938400F02ACD /* CardData.swift in Sources */,
+				A80396331E0CDF51004F9641 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80395F81E0CDBD4004F9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A855AEB61E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */,
+				A80396311E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
+				A80396681E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
+				A80396471E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
+				A804FB8C1E1C938400F02ACD /* CardData.swift in Sources */,
+				A803962B1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
+				A803964A1E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A84FBECA1E70897800348FC4 /* Miara.xcdatamodeld in Sources */,
+				A87C998F1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
+				A80396011E0CDBD4004F9641 /* MiaraTests.swift in Sources */,
+				A80396441E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
+				A803963E1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A855AEBA1E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */,
+				A80396341E0CDF51004F9641 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80396031E0CDBD4004F9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A855AEB71E23AF7B005E57AC /* ShoppingListTableViewController.swift in Sources */,
+				A80396321E0CDF51004F9641 /* CardOrganizer.swift in Sources */,
+				A80396691E0CDFE8004F9641 /* RecipeTableViewCell.swift in Sources */,
+				A80396481E0CDF74004F9641 /* SearchResultsViewController.swift in Sources */,
+				A804FB8D1E1C938400F02ACD /* CardData.swift in Sources */,
+				A803962C1E0CDEEF004F9641 /* AppDelegate.swift in Sources */,
+				A803964B1E0CDF74004F9641 /* ViewController.swift in Sources */,
+				A84FBEC91E70897700348FC4 /* Miara.xcdatamodeld in Sources */,
+				A84FBECD1E70897E00348FC4 /* MiaraTests.swift in Sources */,
+				A87C99901E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
+				A803960C1E0CDBD4004F9641 /* MiaraUITests.swift in Sources */,
+				A80396451E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
+				A803963F1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
+				A855AEBB1E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */,
+				A80396351E0CDF51004F9641 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80395FE1E0CDBD4004F9641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80395E41E0CDBD4004F9641 /* Miara */;
+			targetProxy = A80395FD1E0CDBD4004F9641 /* PBXContainerItemProxy */;
+		};
+		A80396091E0CDBD4004F9641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80395E41E0CDBD4004F9641 /* Miara */;
+			targetProxy = A80396081E0CDBD4004F9641 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A80395EC1E0CDBD4004F9641 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80395ED1E0CDBD4004F9641 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Miara;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A803960E1E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A803960F1E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80396111E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221DEACCEC889873C3A1E6A9 /* Pods-Miara.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S26ZP2M35G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Miara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charlie.Buckets.Miara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A80396121E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7EA3127478FAC9293224310 /* Pods-Miara.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S26ZP2M35G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Miara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charlie.Buckets.Miara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A80396141E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22172EC15C45C707B0A2168 /* Pods-MiaraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MiaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miara.app/Miara";
+			};
+			name = Debug;
+		};
+		A80396151E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MiaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miara.app/Miara";
+			};
+			name = Release;
+		};
+		A80396171E0CDBD4004F9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MiaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Miara;
+			};
+			name = Debug;
+		};
+		A80396181E0CDBD4004F9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5DBC4F39F0A02650731E8D /* Pods-MiaraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MiaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Buckets.Charlie.MiaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Miara;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80395E01E0CDBD4004F9641 /* Build configuration list for PBXProject "Miara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A803960E1E0CDBD4004F9641 /* Debug */,
+				A803960F1E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80396101E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "Miara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80396111E0CDBD4004F9641 /* Debug */,
+				A80396121E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80396131E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80396141E0CDBD4004F9641 /* Debug */,
+				A80396151E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80396161E0CDBD4004F9641 /* Build configuration list for PBXNativeTarget "MiaraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80396171E0CDBD4004F9641 /* Debug */,
+				A80396181E0CDBD4004F9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A80395EF1E0CDBD4004F9641 /* Miara.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A80395F01E0CDBD4004F9641 /* Miara.xcdatamodel */,
+			);
+			currentVersion = A80395F01E0CDBD4004F9641 /* Miara.xcdatamodel */;
+			path = Miara.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A80395DD1E0CDBD4004F9641 /* Project object */;
+}

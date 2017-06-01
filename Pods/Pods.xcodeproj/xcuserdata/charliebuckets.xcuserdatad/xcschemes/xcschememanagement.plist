@@ -8,36 +8,55 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-Miara-Miara-cal.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Pods-Miara.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-MiaraTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Pods-MiaraUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>SwiftSoup.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08224ABD6CC598EE2A7D644A327AEA5E</key>
+		<key>08E5EB3C958A990B53F398A35536D90E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -58,11 +77,6 @@
 			<true/>
 		</dict>
 		<key>580A700FD11FC48086477A98532E34DE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C5EB19EF7EB84F98A94551C2016589A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

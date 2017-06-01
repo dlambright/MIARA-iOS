@@ -9,6 +9,7 @@
 
 import UIKit
 import SwiftyJSON
+//import Recipe
 
 class ViewController: UIViewController {
     @IBOutlet var btnSearch: UIButton!
@@ -60,7 +61,7 @@ class ViewController: UIViewController {
                 if(Model.sharedInstance.recipeList.count > 0){
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let srvc = storyboard.instantiateViewController(withIdentifier: "searchResultsViewController") as! SearchResultsViewController
-                    srvc.searchTermUserText = "search results for \"\((searchTerm! as String))\""
+                    srvc.searchTermUserText = "search results for \((searchTerm! as String))"
                     srvc.searchTerm = searchTerm
                     srvc.searchDepth = 2
                     if let navigator = navigationController {

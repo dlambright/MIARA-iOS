@@ -1,8 +1,13 @@
 # SwiftSoup
+![Platform OS X | iOS | tvOS | watchOS | Linux](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20iOS%20%7C%20tvOS%20%7C%20watchOS-orange.svg)
+![🐧 linux: ready](https://img.shields.io/badge/%F0%9F%90%A7%20linux-ready-red.svg)
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
 [![Build Status](https://travis-ci.org/scinfu/SwiftSoup.svg?branch=master)](https://travis-ci.org/scinfu/SwiftSoup)
 [![Version](https://img.shields.io/cocoapods/v/SwiftSoup.svg?style=flat)](http://cocoapods.org/pods/SwiftSoup)
 [![License](https://img.shields.io/cocoapods/l/SwiftSoup.svg?style=flat)](http://cocoapods.org/pods/SwiftSoup)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftSoup.svg?style=flat)](http://cocoapods.org/pods/SwiftSoup)
+[![GitHub release](https://img.shields.io/github/release/scinfu/SwiftSoup.svg)](https://github.com/scinfu/SwiftSoup/releases)
+[![Twitter](https://img.shields.io/badge/twitter-@scinfu-blue.svg?style=flat)](http://twitter.com/scinfu)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/scinfu)
 
 `SwiftSoup` is a Swift library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods.
 `SwiftSoup` implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers do.
@@ -28,7 +33,7 @@ pod "SwiftSoup"
 
 ## Examples
 
-###To parse a HTML document:
+### To parse a HTML document:
 
 ```swift
 do{
@@ -44,7 +49,7 @@ do{
 }
 ```
 
-##Set the HTML of an element
+## Set the HTML of an element
 You need to modify the HTML of an element.
 Use the HTML setter methods in Element:
 
@@ -70,7 +75,7 @@ do{
 }
 ```
 
-###Extract attributes, text, and HTML from elements
+### Extract attributes, text, and HTML from elements
 After parsing a document, and finding some elements, you'll want to get at the data inside those elements.
 - To get the value of an attribute, use `Node.attr(_ String key)` method
 - For the text on an element (and its combined children), use `Element.text()`
@@ -95,7 +100,7 @@ do{
 	print("error")
 }
 ```
-###Parsing a body fragment
+### Parsing a body fragment
 You have a fragment of body HTML (e.g. div containing a couple of p tags; as opposed to a full HTML document) that you want to parse. Perhaps it was provided by a user submitting a comment, or editing the body of a page in a CMS.
 
 Use the `SwiftSoup.parseBodyFragment(_ html : String)` method.
@@ -112,7 +117,7 @@ do{
 }
 ```
 
-###Use selector syntax to find elements
+### Use selector syntax to find elements
 You want to find or manipulate elements using a CSS or jquery-like selector syntax.
 Use the `Element.select(_ selector: String)` and `Elements.select(_ selector: String)` methods:
 ```swift
@@ -155,7 +160,7 @@ do{
 	print("error")
 }
 ```
-###Setting the text content of elements
+### Setting the text content of elements
 You need to modify the text content of a HTML document.
 
 ```swift
@@ -174,7 +179,7 @@ do{
 ```
 
 
-###Sanitize untrusted HTML (to prevent XSS)
+### Sanitize untrusted HTML (to prevent XSS)
 You want to allow untrusted users to supply HTML for output on your website (e.g. as comment submission). You need to clean this HTML to avoid cross-site scripting (XSS) attacks.
 Use the SwiftSoup HTML Cleaner with a configuration specified by a `Whitelist`.
 
@@ -190,7 +195,7 @@ do{
 }
 ```
 
-###Use DOM methods to navigate a document
+### Use DOM methods to navigate a document
 You have a HTML document that you want to extract data from. You know generally the structure of the HTML document.
 Use the DOM-like methods available after parsing HTML into a `Document¡.
 
@@ -209,9 +214,9 @@ do{
 }
 ```
 
-####Description
+#### Description
 Elements provide a range of DOM-like methods to find elements, and extract and manipulate their data. The DOM getters are contextual: called on a parent Document they find matching elements under the document; called on a child element they find elements under that child. In this way you can winnow in on the data you want.
-####Finding elements
+#### Finding elements
 * `getElementById(_ id: String)`
 * `getElementsByTag(_ tag:String)`
 * `getElementsByClass(_ className: String)`
@@ -219,7 +224,7 @@ Elements provide a range of DOM-like methods to find elements, and extract and m
 * Element siblings: `siblingElements()`, `firstElementSibling()`, `lastElementSibling()`, `nextElementSibling()`, `previousElementSibling()`
 * Graph: `parent()`, `children()`, `child(_ index: Int)`
 
-####Element data
+#### Element data
 * `attr(_ key: Strin)` to get and `attr(_ key: String, _ value: String)` to set attributes
 * `attributes()` to get all attributes
 * `id()`, `className()` and `classNames()`
@@ -229,7 +234,7 @@ Elements provide a range of DOM-like methods to find elements, and extract and m
 * `data()` to get data content (e.g. of script and style tags)
 * `tag()` and `tagName()`
 
-####Manipulating HTML and text
+#### Manipulating HTML and text
 * `append(_ html: String)`, `prepend(html: String)`
 * `appendText(text: String)`, `prependText(text: String)`
 * `appendElement(tagName: String)`, `prependElement(tagName: String)`

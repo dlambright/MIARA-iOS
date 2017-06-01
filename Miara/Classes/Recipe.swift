@@ -112,7 +112,7 @@ class Recipe: NSObject, NSCoding {
         self.carted = false
         let ingreds = newJson["ingredients"].arrayObject as! [String]!
         if ingreds != nil && ingreds!.count > 0{
-            self.ingredients = Model.sharedInstance.sanitizeIngredientsList(ingredientsToTest: ingreds!)
+            self.ingredients = self.sanitizeIngredientsList(ingredientsToTest: ingreds!)
         }
         DispatchQueue.global(qos: .background).async {
             self.setActualImage()
@@ -157,7 +157,7 @@ class Recipe: NSObject, NSCoding {
     }
     
     required convenience init(coder aDecoder: NSCoder) {
-        ///super.init()
+        //self.init()
         
 
         let f2f_url = aDecoder.decodeObject(forKey: Keys.F2f_url) as! String
@@ -197,5 +197,21 @@ class Recipe: NSObject, NSCoding {
         newString = newString.replacingOccurrences(of: "&#8217;", with: "'")
         newString = newString.replacingOccurrences(of: "&nbsp;", with: " ")
         return newString
+    }
+    
+    func sanitizeIngredientsList(ingredientsToTest: [String])->[String]{
+        var newIngredientList = [String]()
+        
+        for ingredient in ingredientsToTest{
+            if (ingredient.characters.last != ":" &&
+                ingredient.characters.last != ";" &&
+                ingredient.characters.last != "_" &&
+                ingredient.characters.first != "&" ){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
+                newIngredientList.append(ingredient)
+            }
+            
+        }
+        return newIngredientList
+        
     }
 }

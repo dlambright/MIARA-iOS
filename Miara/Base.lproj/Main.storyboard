@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxd-Lo-5eu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxd-Lo-5eu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,9 +80,10 @@
                                     <constraint firstAttribute="height" constant="8" id="u2R-7Y-W3g"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search for a recipe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-cq-FdE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search for a recipe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-cq-FdE">
                                 <rect key="frame" x="32" y="180.5" width="311" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="textBox"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="jW2-8n-Fid"/>
                                 </constraints>
@@ -113,8 +114,8 @@
                                     <action selector="btnSearchPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o87-8s-Nmr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifying-glass-3-xxl.png" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-Vi-fm6">
-                                <rect key="frame" x="46" y="243.5" width="44" height="44"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search.png" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-Vi-fm6">
+                                <rect key="frame" x="46" y="243" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="Jgr-iJ-ZUH"/>
                                     <constraint firstAttribute="height" constant="44" id="ivb-6r-ms6"/>
@@ -157,9 +158,8 @@
                                     <constraint firstAttribute="height" constant="44" id="rKu-Uy-Im6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wl-QF-eRH">
-                                <rect key="frame" x="32" y="62.5" width="311" height="98.5"/>
-                                <string key="text">As a beta tester: Please let me know anything that doesn't make sense to you, either through text: 805-293-4157 or email: dev.miara@gmail.com</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BETA TEST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wl-QF-eRH">
+                                <rect key="frame" x="32" y="141" width="311" height="20"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -244,11 +244,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-mQ-fAo">
                                 <rect key="frame" x="98" y="150" width="87.5" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="cards"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="mRi-AD-8JT"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="4"/>
-                                <state key="normal" image="card_stack.png">
+                                <state key="normal" image="cards.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -277,6 +278,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-L7-AIO">
                                 <rect key="frame" x="277.5" y="150" width="87.5" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="saveRecipe"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="tIb-4V-O9j"/>
                                 </constraints>
@@ -291,6 +293,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-Za-Wfs">
                                 <rect key="frame" x="187.5" y="150" width="88" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="listRecipe"/>
                                 <inset key="contentEdgeInsets" minX="22" minY="4" maxX="22" maxY="4"/>
                                 <state key="normal" image="shopping_list.png"/>
                                 <connections>
@@ -404,8 +407,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="huz-aH-0Sp">
-                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="huz-aH-0Sp">
+                                <rect key="frame" x="0.0" y="82" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="150" id="Q4N-g2-1GD" customClass="RecipeTableViewCell" customModule="Miara" customModuleProvider="target">
@@ -434,6 +437,7 @@
                                                                 <constraint firstAttribute="width" constant="38" id="4Cn-mS-hM3"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
                                                             <state key="normal" image="download.png"/>
                                                             <connections>
                                                                 <action selector="btnSavePress:" destination="Q4N-g2-1GD" eventType="touchUpInside" id="rJG-kO-x2W"/>
@@ -531,6 +535,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="RecipeTableViewCell"/>
                                         <connections>
                                             <outlet property="btnCarted" destination="qvY-VS-AuL" id="boG-YB-IdN"/>
                                             <outlet property="btnSave" destination="d5I-ve-bRT" id="kYi-AM-VaG"/>
@@ -651,12 +656,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="card_stack.png" width="228" height="190"/>
-        <image name="download.png" width="300" height="300"/>
+        <image name="cards.png" width="500" height="500"/>
+        <image name="download.png" width="500" height="500"/>
         <image name="link.png" width="512" height="512"/>
-        <image name="magnifying-glass-3-xxl.png" width="256" height="256"/>
         <image name="meme.jpg" width="400" height="354"/>
         <image name="purple.jpg" width="1080" height="1920"/>
-        <image name="shopping_list.png" width="495" height="495"/>
+        <image name="search.png" width="500" height="500"/>
+        <image name="shopping_list.png" width="500" height="500"/>
     </resources>
 </document>

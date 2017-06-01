@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+//import Recipe
 
 class SearchResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
