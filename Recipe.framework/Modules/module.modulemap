@@ -1,0 +1,10 @@
+framework module Recipe {
+  umbrella header "Recipe.h"
+
+  export *
+  module * { export * }
+}
+
+module Recipe.Swift {
+    header "Recipe-Swift.h"
+}
