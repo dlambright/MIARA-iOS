@@ -40,6 +40,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         Model.sharedInstance.loadRecipesFromDisk()
+        txtSearchText.text = ""
     }
     
     

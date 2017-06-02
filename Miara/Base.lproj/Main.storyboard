@@ -14,7 +14,7 @@
         <scene sceneID="jyA-j1-kyD">
             <objects>
                 <navigationController id="vxd-Lo-5eu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vrR-GA-7TM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="vrR-GA-7TM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -256,25 +256,6 @@
                                     <action selector="refreshPress:" destination="PWH-q5-Bs5" eventType="touchUpInside" id="cVS-Ua-6zh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Ve-h8i">
-                                <rect key="frame" x="8" y="210" width="359" height="449"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="loading ingredients...." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-Xy-AEP">
-                                        <rect key="frame" x="2" y="2" width="355" height="445"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25020973154362414" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="VJp-Xy-AEP" secondAttribute="trailing" constant="2" id="Kge-zu-5vu"/>
-                                    <constraint firstItem="VJp-Xy-AEP" firstAttribute="top" secondItem="Wkd-Ve-h8i" secondAttribute="top" constant="2" id="MOS-hP-k3A"/>
-                                    <constraint firstAttribute="bottom" secondItem="VJp-Xy-AEP" secondAttribute="bottom" constant="2" id="WQZ-a7-aya"/>
-                                    <constraint firstItem="VJp-Xy-AEP" firstAttribute="leading" secondItem="Wkd-Ve-h8i" secondAttribute="leading" constant="2" id="gbj-dS-oZ3"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-L7-AIO">
                                 <rect key="frame" x="277.5" y="150" width="87.5" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,6 +319,25 @@
                                 <rect key="frame" x="123" y="158" width="37" height="37"/>
                                 <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Ve-h8i">
+                                <rect key="frame" x="8" y="210" width="359" height="449"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="loading ingredients...." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-Xy-AEP">
+                                        <rect key="frame" x="2" y="2" width="355" height="445"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25020973154362414" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VJp-Xy-AEP" secondAttribute="trailing" constant="2" id="Kge-zu-5vu"/>
+                                    <constraint firstItem="VJp-Xy-AEP" firstAttribute="top" secondItem="Wkd-Ve-h8i" secondAttribute="top" constant="2" id="MOS-hP-k3A"/>
+                                    <constraint firstAttribute="bottom" secondItem="VJp-Xy-AEP" secondAttribute="bottom" constant="2" id="WQZ-a7-aya"/>
+                                    <constraint firstItem="VJp-Xy-AEP" firstAttribute="leading" secondItem="Wkd-Ve-h8i" secondAttribute="leading" constant="2" id="gbj-dS-oZ3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

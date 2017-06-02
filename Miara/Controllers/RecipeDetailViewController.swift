@@ -81,7 +81,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
                     self.btnCards.isHidden = true
                 }
             }
-            self.view.sendSubview(toBack: <#T##UIView#>)
+            
         }
     }
     
@@ -236,14 +236,16 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     func setIngredientsForCurrentRecipe(){
-        Model.sharedInstance.getIngredientsForRecipeWithId(id: currentRecipe.recipe_id, callback: { (data) in
-            let jsonData = data
-            let swiftyJson:JSON = JSON(data: jsonData as Data)
-            let ingredients = Model.sharedInstance.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
-            Model.sharedInstance.setIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, ingredients: ingredients)
-            self.currentRecipe.ingredients = ingredients
-            self.refreshIngredientsList()
-        })
+        DispatchQueue.main.async{
+            Model.sharedInstance.getIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, callback: { (data) in
+                let jsonData = data
+                let swiftyJson:JSON = JSON(data: jsonData as Data)
+                let ingredients = Model.sharedInstance.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
+                Model.sharedInstance.setIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, ingredients: ingredients)
+                self.currentRecipe.ingredients = ingredients
+                self.refreshIngredientsList()
+            })
+        }
     }
 
     func refreshIngredientsList(){
