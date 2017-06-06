@@ -123,13 +123,17 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             
             let lblItemStep = UILabel(frame: CGRect(x: 16, y: viewRedLine.frame.height + lblItemName.frame.height  + 16, width: newCardView.layer.frame.width - 32, height: newCardView.frame.height - lblItemName.frame.height - viewRedLine.frame.height - 32))
             
+            lblItemStep.font = UIFont(name: "Arial Rounded MT Bold", size: 15.0)
+            
             let ttext = cardData[cardData.count-1-i].instruction
             let range = NSMakeRange(cardData[cardData.count-1-i].rangeLow, cardData[cardData.count-1-i].rangeHigh - cardData[cardData.count-1-i].rangeLow)
             let attributedString = NSMutableAttributedString(string:ttext!)
             attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1) , range: range)
+            attributedString.addAttribute(NSFontAttributeName, value: UIFont(
+                name: "Arial Rounded MT Bold",size: 25.0)!, range: range)
             
             lblItemStep.attributedText = attributedString
-            lblItemStep.font = UIFont(name: "Arial Rounded MT Bold", size: 15.0)
+            
             lblItemName.lineBreakMode = NSLineBreakMode.byWordWrapping
             lblItemStep.numberOfLines = 0
             newCardView.addSubview(lblItemStep)

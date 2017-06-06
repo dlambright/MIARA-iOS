@@ -93,6 +93,9 @@ class CardOrganizer: NSObject {
         
         // Take out numbers
         for ingredient in ingredientList{
+//            if (ingredient == "2 1/2 cups vegetable broth"){
+//                var a = 0;
+//            }
             var tempIngredient = ingredient
             
             var matches = matchesForRegexInText(regex: numberOrPattern, text: tempIngredient)
@@ -110,8 +113,12 @@ class CardOrganizer: NSObject {
             }
             
             matches = matchesForRegexInText(regex: numberPattern, text: tempIngredient)
+
+            
             if (matches.count > 0){
-                tempIngredient = ingredient.replacingOccurrences(of: matches[0], with: "")
+                for i in (0...matches.count-1).reversed(){
+                    tempIngredient = tempIngredient.replacingOccurrences(of: matches[i], with: "")
+                }
                 newIngredientList.append(tempIngredient)
             }
             else if (tempIngredient.characters.last != ":"){ // : bullshit dividers
@@ -236,9 +243,9 @@ class CardOrganizer: NSObject {
     }
     
     func wordIsFillerWord(word: String)->Bool{
-        let fillerWords = ["and", "with", "or", "are", "of", "for", "your"]
-        for fillerWord in fillerWords{
-            if word.lowercased() == fillerWord.lowercased(){
+        let stopWords = ["and", "with", "or", "are", "of", "for", "your", "in", "the", "To", "to"]
+        for stopWord in stopWords{
+            if word.lowercased() == stopWord.lowercased(){
                 return true
             }
         }

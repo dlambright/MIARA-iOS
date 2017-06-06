@@ -301,7 +301,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-4I-NxQ">
                                 <rect key="frame" x="8" y="20" width="128" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meme.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SQr-fS-H9e">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="SQr-fS-H9e">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     </imageView>
                                 </subviews>
@@ -414,8 +414,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="huz-aH-0Sp">
-                                <rect key="frame" x="0.0" y="82" width="375" height="583"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="huz-aH-0Sp">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="150" id="Q4N-g2-1GD" customClass="RecipeTableViewCell" customModule="Miara" customModuleProvider="target">
@@ -488,7 +488,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBr-qv-SqY">
                                                             <rect key="frame" x="0.0" y="0.0" width="124" height="138"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBh-st-Ivo">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="IBh-st-Ivo">
                                                                     <rect key="frame" x="0.0" y="0.0" width="124" height="138"/>
                                                                 </imageView>
                                                             </subviews>
@@ -665,8 +665,8 @@
     <resources>
         <image name="cards.png" width="500" height="500"/>
         <image name="download.png" width="500" height="500"/>
+        <image name="image_loading.png" width="640" height="640"/>
         <image name="link.png" width="512" height="512"/>
-        <image name="meme.jpg" width="400" height="354"/>
         <image name="purple.jpg" width="1080" height="1920"/>
         <image name="search.png" width="500" height="500"/>
         <image name="shopping_list.png" width="500" height="500"/>

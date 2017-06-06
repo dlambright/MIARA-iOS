@@ -11,7 +11,7 @@ import UIKit
 import SwiftyJSON
 //import Recipe
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var btnSearch: UIButton!
     @IBOutlet var btnSavedRecipes: UIButton!
     @IBOutlet var btnShoppingList: UIButton!
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         btnShoppingList.layer.borderColor = UIColor.white.cgColor
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        txtSearchText.delegate = self
         //txtSearchText.text = "taco"
         
         //navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Arial Rounded MT Bold", size: 20.0)!]
@@ -45,7 +46,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnSearchPress(_ sender: Any) {
-        
+        searchForFood()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        searchForFood()
+        return true
+    }
+    
+    func searchForFood(){
         view.endEditing(true)
         let searchTerm = txtSearchText.text
         
@@ -84,8 +94,9 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
             btnSearch.backgroundColor = UIColor(colorLiteralRed: 34/255, green: 245/255, blue: 107/255, alpha: 0.5)
-        
+            
         }
+        
     }
     func showPH(){
         progressHud.show()
