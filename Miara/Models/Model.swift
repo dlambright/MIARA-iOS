@@ -20,19 +20,19 @@ class Model: NSObject {
     
     var recipeFilePath : String {
         let manager = FileManager.default
-        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first as! NSURL
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
         return url.appendingPathComponent("recipeArray")!.path
     }
     
     var cartedFilePath : String {
         let manager = FileManager.default
-        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first as! NSURL
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
         return url.appendingPathComponent("objectsArray")!.path
     }
     
     var customRecipeFilePath : String {
         let manager = FileManager.default
-        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first as! NSURL
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
         return url.appendingPathComponent("custom")!.path
     }
     
@@ -131,11 +131,27 @@ class Model: NSObject {
         var newIngredientList = [String]()
         
         for ingredient in ingredientsToTest{
-            if (ingredient.characters.last != ":" &&
-                ingredient.characters.last != ";" &&
-                ingredient.characters.last != "_" &&
-                ingredient.characters.first != "&" ){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
-                newIngredientList.append(ingredient)
+            
+            let words = ingredient.components(separatedBy: " ")
+            
+            var wordIsRepeated = true
+            for i in 0...(words.count/2)-1{
+                if words[i] != words[i + words.count / 2]{
+                    wordIsRepeated = false
+                    break
+                }
+            }
+            
+            var tempIngredient = ingredient
+            if wordIsRepeated{
+                tempIngredient = words[0...words.count/2].joined(separator: " ")
+            }
+            
+            if (tempIngredient.characters.last != ":" &&
+                tempIngredient.characters.last != ";" &&
+                tempIngredient.characters.last != "_" &&
+                tempIngredient.characters.first != "&" ){ // Bullshit dividers that get read in as ingredients, this might need to be expanded
+                newIngredientList.append(tempIngredient)
             }
 
         }
@@ -271,7 +287,6 @@ class Model: NSObject {
         }
         return recipe
     }
-    
 
 }
 

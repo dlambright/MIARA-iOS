@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6ddc6d8759bab635c201b3af"
+               BlueprintIdentifier = "a8b7db0d006ea282e0d3c730"
                BuildableName = "Miara-cal.app"
                BlueprintName = "Miara-cal"
                ReferencedContainer = "container:Miara.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A89A09211E82F60C00D738DA"
+            BlueprintIdentifier = "a8b7db0d006ea282e0d3c730"
             BuildableName = "Miara-cal.app"
             BlueprintName = "Miara-cal"
             ReferencedContainer = "container:Miara.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A89A09211E82F60C00D738DA"
+            BlueprintIdentifier = "a8b7db0d006ea282e0d3c730"
             BuildableName = "Miara-cal.app"
             BlueprintName = "Miara-cal"
             ReferencedContainer = "container:Miara.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6ddc6d8759bab635c201b3af"
+            BlueprintIdentifier = "a8b7db0d006ea282e0d3c730"
             BuildableName = "Miara-cal.app"
             BlueprintName = "Miara-cal"
             ReferencedContainer = "container:Miara.xcodeproj">

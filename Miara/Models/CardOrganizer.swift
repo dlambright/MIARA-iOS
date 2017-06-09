@@ -65,6 +65,8 @@ class CardOrganizer: NSObject {
         } else {
             // the URL was bad!
         }
+        
+        
         return listToReturn
     }
     
@@ -368,7 +370,7 @@ class CardOrganizer: NSObject {
                     classString.lowercased().range(of:"instructions") != nil ||
                     classString.lowercased().range(of:"preparation") != nil){
                     
-                    listItems = try! element.select("li")
+                    listItems = try! element.select("li")                    
                     
                     break
                 }
@@ -408,7 +410,9 @@ class CardOrganizer: NSObject {
             
         }
         
+       
         return listToReturn
+        
     }
     
 
