@@ -405,8 +405,12 @@ class CardOrganizer: NSObject {
         for element :Element in listItems.array() {
             if (try! element.text() != ""){
                 //print (try! element.text())
-                listToReturn.append(try! element.text())
+                
+                if !listToReturn.contains(try! element.text()){
+                    listToReturn.append(try! element.text())
+                }
             }
+                
             
         }
         
