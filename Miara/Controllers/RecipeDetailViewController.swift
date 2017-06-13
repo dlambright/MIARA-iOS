@@ -14,7 +14,13 @@
 import UIKit
 import MDCSwipeToChoose
 import SwiftyJSON
-//import Recipe
+
+enum UIUserInterfaceIdiom : Int {
+    case unspecified
+    
+    case phone // iPhone and iPod touch style UI
+    case pad // iPad style UI
+}
 
 
 class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
@@ -58,6 +64,17 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.05)
 
         
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            let insetHeight = CGFloat(4) // To determine the size of the insets
+            let insetWidth = CGFloat(60)
+            let uiEdgeInsets = UIEdgeInsetsMake(insetHeight, insetWidth, insetHeight, insetWidth)
+            btnLink.contentEdgeInsets = uiEdgeInsets
+            btnCards.contentEdgeInsets = uiEdgeInsets
+            btnCart.contentEdgeInsets = uiEdgeInsets
+            btnSave.contentEdgeInsets = uiEdgeInsets
+        }
+        
+
         
         
         DispatchQueue.global(qos: .background).async {
