@@ -132,17 +132,22 @@ class Model: NSObject {
         
         for ingredient in ingredientsToTest{
             
-            let words = ingredient.components(separatedBy: " ")
+            var tempIngredient = ingredient.replacingOccurrences(of: "&#0174;", with: "®")
+            
+            let words = tempIngredient.components(separatedBy: " ")
+
             
             var wordIsRepeated = true
-            for i in 0...(words.count/2)-1{
-                if words[i] != words[i + words.count / 2]{
-                    wordIsRepeated = false
-                    break
+            if words.count > 1{
+                for i in 0...(words.count/2)-1{
+                    if words[i] != words[i + words.count / 2]{
+                        wordIsRepeated = false
+                        break
+                    }
                 }
             }
             
-            var tempIngredient = ingredient
+
             if wordIsRepeated{
                 tempIngredient = words[0...words.count/2].joined(separator: " ")
             }
