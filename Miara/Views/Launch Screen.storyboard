@@ -26,19 +26,37 @@
                                 <rect key="frame" x="-8" y="-4" width="391" height="687"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="gWZ-5f-At9">
-                                <rect key="frame" x="67" y="82" width="240" height="502"/>
+                                <rect key="frame" x="97.5" y="44" width="180" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="qvJ-au-0SJ"/>
+                                </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food2fork.png" translatesAutoresizingMaskIntoConstraints="NO" id="wJb-5o-I0O">
+                                <rect key="frame" x="119" y="543" width="240" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="Obc-Bt-4I5"/>
+                                    <constraint firstAttribute="width" constant="240" id="zm3-mg-jHC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UI-Kq-b85">
+                                <rect key="frame" x="119" y="544" width="98.5" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3cu-yO-pJ9" secondAttribute="bottom" constant="-16" id="3B2-Fz-Icj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gWZ-5f-At9" secondAttribute="trailing" constant="52" id="C8L-HZ-JzQ"/>
-                            <constraint firstItem="gWZ-5f-At9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="62" id="OCg-qR-xZL"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="gWZ-5f-At9" secondAttribute="bottom" constant="83" id="OmC-Kw-drG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wJb-5o-I0O" secondAttribute="trailing" id="CBx-UE-uqz"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wJb-5o-I0O" secondAttribute="bottom" constant="31" id="Dfm-hy-t1e"/>
+                            <constraint firstItem="wJb-5o-I0O" firstAttribute="top" secondItem="2UI-Kq-b85" secondAttribute="bottom" constant="-21" id="JrF-Oc-LN1"/>
+                            <constraint firstItem="gWZ-5f-At9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="24" id="OCg-qR-xZL"/>
                             <constraint firstItem="3cu-yO-pJ9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-24" id="Ra8-B4-3Rm"/>
-                            <constraint firstItem="gWZ-5f-At9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="51" id="c0a-jP-o0c"/>
+                            <constraint firstItem="2UI-Kq-b85" firstAttribute="leading" secondItem="wJb-5o-I0O" secondAttribute="leading" id="YT9-Bi-bIm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3cu-yO-pJ9" secondAttribute="trailing" constant="-24" id="irM-Ei-WtT"/>
                             <constraint firstItem="3cu-yO-pJ9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-24" id="vDn-t6-HyE"/>
+                            <constraint firstItem="gWZ-5f-At9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xJc-lM-SF8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,6 +66,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="food2fork.png" width="300" height="83"/>
         <image name="launch_screen.png" width="180" height="600"/>
         <image name="purple.jpg" width="1080" height="1920"/>
     </resources>

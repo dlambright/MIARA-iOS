@@ -112,9 +112,11 @@
 		A88909431E497F9800D2B922 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
 		A88909441E497F9800D2B922 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80396741E0CE54A004F9641 /* Info.plist */; };
 		A89A094F1E82FACE00D738DA /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89A094E1E82FACE00D738DA /* calabash.framework */; };
+		A8E6E2801EF3330C00700B4A /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6E27F1EF3330C00700B4A /* String_Extensions.swift */; };
 		A8EFDA9F1EDCC35D00F1DC44 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = A8EFDA9E1EDCC35D00F1DC44 /* search.png */; };
 		A8FCF03C1E2F15CF003AC5F4 /* card_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */; };
 		A8FCF03E1E2F17AC003AC5F4 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FCF03D1E2F17AC003AC5F4 /* link.png */; };
+		A8FD25731EF21C42000CAA7A /* food2fork.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FD25721EF21C42000CAA7A /* food2fork.png */; };
 		F6C3EF5B9241D2B3BAB804AD /* Pods_MiaraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BAB449A94AA6EBAA22F754 /* Pods_MiaraUITests.framework */; };
 		a49131bf98ee74793a4588c7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = c2e8467cf365011d6614d3b8 /* CFNetwork.framework */; };
 		aa2c04bd41ecb8c05634f9f9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80395EC1E0CDBD4004F9641 /* Main.storyboard */; };
@@ -192,10 +194,12 @@
 		A87C998D1E4902FA00D7BE7C /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = Miara/Views/ProgressHUD.swift; sourceTree = "<group>"; };
 		A889093E1E497CED00D2B922 /* BLACKJAR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = BLACKJAR.TTF; path = "Miara/Supporting Files/BLACKJAR.TTF"; sourceTree = "<group>"; };
 		A89A094E1E82FACE00D738DA /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		A8E6E27F1EF3330C00700B4A /* String_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
 		A8EFDA9D1EDCC29800F1DC44 /* Miara-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miara-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EFDA9E1EDCC35D00F1DC44 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = Miara/Images/search.png; sourceTree = "<group>"; };
 		A8FCF03B1E2F15CF003AC5F4 /* card_stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_stack.png; path = Miara/Images/card_stack.png; sourceTree = "<group>"; };
 		A8FCF03D1E2F17AC003AC5F4 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link.png; path = Miara/Images/link.png; sourceTree = "<group>"; };
+		A8FD25721EF21C42000CAA7A /* food2fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food2fork.png; path = Miara/Images/food2fork.png; sourceTree = "<group>"; };
 		B7EA3127478FAC9293224310 /* Pods-Miara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miara/Pods-Miara.release.xcconfig"; sourceTree = "<group>"; };
 		B9DB4B846916516D2C211502 /* Pods-MiaraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraUITests/Pods-MiaraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB406C9F88182198A500DF46 /* Pods-MiaraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaraTests/Pods-MiaraTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 		A803962D1E0CDF3C004F9641 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A8E6E27F1EF3330C00700B4A /* String_Extensions.swift */,
 				A803962E1E0CDF51004F9641 /* CardOrganizer.swift */,
 				A803962F1E0CDF51004F9641 /* Model.swift */,
 			);
@@ -347,6 +352,7 @@
 		A803964C1E0CDF79004F9641 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A8FD25721EF21C42000CAA7A /* food2fork.png */,
 				A83385921EE560B500D99B6A /* image_loading.png */,
 				A83385901EE5603000D99B6A /* loading_image.png */,
 				A8EFDA9E1EDCC35D00F1DC44 /* search.png */,
@@ -549,6 +555,7 @@
 				A855E9C61E498DA400280116 /* launch_screen.png in Resources */,
 				A803965A1E0CDF86004F9641 /* purple.jpg in Resources */,
 				A83385911EE5603000D99B6A /* loading_image.png in Resources */,
+				A8FD25731EF21C42000CAA7A /* food2fork.png in Resources */,
 				A83DB2911E3D82D400AB5822 /* Launch Screen.storyboard in Resources */,
 				A8537C961EE07621001B7A45 /* cards.png in Resources */,
 				A855AEAB1E22CA54005E57AC /* shopping_list.png in Resources */,
@@ -819,6 +826,7 @@
 				A87C998E1E4902FB00D7BE7C /* ProgressHUD.swift in Sources */,
 				A80396431E0CDF74004F9641 /* RecipeWebViewViewController.swift in Sources */,
 				A83DC6DA1E8AD12B00438B03 /* Recipe.swift in Sources */,
+				A8E6E2801EF3330C00700B4A /* String_Extensions.swift in Sources */,
 				A803963D1E0CDF74004F9641 /* RecipeDetailViewController.swift in Sources */,
 				A855AEB91E23AF93005E57AC /* ShoppingListTableViewCell.swift in Sources */,
 				A804FB8B1E1C938400F02ACD /* CardData.swift in Sources */,

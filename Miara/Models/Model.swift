@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+
 //import Recipe
 
 class Model: NSObject {
@@ -132,7 +133,11 @@ class Model: NSObject {
         
         for ingredient in ingredientsToTest{
             
-            var tempIngredient = ingredient.replacingOccurrences(of: "&#0174;", with: "®")
+            var tempIngredient = String(htmlEncodedString: ingredient)
+            //var tempIngredient = String(ingredient)!
+            
+            
+            //var tempIngredient = ingredient.replacingOccurrences(of: "&#0174;", with: "®")
             
             let words = tempIngredient.components(separatedBy: " ")
 
@@ -149,7 +154,7 @@ class Model: NSObject {
             
 
             if wordIsRepeated{
-                tempIngredient = words[0...words.count/2].joined(separator: " ")
+                tempIngredient = words[0...(words.count/2 - 1)].joined(separator: " ")
             }
             
             if (tempIngredient.characters.last != ":" &&
@@ -293,6 +298,10 @@ class Model: NSObject {
         return recipe
     }
 
+
+
+    
+    
 }
 
 
