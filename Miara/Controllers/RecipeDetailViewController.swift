@@ -43,9 +43,9 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
-            self.setIngredientsForCurrentRecipe()
-        }
+//        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
+//            self.setIngredientsForCurrentRecipe()
+//        }
         
         if (currentRecipe.image != nil){
             imgFoodImage.image = currentRecipe.image
@@ -78,7 +78,11 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         
         DispatchQueue.global(qos: .background).async {
+            if (self.currentRecipe.ingredients == nil || self.currentRecipe.ingredients.count == 0){
+                self.setIngredientsForCurrentRecipe()
+            }
             for _ in 0...15{
+
                 if (self.currentRecipe.ingredients != nil && self.currentRecipe.source_url != nil){
                     self.cardData = self.cardOrganizer.getCardDictionary(ingredientList: self.currentRecipe.ingredients, instructionURL: self.currentRecipe.source_url)
                     break
@@ -257,16 +261,23 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     func setIngredientsForCurrentRecipe(){
-        DispatchQueue.main.async{
-            Model.sharedInstance.getIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, callback: { (data) in
+//        DispatchQueue.main.async{
+            if(self.currentRecipe.source_url.contains("http://tastykitchen.com/")){
+                self.currentRecipe.ingredients = Model.sharedInstance.getIngredientsFromTastyKitchen(url: self.currentRecipe.source_url)
+                Model.sharedInstance.setIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, ingredients: self.currentRecipe.ingredients)
+                self.refreshIngredientsList()
+            }
+            else{
+                Model.sharedInstance.getIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, callback: { (data) in
                 let jsonData = data
                 let swiftyJson:JSON = JSON(data: jsonData as Data)
                 let ingredients = Model.sharedInstance.sanitizeIngredientsList(ingredientsToTest: swiftyJson["recipe"]["ingredients"].arrayObject as! [String]!)
                 Model.sharedInstance.setIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, ingredients: ingredients)
                 self.currentRecipe.ingredients = ingredients
                 self.refreshIngredientsList()
-            })
-        }
+                })
+            }
+//        }
     }
 
     func refreshIngredientsList(){

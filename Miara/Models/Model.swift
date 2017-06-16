@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import SwiftSoup
 
 //import Recipe
 
@@ -84,7 +85,74 @@ class Model: NSObject {
         })
     }
     
+    func getIngredientsFromTastyKitchen(url: String) -> [String]{
+        var recipeHtml : String!
+        var listToReturn = [String]()
+        //make url request
+        
+        var listItems = Elements()
+        if let url = URL(string: url) {
+            do {
+                recipeHtml = try String(contentsOf: url)
+                let doc: Document = try SwiftSoup.parse(recipeHtml)
+                
+                var listToReturn = [String]()                
+                let links : Elements = try! doc.select("ul")
+                
+                for element :Element in links.array() {
+                    
+                    //print (try! element.attr("class"))
+                    let classString = try! element.attr("class")
+                    
+                    if (classString.lowercased().range(of:"ingredients") != nil) {
+                        
+                        listItems = try! element.select("li")
+                        break
+                    }
+                }
+                
+                    
+//                if (listItems.array().count == 0){
+//                    let links : Elements = try! doc.select("div")
+//                    
+//                    for element :Element in links.array() {
+//                        
+//                        //print (try! element.attr("class"))
+//                        let classString = try! element.attr("class")
+//                        if (classString.lowercased().range(of:"directions") != nil ||
+//                            classString.lowercased().range(of:"instructions") != nil){
+//                            
+//                            listItems = try! element.select("li")
+//                            break
+//                        }
+//                        
+//                    }
+//                }
+                
+                for element :Element in listItems.array() {
+                    let logString = try! element.text()
+                    if (try! element.text() != ""){
+                        //print (try! element.text())
+                        
+                        if !listToReturn.contains(try! element.text()){
+                            listToReturn.append(try! element.text())
+                        }
+                    }
+                    NSLog(logString)
+                }
+                
+                
+                return listToReturn
+            } catch {
+                let a = 0
+            // contents could not be loaded
+            }    
     
+        }
+        return listToReturn
+    }
+
+
 
     func getIngredientsForRecipeWithId(id: String, callback: @escaping (_ data: NSData) -> ()) {
         
@@ -134,10 +202,6 @@ class Model: NSObject {
         for ingredient in ingredientsToTest{
             
             var tempIngredient = String(htmlEncodedString: ingredient)
-            //var tempIngredient = String(ingredient)!
-            
-            
-            //var tempIngredient = ingredient.replacingOccurrences(of: "&#0174;", with: "®")
             
             let words = tempIngredient.components(separatedBy: " ")
 
