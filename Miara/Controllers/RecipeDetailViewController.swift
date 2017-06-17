@@ -43,9 +43,6 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if (currentRecipe.ingredients == nil || currentRecipe.ingredients.count == 0){
-//            self.setIngredientsForCurrentRecipe()
-//        }
         
         if (currentRecipe.image != nil){
             imgFoodImage.image = currentRecipe.image
@@ -78,7 +75,10 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         
         DispatchQueue.global(qos: .background).async {
-            if (self.currentRecipe.ingredients == nil || self.currentRecipe.ingredients.count == 0){
+            
+            if (self.currentRecipe.ingredients == nil ||
+                self.currentRecipe.ingredients.count == 0 ||
+                self.currentRecipe.source_url.contains("tastykitchen.com")){
                 self.setIngredientsForCurrentRecipe()
             }
             for _ in 0...15{
@@ -262,7 +262,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     func setIngredientsForCurrentRecipe(){
 //        DispatchQueue.main.async{
-            if(self.currentRecipe.source_url.contains("http://tastykitchen.com/")){
+            if(self.currentRecipe.source_url.contains("tastykitchen.com/")){
                 self.currentRecipe.ingredients = Model.sharedInstance.getIngredientsFromTastyKitchen(url: self.currentRecipe.source_url)
                 Model.sharedInstance.setIngredientsForRecipeWithId(id: self.currentRecipe.recipe_id, ingredients: self.currentRecipe.ingredients)
                 self.refreshIngredientsList()
