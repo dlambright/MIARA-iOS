@@ -205,20 +205,21 @@ class Model: NSObject {
             
             let words = tempIngredient.components(separatedBy: " ")
 
-            
-            var wordIsRepeated = true
             if words.count > 1{
-                for i in 0...(words.count/2)-1{
-                    if words[i] != words[i + words.count / 2]{
-                        wordIsRepeated = false
-                        break
+                var wordIsRepeated = true
+                if words.count > 1{
+                    for i in 0...(words.count/2)-1{
+                        if words[i] != words[i + words.count / 2]{
+                            wordIsRepeated = false
+                            break
+                        }
                     }
                 }
-            }
-            
+                
 
-            if wordIsRepeated{
-                tempIngredient = words[0...(words.count/2 - 1)].joined(separator: " ")
+                if wordIsRepeated{
+                    tempIngredient = words[0...(words.count/2 - 1)].joined(separator: " ")
+                }
             }
             
             if (tempIngredient.characters.last != ":" &&

@@ -89,7 +89,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             progressHud.hide()
             // If nothing get s returned from the server, send an error message
-            let alert = UIAlertController(title: "", message: "Unable to retrieve data from server", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "", message: "No results found", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
