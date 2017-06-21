@@ -60,19 +60,8 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         self.btnCards.isEnabled = false
         self.btnCards.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0.05)
 
-        
-        if UIDevice.current.userInterfaceIdiom == .pad{
-            let insetHeight = CGFloat(4) // To determine the size of the insets
-            let insetWidth = CGFloat(60)
-            let uiEdgeInsets = UIEdgeInsetsMake(insetHeight, insetWidth, insetHeight, insetWidth)
-            btnLink.contentEdgeInsets = uiEdgeInsets
-            btnCards.contentEdgeInsets = uiEdgeInsets
-            btnCart.contentEdgeInsets = uiEdgeInsets
-            btnSave.contentEdgeInsets = uiEdgeInsets
-        }
-        
+        self.adjustMargins()
 
-        
         
         DispatchQueue.global(qos: .background).async {
             
@@ -295,6 +284,40 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             }
         }
     }
+    
+    func adjustMargins(){
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            var landscape = 0
+            if UIDevice.current.orientation.isLandscape == true{
+                
+                if UIScreen.main.bounds.size.width == 1366{
+                    landscape = 70
+                }
+                else{
+                    landscape = 40
+                }
+            }
+            else if UIScreen.main.bounds.size.width == 1024{
+                landscape = 30
+            }
+            
+            let insetHeight = CGFloat(4) // To determine the size of the insets
+            let insetWidth = CGFloat(50 + landscape)
+            let uiEdgeInsets = UIEdgeInsetsMake(insetHeight, insetWidth, insetHeight, insetWidth)
+            btnLink.contentEdgeInsets = uiEdgeInsets
+            btnCards.contentEdgeInsets = uiEdgeInsets
+            btnCart.contentEdgeInsets = uiEdgeInsets
+            btnSave.contentEdgeInsets = uiEdgeInsets
+        }
+    }
+    
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        self.adjustMargins()
+
+    }
+    
+    
 
 }
 
