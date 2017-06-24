@@ -32,14 +32,14 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food2fork.png" translatesAutoresizingMaskIntoConstraints="NO" id="wJb-5o-I0O">
-                                <rect key="frame" x="119" y="543" width="240" height="93"/>
+                                <rect key="frame" x="239" y="591" width="120" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="Obc-Bt-4I5"/>
-                                    <constraint firstAttribute="width" constant="240" id="zm3-mg-jHC"/>
+                                    <constraint firstAttribute="height" constant="45" id="Vog-TT-3U9"/>
+                                    <constraint firstAttribute="width" constant="120" id="f35-VM-Wle"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UI-Kq-b85">
-                                <rect key="frame" x="119" y="544" width="99" height="20"/>
+                                <rect key="frame" x="239" y="592" width="99" height="20"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

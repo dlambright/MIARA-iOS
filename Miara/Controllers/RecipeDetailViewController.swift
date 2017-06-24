@@ -95,7 +95,13 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
     }
     
-    func refreshCardStack(){
+    func refreshCardStack(startingIndex: Int){
+        
+        for view in viewCardViewHolder.subviews {
+            if view is MDCSwipeToChooseView {
+                view.removeFromSuperview()
+            }
+        }
         
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
@@ -112,7 +118,7 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             currentRecipe.ingredients.count == 0){
             currentRecipe.ingredients = ["1 cup sugar", "2 cups flour", "1 tsp dank memes"]
         }
-        for i in 0...cardData.count-1{
+        for i in startingIndex...cardData.count-1{
             let newCardView = MDCSwipeToChooseView(frame: CGRect(x : 0, y : 0 , width : viewCardViewHolder.frame.width, height: viewCardViewHolder.frame.height) , options: options)!
             newCardView.layer.backgroundColor = UIColor(colorLiteralRed: 245/255, green: 245/255, blue: 245/255, alpha: 1).cgColor
             
@@ -120,23 +126,26 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
             lblItemName.font = UIFont(name: "Arial Rounded MT Bold", size: 20.0)
             lblItemName.textColor = UIColor.black
             lblItemName.layer.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 0).cgColor
-            lblItemName.text = cardData[cardData.count-1-i].ingredient  // all weird becuase it needs to be read backward
+            lblItemName.text = cardData[cardData.count-i-1+startingIndex].ingredient  // all weird becuase it needs to be read backward
             lblItemName.textAlignment = NSTextAlignment.center
             lblItemName.lineBreakMode = NSLineBreakMode.byWordWrapping
             lblItemName.numberOfLines = 0
             
             newCardView.addSubview(lblItemName)
+            NSLayoutConstraint(item: lblItemName, attribute: .trailing, relatedBy: .equal, toItem: newCardView, attribute: .trailingMargin, multiplier: 1.0, constant: 0.0).isActive = true
             
             let viewRedLine = UIView(frame: CGRect(x: 0, y: lblItemName.frame.height, width: newCardView.layer.frame.width, height: 1))
             viewRedLine.layer.backgroundColor = UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1).cgColor
             newCardView.addSubview(viewRedLine)
+
+            
             
             let lblItemStep = UILabel(frame: CGRect(x: 16, y: viewRedLine.frame.height + lblItemName.frame.height  + 16, width: newCardView.layer.frame.width - 32, height: newCardView.frame.height - lblItemName.frame.height - viewRedLine.frame.height - 32))
             
             lblItemStep.font = UIFont(name: "Arial Rounded MT Bold", size: 15.0)
             
-            let ttext = cardData[cardData.count-1-i].instruction
-            let range = NSMakeRange(cardData[cardData.count-1-i].rangeLow, cardData[cardData.count-1-i].rangeHigh - cardData[cardData.count-1-i].rangeLow)
+            let ttext = cardData[cardData.count-i-1+startingIndex].instruction
+            let range = NSMakeRange(cardData[cardData.count-i-1+startingIndex].rangeLow, cardData[cardData.count-i-1+startingIndex].rangeHigh - cardData[cardData.count-i-1+startingIndex].rangeLow)
             let attributedString = NSMutableAttributedString(string:ttext!)
             attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(colorLiteralRed: 113/255, green: 50/255, blue: 93/255, alpha: 1) , range: range)
             attributedString.addAttribute(NSFontAttributeName, value: UIFont(
@@ -206,13 +215,8 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
 
     @IBAction func refreshPress(_ sender: Any) {
-        for view in viewCardViewHolder.subviews {
-            if view is MDCSwipeToChooseView {
-                view.removeFromSuperview()
-            }
-            
-        }
-            refreshCardStack()
+
+        refreshCardStack(startingIndex: 0)
         
     }
     
@@ -314,11 +318,19 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         self.adjustMargins()
+        
 
+        
+        DispatchQueue.main.async{
+            self.refreshCardStack(startingIndex: (self.cardData.count - self.viewCardViewHolder.subviews.count + 1)) // already 2 subviews in cardDataHolder
+//            for view in self.viewCardViewHolder.subviews{
+//                view.frame.size = self.viewCardViewHolder.frame.size
+                //            view.frame.width = self.viewCardViewHolder.frame.width
+                //            view.frame.height = self.viewCardViewHolder.frame.height
+//            }
+        
+        }
     }
-    
-    
-
 }
 
 
