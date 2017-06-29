@@ -319,8 +319,6 @@ class RecipeDetailViewController: UIViewController, MDCSwipeToChooseDelegate {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         self.adjustMargins()
         
-
-        
         DispatchQueue.main.async{
             self.refreshCardStack(startingIndex: (self.cardData.count - self.viewCardViewHolder.subviews.count + 1)) // already 2 subviews in cardDataHolder
 //            for view in self.viewCardViewHolder.subviews{

@@ -28,11 +28,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         txtSearchText.delegate = self
-        //txtSearchText.text = "taco"
-        
-        //navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Arial Rounded MT Bold", size: 20.0)!]
-        //navigationController?.navigationBar.tit
-        //Model.sharedInstance.nukeAllRecipes()
         
         self.view.addSubview(progressHud)
         progressHud.hide()
