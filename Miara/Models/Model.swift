@@ -87,7 +87,7 @@ class Model: NSObject {
     
     func getIngredientsFromTastyKitchen(url: String) -> [String]{
         var recipeHtml : String!
-        var listToReturn = [String]()
+        let listToReturn = [String]()
         //make url request
         
         var listItems = Elements()
@@ -144,7 +144,7 @@ class Model: NSObject {
                 
                 return listToReturn
             } catch {
-                let a = 0
+                let _ = 0
             // contents could not be loaded
             }    
     
