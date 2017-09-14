@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/dlambright/MIARA-iOS/blob/develop/README.md.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 # MIARA IS A RECIPE APP #
-Miara gives you the ability to search for recipes using the Food2Fork api.  Anything that is on Food2Fork will show up on this app.  You can browse through the recipes, save a recipe, or put a recipe on your grocery list.  More on that later!
+Miara gives you the ability to search for recipes using the Food2Fork API.  Anything that is on Food2Fork will show up on this app.  You can browse through the recipes, save a recipe, or put a recipe on your grocery list.  More on that later!
 
 ![screen shot 2017-02-07 at 12 05 24 pm](https://cloud.githubusercontent.com/assets/8572563/22702447/bcb60100-ed2e-11e6-99ee-ff03f8cb3e1b.png)
 
